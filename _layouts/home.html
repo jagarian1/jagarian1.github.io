@@ -6,6 +6,12 @@ layout: archive
 
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
 
+<!-- 변경후 https://syki66.github.io/blog/2020/04/17/TeXt-theme-detailed-customization.html -->
+<!-- {%- if page.subtitle -%}
+  <p class="overlay__excerpt">{{ page.subtitle }}</p>
+{%- endif -%} -->
+
+
 {% if paginator %}
   {% assign posts = paginator.posts %}
 {% else %}

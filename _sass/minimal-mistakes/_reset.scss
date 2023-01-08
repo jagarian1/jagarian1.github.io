@@ -185,3 +185,18 @@ textarea {
   overflow: auto; /* remove vertical scrollbar in IE6-9*/
   vertical-align: top; /* readability and alignment cross-browser*/
 }
+
+::-webkit-scrollbar{
+  width: 6px; // 세로 스크롤의 너비
+  height: 3px; // 가로 스크롤의 너비
+  background-color: #121212; // 스크롤의 기본 배경색상
+  
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 3px; // 스크롤바 곡률
+  background-color: #d3d3d37c; // 스크롤바 색상
+}
+
+::-webkit-scrollbar-track:horizontal{
+  background-color: #000000; // 가로 스크롤바 색상
+}

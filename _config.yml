@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "n
 
 # Site Settings
 locale                   : "ko-KR"
-title                    : "날고싶은 개발자 Blog"
+title                    : "WINGMAN Blog"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Jerome"
@@ -27,8 +27,8 @@ baseurl                  : "" #예기치 못한 오류일떄 연결되는 url �
 repository               : "jagarian1/jagarian1.github.io"  # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # 폴백일떄 보여지는 이미지 입니다.  e.g. "/assets/images/500x300.png"
 logo                     : # 화면에 보여지느 로그 이미지 입니다.  e.g. "/assets/images/88x88.png"
-masthead_title           : "날고싶은 개발자" # 화면 타이틀 입니다., use " " for no title
-breadcrumbs            : false # true, false (default)
+masthead_title           : "Do Something the Way You Want" # 화면 타이틀 입니다., use " " for no title
+breadcrumbs              : false # true, false (default)
 words_per_minute         : 200
 comments:
   provider               : "disqus"   # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
@@ -102,18 +102,17 @@ analytics:
     tracking_id          : "UA-252976386-1"
     anonymize_ip         : # true, false (default)
 
-
 # Site Author
 author:
   name             : "Sang Hyun"
   avatar           : # 프로필 사진 경로 "/assets/images/bio-photo.jpg"
-  bio              : "**날아보자** 어디로든."
-  location         : "Rep Kor"
+  bio              : "**Do Something** Anything."
+  location         : "Seoul Kor"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:your.name@email.com"
+      url: "mailto:jeromeoffice191@email.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -202,6 +201,7 @@ incremental: false
 # Markdown Processing
 kramdown:
   input: GFM
+  syntax_highlighter: rouge
   hard_wrap: false
   auto_ids: true
   footnote_nr: 1
@@ -222,7 +222,8 @@ sass:
 permalink: /:categories/:title/
 paginate: 15 
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+preserve_timezones: false
+#timezone: "Asia/Seoul"    #  https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)
