@@ -5,6 +5,10 @@
   "hints": {
     "apple-touch-icons": "off",
     "compat-api/html": "off",
-    "compat-api/css": "off"
+    "compat-api/css": "off",
+    "meta-charset-utf-8": "off",
+    "axe/language": "off",
+    "axe/text-alternatives": "off",
+    "meta-viewport": "off"
   }
 }

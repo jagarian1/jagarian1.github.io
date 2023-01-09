@@ -14,6 +14,8 @@ group :jekyll_plugins do
     gem "jekyll-algolia"
     gem 'jekyll-seo-tag'
   end
+# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+gem "tzinfo-data"
 gem "jekyll", "~> 3.7"
 gem "minimal-mistakes-jekyll"
 gem "webrick", "~> 1.7"

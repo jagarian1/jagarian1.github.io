@@ -10,13 +10,16 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-# theme                  : "minimal-mistakes-jekyll"
 remote_theme             : "mmistakes/minimal-mistakes@4.24.0"
-minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dirt" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "ko-KR"
 title                    : "WINGMAN Blog"
+toc: true
+toc_sticky: true
+toc_levels: 1..6
+toc_label: "페이지 주요 목차"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Jerome"
@@ -106,7 +109,7 @@ analytics:
 author:
   name             : "Sang Hyun"
   avatar           : # 프로필 사진 경로 "/assets/images/bio-photo.jpg"
-  bio              : "**Do Something** Anything."
+  bio              : "**Do Something** Anything"
   location         : "Seoul Kor"
   email            :
   links:
@@ -143,7 +146,7 @@ footer:
       # url:
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
-      # url:
+      url: "https://github.com/jagairan1"
     - label: "Bitbucket"
       icon: "fab fa-fw fa-bitbucket"
       # url:
@@ -206,8 +209,10 @@ kramdown:
   auto_ids: true
   footnote_nr: 1
   entity_output: as_char
+  toc: true
+  toc_sticky: true
   toc_levels: 1..6
-  toc_sticky : true
+  toc_label: "페이지 주요 목차"
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
@@ -217,13 +222,13 @@ sass:
   sass_dir: _sass
   style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
-
+#blog 표시방법 
 # Outputting
 permalink: /:categories/:title/
 paginate: 15 
 paginate_path: /page:num/
 preserve_timezones: false
-#timezone: "Asia/Seoul"    #  https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Seoul    #  https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)
