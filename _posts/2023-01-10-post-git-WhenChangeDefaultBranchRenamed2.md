@@ -4,6 +4,8 @@ search: true
 categories: 
   - Git Study
 last_modified_at: 2023-01-10T08:06:00-05:00
+tags:
+  - GIT commands
 ---
 
 
@@ -24,4 +26,3 @@ git branch -u origin/devlop devlop
 git remote set-head origin -a
 ```
 
-처음으로 노션으로 만들어 배포해 봅니다.
