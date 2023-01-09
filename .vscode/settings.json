@@ -1,4 +1,13 @@
 {
+    "MD013": false,
     "editor.wordWrap": "on",
-    "diffEditor.wordWrap": "on"
+    "diffEditor.wordWrap": "on",
+    "markdownlint.focusMode": 2,
+    "markdownlint.ignore": ".gitignore",
+    "markdownlint.config": {
+        "default": false,
+        "MD003": { "style": "atx_closed" },
+        "MD007": { "indent": 4 },
+        "no-hard-tabs": false
+    }
 }
