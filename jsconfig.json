@@ -4,5 +4,5 @@
       "target": "es6"
     },
     "include": ["_pages/**/*"],
-    "exclude": ["node_modules","**/node_modules/","_site/**/*"]
+    "exclude": ["node_modules","**/node_modules/","run.bat"]
   }
