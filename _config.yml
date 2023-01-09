@@ -298,11 +298,7 @@ defaults:
   - scope:
       path: "_pages"
       type: pages
-      author_profile: true
-  # _about
-  - scope:
-      path: "_about"
-      type: posts
+      # author_profile: true
 
 collections:
   about:
