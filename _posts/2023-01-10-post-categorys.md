@@ -9,11 +9,12 @@ tags:
   - SPRING
 ---
 
-## SPRING
+## SPRING  CONFIG
 
-###
 
-WebMvcConfigurer
+
+- WebMvcConfigurer
+
 
 ```java
 @Bean
