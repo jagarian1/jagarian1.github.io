@@ -4,12 +4,12 @@ header:
   video:
     id: iLqGzEkusIw
     provider: youtube
-categories:
-  - Layout
-  - Uncategorized
-tags:
-  - video
-  - layout
+# categories:
+#   - Layout
+#   - Uncategorized
+# tags:
+#   - video
+#   - layout
 ---
 
 This post should display a **header with a responsive video**, if the theme supports it.
@@ -68,7 +68,7 @@ header:
 
 ### Vimeo
 
-To embed the following Vimeo video at url `https://vimeo.com/212731897` into a post or page's main content you'd use: 
+To embed the following Vimeo video at url `https://vimeo.com/212731897` into a post or page's main content you'd use:
 
 ```liquid
 {% raw %}{% include video id="212731897" provider="vimeo" %}{% endraw %}

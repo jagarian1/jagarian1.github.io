@@ -5,4 +5,4 @@
 @REM  bundle exec jekyll serve --draft
  rem 초안 표시
 @REM  bundle exec jekyll serve --trace
- bundle exec jekyll serve --draft
+ bundle exec jekyll serve 
