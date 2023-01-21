@@ -6,14 +6,12 @@ main:
     url: "/about/"
   - title: "Category"
     url: /categories/
-  - title: "Recipes"
-    url: /recipes/
+
   - title: "Posts"
     url: /year-archive/
-  - title: "Collections"
-    url: /collection-archive/
-  # - title: "Portfolio"
-  #   url: /portfolio/
+  # - title: "Collections"
+  #   url: /collection-archive/
+
   - title: "Tags"
     url: /tags/
   - title: "Sitemap"
