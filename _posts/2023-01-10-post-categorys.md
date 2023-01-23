@@ -11,9 +11,9 @@ toc: true
 toc_sticky: true
 ---
 
-## SPRING  CONFIG
+##### SPRING  CONFIG
 
-### WebMvcConfigurer
++  WebMvcConfigurer
 
 - WebMvcConfigurer 설정 메모
 

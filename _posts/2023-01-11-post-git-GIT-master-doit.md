@@ -11,23 +11,23 @@ toc: true
 toc_sticky: true
 ---
 
-![](../assets/images/2023-01-11-post-git-GIT-master-doit/headway-5QgIuuBxKwM-unsplash.jpg)
+![Git Commands List](../assets/images/2023-01-11-post-git-GIT-master-doit/headway-5QgIuuBxKwM-unsplash.jpg)
 
-#### 📗 Git Commands List
+##### 📗 Git Commands List
 
 
 ##### 🔓📎 GIT 저장소 개념 📎
 
 ```
-git의 저장소는 3가지 단계로 나누어 집니다. 
-커밋한 소스가 보관되는 저장소 Repository
-프로젝트 파일들이 있는 **🌟작업트리** WorkTree
-저장소와 작업트리사이의 버퍼영역으로 커밋될 대상이 저장되는 **🌟스테이징** Staging
++ git의 저장소는 3가지 단계로 나누어 집니다. 
++ 커밋한 소스가 보관되는 저장소 Repository
++ 프로젝트 파일들이 있는 **🌟작업트리** WorkTree
++ 저장소와 작업트리사이의 버퍼영역으로 커밋될 대상이 저장되는 **🌟스테이징** Staging
 
-git은 빈 디렉토리는 추적하지 않습니다. 
-형상관리를 하지 않을 파일은 **.gitignore** 파일에 추가 함
-**HEAD**는 현재 브랜치의 가장 최신커밋을 의미 함
-기본원격 저장소를 **origin**이라고 함
++ git은 빈 디렉토리는 추적하지 않습니다. 
++ 형상관리를 하지 않을 파일은 **.gitignore** 파일에 추가 함
++ **HEAD**는 현재 브랜치의 가장 최신커밋을 의미 함
++ 기본원격 저장소를 **origin**이라고 함
 ```
 
 #### 🔓 git commands  → 

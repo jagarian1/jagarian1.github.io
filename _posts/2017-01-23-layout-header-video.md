@@ -16,7 +16,7 @@ toc_sticky: true
 
 This post should display a **header with a responsive video**, if the theme supports it.
 
-## Settings
+##### Settings
 
 ```JAVA
 | Parameter  | Required     | Description |
@@ -25,7 +25,7 @@ This post should display a **header with a responsive video**, if the theme supp
 | `provider` | **Required** | Hosting provider of the video, either `youtube` or `vimeo` |
 ```
 
-### YouTube
+##### YouTube
 
 ```liquid
 {% raw %}{% include video id="Eim11QYLfEY" provider="youtube" %}{% endraw %}
@@ -68,7 +68,7 @@ header:
     provider: youtube
 ```
 
-### Vimeo
+##### Vimeo
 
 To embed the following Vimeo video at url `https://vimeo.com/212731897` into a post or page's main content you'd use:
 
