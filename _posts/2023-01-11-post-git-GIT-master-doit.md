@@ -72,14 +72,19 @@ git은 빈 디렉토리는 추적하지 않습니다.
 
 - git --version *  현재 git 버전을 확인 
 
-#### 💡  git init  → 
+#### 💡 git init 
 - git init      로컬 Git 리포지토리 초기화 , 현재 디렉토리에 git 저장소를 생성
-- git status    🌟 상태 확인
-- git clone ssh://git@github.com/[username]/[repository-name]
-    * git	원격 저장소의 로컬 사본 작성
-#### 💡 git commit  → 
 
-- git commit -m "커밋메시지”  → 
+#### 💡 git status
+    *    🌟 상태 확인
+#### 💡 git clone
+    * git clone ssh://git@github.com/[username]/[repository-name]
+    * git	원격 저장소의 로컬 사본 작성
+
+#### 💡 git commit 
+
+#### 💡 git commit
+    * git commit -m "커밋메시지”
     *  스테이징 영역에 올라가 있는 파일들을 커밋 함
     *  -m 은 커밋메시지를 주는 옵션으로 여러 줄의 커밋메시지를 쓸 경우 -m 을 여러개 사용할 수 있습니다.
     *  -a  옵션을 사용하면 스테이징에 올리는 작업과 커밋을 동시에 할 수 있습니다.
@@ -87,67 +92,76 @@ git은 빈 디렉토리는 추적하지 않습니다.
     * -m 을 사용하지 않을때 -v옵션을 사용하면 편집기에 커밋하려는 변경사항의 다른점을 보여줍니다.
     *  특정파일만 커밋하려면 마지막에 파일명을 추가해주면 됩니다.
 
-- git commit -C HEAD -a --amend <fileName> → 
-    *  지정한 커밋의 로그메시지를 다시 사용하여 기존커밋을 수정
+    *  git commit -C HEAD -a --amend <fileName>  
+       지정한 커밋의 로그메시지를 다시 사용하여 기존커밋을 수정
     *  -C  를 사용하면 기존메시지를 수정할 수 있는 편집기를 실행
 
-#### 💡 git diff  → 
+#### 💡 git diff 
     *  스테이징영역과 현재 작업트리의 차이점을 보여줍니다.
         --cached 옵션을 추가하면 스테이징영역과 저장소의 차이점을 볼 수 있다.
     *  git diff HEAD를 입력하면 저장소, 스테이징영역, 작업트리의 차이점을 모두 볼 수 있다.
     *  파라미터로 log와 동일하게 범위를 지정할 수 있으며
         --stat  추가하면 변경사항에 대한 통계를 볼 수 있습니다.
 
-#### 💡 git mv fileName newFileName  → 
+#### 💡 git mv
+    *  git mv fileName newFileName  
     *  기존에 존재하는 파일을 새파일로 이동합니다. 변경이력은 그대로 유지합니다.
 
-#### 💡 git checkout  fileName →
-  1. 현재 브랜치에서, 입력한 브랜치가 위치한 커밋으로 이동 
-  2. 로컬 브랜치를 생성하면서 해당 브랜치로 이동하기 **git checkout** -b new_branch.
-  3. 원격 브랜치를 트래킹 하면서 원격과 동일한 이름의 로컬브랜치를 생성 및 이동
+#### 💡 git checkout 
+    * git checkout  fileName
+    * 현재 브랜치에서, 입력한 브랜치가 위치한 커밋으로 이동 
+    * **git checkout** -b new_branch. 로컬 브랜치를 생성하면서 해당 브랜치로 이동하기 
+    * 원격 브랜치를 트래킹 하면서 원격과 동일한 이름의 로컬브랜치를 생성 및 이동
 
 #### 💡 git remote  
-- 원격저장소인  <remote>  브렌치를 핸들링 하는 명령어
+    * 원격저장소인  <remote>  브렌치를 핸들링 하는 명령어
 
-#### 💡 git clone 저장소주소 폴더명 <origin URL : “http://githup.com/idName/projectName”>
+#### 💡 git clone 
+    *  git clone  저장소 주소 폴더명 <origin URL : “http://githup.com/idName/projectName”>
     *  원격저장소를 복제하여 저장소를 생성합니다. 폴더명을 생략가능
 
 #### 💡 git fetch
     *  원격저장소의 변경사항 가져와서 원격브랜치를 갱신
 
-#### 💡 git branch -r 
+#### 💡 git branch
     * 현재 존재하는 브랜치를 조회  -r 옵션을 사용하면 원격저장소의 브랜치를 확인할 수 있습니다.
 
-#### 💡 git branch <브랜치명B> <브랜치명A> 
+#### 💡 git branch
+    * git branch <브랜치명B> <브랜치명A> 
     * 브랜치명A 에서 새로운 브랜치 브랜치명 B를 만듭니다.
     * (git에서 기본 브랜치는 master 라는 이름을 사용합니다.)
 
-#### 💡 git branch <브랜치명> 
-    * 브랜치명의 새로운 브랜치를 만듭니다.
+#### 💡 git branch
+    * git branch <브랜치명>  브랜치명의 새로운 브랜치를 만듭니다.
 
-#### 💡 git branch -d <브랜치명> 
-    * 브랜치를 삭제 
+#### 💡 git branch
+    * git branch -d <브랜치명>  브랜치를 삭제 
 
-#### 💡 git branch -m <존재하는브랜치명> <새로운 브랜치명> 
-  
+#### 💡 git branch
+    * git branch -m <존재하는브랜치명> <새로운 브랜치명> 
     * 존재하는 브랜치를 새로운 브랜치로 변경
     * 이미 존재하는 브랜치명이 있을 경우에는 에러가 나는데 -M 옵션을 사용하면 
   ​     이미 있는 브랜치의 경우에도 덮어씁니다.
 
-#### 💡  git tag <태그명> <브랜치명>
+#### 💡  git tag
+    * git tag <태그명> <브랜치명>
     * 브랜치명의 현재시점에 태그명으로 된 태그
     * git tag만 입력하면 현재 존재하는 태그 목록을 볼 수 있습니다.
 
-#### 💡 git checkout <브랜치명/태그명>
+#### 💡 git checkout 
+    * git checkout <브랜치명/태그명>
     * 해당 브랜치나 태그로 작업트리를 변경
 
-#### 💡 git checkout -b <브랜치명B> <브랜치명A>
+#### 💡 git checkout
+    * git checkout -b <브랜치명B> <브랜치명A>
     * 브랜치명A에서 브랜치명B라는 새로운 브랜치를 만들면서 체크아웃
 
-#### 💡 git rebase <브랜치명>
+#### 💡 git rebase 
+    * git rebase <브랜치명>
     * 브랜치명의 변경사항을 현재 브랜치에 적용
 
-#### 💡 git merge <브랜치명>
+#### 💡 git merge
+    * git merge <브랜치명>
     * 브랜치명의 브랜치를 현재 브랜치로 합칩니다.
     * --squash 옵션을 주면 브랜치명의 모든 커밋을 하나의 커밋
 
