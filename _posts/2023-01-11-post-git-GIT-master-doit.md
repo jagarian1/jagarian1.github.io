@@ -57,23 +57,23 @@ git은 빈 디렉토리는 추적하지 않습니다.
 
 💡 git config →  [Git - git-config Documentation (git-scm.com)](https://git-scm.com/docs/git-config)
 
-- git config --global --list
++ git config --global --list
     *  리포지토리 또는 전역옵션 설정정보 조회 가져오기 
     *  --global 옵션은 전역설정에 대한 옵션
 
-- git config --global user.name "사용자명"
++ git config --global user.name "사용자명"
     * 사용자명을 등록합니다 (필수) 🌟
 
-- git config --global user.email "이메일주소”
++ git config --global user.email "이메일주소”
     *  이메일 주소를 등록합니다. (필수) 🌟
 
-- git config --global color.ui “auto”
++ git config --global color.ui “auto”
     *  터미널에 표시되는 메시지에 칼라를 표시
 
-- git --version *  현재 git 버전을 확인 
++ git --version *  현재 git 버전을 확인 
 
 #### 💡 git init 
-- git init      로컬 Git 리포지토리 초기화 , 현재 디렉토리에 git 저장소를 생성
++ git init      로컬 Git 리포지토리 초기화 , 현재 디렉토리에 git 저장소를 생성
 
 #### 💡 git status
     *    🌟 상태 확인
@@ -292,21 +292,21 @@ usage: git push [<options>] [<repository> [<refspec>...]]
 
 #### 💡 git submodule
     * submodule * 연관된 하위모듈을 확인  🌨
-- git submodule add 저장소주소 서브모듈경로
+    * git submodule add 저장소주소 서브모듈경로
     * 새로운 하위모듈을 해당경로에 추가
     * 추가만하고 초기화 하지는 않으며 커밋 해쉬 앞에 마이나스(-) 표시
 
-- git submodule init 서브모듈경로
+    * git submodule init 서브모듈경로
     * 서브모듈을 초기화 
 
-- git submodule update 서브모듈경로
+    * git submodule update 서브모듈경로
     * 서브모듈의 변경사항을 적용합니다. 
     저장소의 최신커밋을 추적하지 않습니다.
 ---
 
 #### 💡 warning Issue
--  warning: LF will be replaced by CRLF in src/App.js.
-- 📌 git 오류  → git config --global core.autocrlf true
+    * warning: LF will be replaced by CRLF in src/App.js.
+    * 📌 git 오류  → git config --global core.autocrlf true
 
 ```bash
  warning: LF will be replaced by CRLF in src/App.js.
@@ -319,11 +319,11 @@ usage: git push [<options>] [<repository> [<refspec>...]]
 + git config --global core.autocrlf true 
     * **input** : 이건 리눅스에서 한방향으로 적용 할떄 옵션을 줍니다.
 
-   리눅스는 테스트 못함.
+    * 리눅스는 테스트 못함.
 
 >  출처 : https://git-scm.com/docs 
 ------
 
-- Created: 2022년 12월 10일 오전 12:06
-- Last Edited Time: 2023년 1월 10일 오후 4:09
-- Status: In Progress
++ Created: 2022년 12월 10일 오전 12:06
++ Last Edited Time: 2023년 1월 10일 오후 4:09
++ Status: In Progress
