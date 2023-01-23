@@ -77,7 +77,7 @@ git은 빈 디렉토리는 추적하지 않습니다.
 - git status    🌟 상태 확인
 - git clone ssh://git@github.com/[username]/[repository-name]
     * git	원격 저장소의 로컬 사본 작성
-#### 🤜 git commit  → 
+#### 💡 git commit  → 
 
 - git commit -m "커밋메시지”  → 
     *  스테이징 영역에 올라가 있는 파일들을 커밋 함
@@ -91,67 +91,67 @@ git은 빈 디렉토리는 추적하지 않습니다.
     *  지정한 커밋의 로그메시지를 다시 사용하여 기존커밋을 수정
     *  -C  를 사용하면 기존메시지를 수정할 수 있는 편집기를 실행
 
-- git diff  → 
+#### 💡 git diff  → 
     *  스테이징영역과 현재 작업트리의 차이점을 보여줍니다.
         --cached 옵션을 추가하면 스테이징영역과 저장소의 차이점을 볼 수 있다.
     *  git diff HEAD를 입력하면 저장소, 스테이징영역, 작업트리의 차이점을 모두 볼 수 있다.
     *  파라미터로 log와 동일하게 범위를 지정할 수 있으며
         --stat  추가하면 변경사항에 대한 통계를 볼 수 있습니다.
 
-- git mv fileName newFileName  → 
+#### 💡 git mv fileName newFileName  → 
     *  기존에 존재하는 파일을 새파일로 이동합니다. 변경이력은 그대로 유지합니다.
 
-- git checkout  fileName →
+#### 💡 git checkout  fileName →
   1. 현재 브랜치에서, 입력한 브랜치가 위치한 커밋으로 이동 
   2. 로컬 브랜치를 생성하면서 해당 브랜치로 이동하기 **git checkout** -b new_branch.
   3. 원격 브랜치를 트래킹 하면서 원격과 동일한 이름의 로컬브랜치를 생성 및 이동
 
--  git remote  
+#### 💡 git remote  
 - 원격저장소인  <remote>  브렌치를 핸들링 하는 명령어
 
-- git clone 저장소주소 폴더명 <origin URL : “http://githup.com/idName/projectName”>
+#### 💡 git clone 저장소주소 폴더명 <origin URL : “http://githup.com/idName/projectName”>
     *  원격저장소를 복제하여 저장소를 생성합니다. 폴더명을 생략가능
 
-- git fetch
+#### 💡 git fetch
     *  원격저장소의 변경사항 가져와서 원격브랜치를 갱신
 
-- git branch -r 
+#### 💡 git branch -r 
     * 현재 존재하는 브랜치를 조회  -r 옵션을 사용하면 원격저장소의 브랜치를 확인할 수 있습니다.
 
-- git branch <브랜치명B> <브랜치명A> 
+#### 💡 git branch <브랜치명B> <브랜치명A> 
     * 브랜치명A 에서 새로운 브랜치 브랜치명 B를 만듭니다.
     * (git에서 기본 브랜치는 master 라는 이름을 사용합니다.)
 
-- git branch <브랜치명> 
+#### 💡 git branch <브랜치명> 
     * 브랜치명의 새로운 브랜치를 만듭니다.
 
-- git branch -d <브랜치명> 
+#### 💡 git branch -d <브랜치명> 
     * 브랜치를 삭제 
 
-- git branch -m <존재하는브랜치명> <새로운 브랜치명> 
+#### 💡 git branch -m <존재하는브랜치명> <새로운 브랜치명> 
   
     * 존재하는 브랜치를 새로운 브랜치로 변경
     * 이미 존재하는 브랜치명이 있을 경우에는 에러가 나는데 -M 옵션을 사용하면 
   ​     이미 있는 브랜치의 경우에도 덮어씁니다.
 
-- git tag <태그명> <브랜치명>
+#### 💡  git tag <태그명> <브랜치명>
     * 브랜치명의 현재시점에 태그명으로 된 태그
     * git tag만 입력하면 현재 존재하는 태그 목록을 볼 수 있습니다.
 
-- git checkout <브랜치명/태그명>
+#### 💡 git checkout <브랜치명/태그명>
     * 해당 브랜치나 태그로 작업트리를 변경
 
-- git checkout -b <브랜치명B> <브랜치명A>
+#### 💡 git checkout -b <브랜치명B> <브랜치명A>
     * 브랜치명A에서 브랜치명B라는 새로운 브랜치를 만들면서 체크아웃
 
-- git rebase <브랜치명>
+#### 💡 git rebase <브랜치명>
     * 브랜치명의 변경사항을 현재 브랜치에 적용
 
-- git merge <브랜치명>
+#### 💡 git merge <브랜치명>
     * 브랜치명의 브랜치를 현재 브랜치로 합칩니다.
     * --squash 옵션을 주면 브랜치명의 모든 커밋을 하나의 커밋
 
-- git cherry-pick  master 
+#### 💡 git cherry-pick  master 
     * 일부 기존 커밋에 의해 도입 된 변경 사항 적용 변경사항을 커밋하고 현재 브랜치에 커밋으로 만듭니다.
     * -n 옵션을 주면 작업트리에 합치지만 커밋은 하지 않기 때문에 여러개의 커밋을 합쳐서 커밋
 
@@ -160,7 +160,7 @@ git은 빈 디렉토리는 추적하지 않습니다.
 ---
 
 
-- git pull
+#### 💡 git pull
     * 저장소에서 소스를 받아온다
 
 ```bash
@@ -228,7 +228,7 @@ Options related to fetching
     --set-upstream        set upstream for git pull/fetch
 ```
 
-- git push 
+#### 💡 git push 
     * 저장소에 소스를 올린다. 분기를 원격 저장소로 푸시
 
 ```bash
@@ -269,14 +269,14 @@ usage: git push [<options>] [<repository> [<refspec>...]]
     -6, --ipv6            use IPv6 addresses only
 ```
 
-- 검사 및 비교
+#### 💡 검사 및 비교
     * git log	변경사항 보기
     * git log --summary	변경 내용 보기(자세히)
     * git log --oneline	변경사항 보기(간단히)
     * git diff [source branch] [target branch]	병합하기 전에 변경 내용 미리 보기
 ---
 
-- git submodule
+#### 💡 git submodule
     * submodule * 연관된 하위모듈을 확인  🌨
 - git submodule add 저장소주소 서브모듈경로
     * 새로운 하위모듈을 해당경로에 추가
@@ -290,7 +290,7 @@ usage: git push [<options>] [<repository> [<refspec>...]]
     저장소의 최신커밋을 추적하지 않습니다.
 ---
 
-+ warning Issue
+#### 💡 warning Issue
 -  warning: LF will be replaced by CRLF in src/App.js.
 - 📌 git 오류  → git config --global core.autocrlf true
 
@@ -302,7 +302,8 @@ usage: git push [<options>] [<repository> [<refspec>...]]
   * 해결 : git config --global core.autocrlf true
 ```
 
-- git config --global core.autocrlf true **input** ==> 이건 리눅스에서 한방향으로 적용 할떄 옵션을 줍니다.
++ git config --global core.autocrlf true 
+    * **input** : 이건 리눅스에서 한방향으로 적용 할떄 옵션을 줍니다.
 
    리눅스는 테스트 못함.
 
