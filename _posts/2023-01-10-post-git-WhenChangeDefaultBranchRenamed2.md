@@ -7,6 +7,8 @@ last_modified_at: 2023-01-10
 tags:
   - GIT 
   - GIT COMMANDS
+toc: true
+toc_sticky: true
 ---
 
 

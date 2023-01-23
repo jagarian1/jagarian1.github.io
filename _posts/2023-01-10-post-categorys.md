@@ -7,13 +7,15 @@ last_modified_at: 2023-01-10T08:06:00-05:00
 tags:
   - JAVA
   - SPRING
+toc: true
+toc_sticky: true
 ---
 
 ## SPRING  CONFIG
 
+### WebMvcConfigurer
 
-
-- WebMvcConfigurer
+- WebMvcConfigurer 설정 메모
 
 
 ```java
@@ -24,7 +26,7 @@ public WebMvcConfigurer corsConfigurer() {
         public void addCorsMappings(CorsRegistry registry) {
             registry
             .addMapping("/**")
-            .allowedOrigins("http://127.0.0.1:4000");
+            .allowedOrigins("http://127.0.0.1:9999");
         }
     };
 }

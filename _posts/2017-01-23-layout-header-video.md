@@ -10,6 +10,8 @@ header:
 # tags:
 #   - video
 #   - layout
+toc: true
+toc_sticky: true
 ---
 
 This post should display a **header with a responsive video**, if the theme supports it.

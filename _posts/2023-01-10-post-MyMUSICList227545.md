@@ -4,6 +4,9 @@ search: true
 categories: 
   - MUSIC
 last_modified_at: 2023-01-10T24:06:00-05:00
+
+toc: true
+toc_sticky: true
 ---
 
 # My MUSIC List

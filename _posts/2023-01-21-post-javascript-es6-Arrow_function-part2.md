@@ -6,6 +6,8 @@ categories:
 last_modified_at: 2023-01-20T05:06:00-05:00
 tags:
   - Javascript
+toc: true
+toc_sticky: true
 ---
 
 ### ⚡️ 화살표 기능을 피해야 하는 경우

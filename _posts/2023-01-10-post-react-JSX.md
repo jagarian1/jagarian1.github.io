@@ -7,6 +7,8 @@ last_modified_at: 2023-01-10T08:06:00-05:00
 tags:
   - React
   - JSX
+toc: true
+toc_sticky: true
 ---
 
 ![](../assets/images/2023-01-10-post-react-JSX/christopher-gower-m_HRfLhgABo-unsplash.jpg)
