@@ -13,7 +13,7 @@ toc_sticky: true
 
 ![](../assets/images/2023-01-10-post-react-JSX/christopher-gower-m_HRfLhgABo-unsplash.jpg)
 
-# JSX가 왜 필요 할까?
+#### JSX가 왜 필요 할까?
 
 ```javascript
 const element = <h1>Hello, world!</h1>;
