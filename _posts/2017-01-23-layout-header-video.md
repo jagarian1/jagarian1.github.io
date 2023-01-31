@@ -10,8 +10,8 @@ header:
 # tags:
 #   - video
 #   - layout
-toc: true
-toc_sticky: true
+#toc: true
+#toc_sticky: true
 ---
 
 This post should display a **header with a responsive video**, if the theme supports it.
@@ -39,11 +39,11 @@ This post should display a **header with a responsive video**, if the theme supp
 {% raw %}{% include video id="bCDBpdsED6Y" provider="youtube" %}{% endraw %}
 ```
 
-{% include video id="Eim11QYLfEY" provider="youtube" %}
+#{% include video id="Eim11QYLfEY" provider="youtube" %}
 
-{% include video id="clbI-NL4s2k" provider="youtube" %}
+#{% include video id="clbI-NL4s2k" provider="youtube" %}
 
-{% include video id="bCDBpdsED6Y" provider="youtube" %}
+#{% include video id="bCDBpdsED6Y" provider="youtube" %}
 
 To embed it as a video header you'd use the following YAML Front Matter
 

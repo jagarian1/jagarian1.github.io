@@ -1,11 +1,10 @@
 ---
-title:  "React Native"
+title:  "React"
 search: true
 categories: 
-  - React
+  - posts
 last_modified_at: 2023-01-10T08:06:00-05:00
 tags:
-  - React
   - JSX
 toc: true
 toc_sticky: true

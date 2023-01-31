@@ -2,7 +2,7 @@
 title: "Javascript ES6 "
 search: true
 categories:
-  - Javascript
+  - posts
 last_modified_at: 2023-01-20T05:06:00-05:00
 tags:
   - Javascript

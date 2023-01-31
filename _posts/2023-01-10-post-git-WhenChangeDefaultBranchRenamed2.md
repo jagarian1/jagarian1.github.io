@@ -2,7 +2,7 @@
 title:  "When U git Change Default Branch Renamed!"
 search: true
 categories: 
-  - Git
+  - posts
 last_modified_at: 2023-01-10
 tags:
   - GIT 

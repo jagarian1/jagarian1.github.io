@@ -2,10 +2,9 @@
 title: "JAVA SPRING"
 search: true
 categories:
-  - JAVA
+  - posts
 last_modified_at: 2023-01-10T08:06:00-05:00
 tags:
-  - JAVA
   - SPRING
 toc: true
 toc_sticky: true

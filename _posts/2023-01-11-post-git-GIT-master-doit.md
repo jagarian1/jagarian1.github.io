@@ -2,10 +2,9 @@
 title: "GIT MASTER"
 search: true
 categories:
-  - GIT
+  - posts
 last_modified_at: 2023-01-10T08:06:00-05:00
 tags:
-  - GIT
   - GIT COMMANDS
 toc: true
 toc_sticky: true
@@ -168,7 +167,7 @@ toc_sticky: true
 #### 💡 git cherry-pick  master 
     * 일부 기존 커밋에 의해 도입 된 변경 사항 적용 변경사항을 커밋하고 현재 브랜치에 커밋으로 만듭니다.
     * -n 옵션을 주면 작업트리에 합치지만 커밋은 하지 않기 때문에 여러개의 커밋을 합쳐서 커밋
-
+    
     *  [버전 2.39.1 ▾](https://git-scm.com/docs/git-cherry-pick#) git-cherry-pick 2.39.1에서 마지막으로 업데이트되었습니다.
 
 ---
@@ -295,10 +294,10 @@ usage: git push [<options>] [<repository> [<refspec>...]]
     * git submodule add 저장소주소 서브모듈경로
     * 새로운 하위모듈을 해당경로에 추가
     * 추가만하고 초기화 하지는 않으며 커밋 해쉬 앞에 마이나스(-) 표시
-
+    
     * git submodule init 서브모듈경로
     * 서브모듈을 초기화 
-
+    
     * git submodule update 서브모듈경로
     * 서브모듈의 변경사항을 적용합니다. 
     저장소의 최신커밋을 추적하지 않습니다.

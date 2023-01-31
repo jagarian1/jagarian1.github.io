@@ -2,9 +2,9 @@
 title:  "MY MUSIC"
 search: true
 categories: 
-  - MUSIC
+  - posts
 last_modified_at: 2023-01-10T24:06:00-05:00
-
+tags : MUSIC
 toc: true
 toc_sticky: true
 ---
