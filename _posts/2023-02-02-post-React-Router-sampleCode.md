@@ -16,6 +16,7 @@ toc_sticky: true
 
 ###### @tanstack/react-query   
 
+
 - 사용하는 이유  :  Custom Hook 의 문제로 인해.    1.Cache   2.Retry 기능이 없음.
 
   React Query 사용하여 이런 문제를 해결..
@@ -41,21 +42,23 @@ toc_sticky: true
 공식문서 : tanstack.com   ReactQuery
 https://tanstack.com/query/latest/docs/react/installation
 
-API : 
+API :  
 https://tanstack.com/query/latest/docs/react/reference/useQuery
 
-------
-
-
-
-######  SOURCE
-
-✨ src/components/Product.jsx
 
 ```react
 import { useQuery } from '@tanstack/react-query';
 ```
 
+------
+
+######  SOURCE
+
+
+✨ src/components/Product.jsx
+<details>
+<summary>접기/펼치기</summary>
+<div markdown="1">
 
 ```react
 import React, { useState } from 'react';
@@ -106,13 +109,16 @@ export default function Products() {
     </>
   );
 }
-//ui-monospace,"Cascadia Mono","Segoe UI Mono","Liberation Mono",Menlo,Monaco,Consolas,monospace;
-```
 
+```
+</div>
+</details>
 
 
 ✨ App.js
-
+<details>
+<summary>접기/펼치기</summary>
+<div markdown="1">
 ```react
 import React from 'react';
 import './App.css';
@@ -133,11 +139,16 @@ export default function App() {
     </QueryClientProvider>
   );
 }
-
 ```
+</div>
+</details>
+
 
 ✨ src/hooks/use-project.jsx
 
+<details>
+<summary>접기/펼치기</summary>
+<div markdown="1">
 ```react
 import { useEffect, useState } from 'react';
 
@@ -166,9 +177,15 @@ export default function useProducts({ salesOnly }) {
 }
 
 ```
+</div>
+</details>
+
 
 ✨ src/components/MainProducts.jsx
 
+<details>
+<summary>접기/펼치기</summary>
+<div markdown="1">
 ```react
 import React, { useState } from 'react';
 import Products from './Products';
@@ -194,7 +211,8 @@ export default function MainProducts() {
   );
 }
 ```
-
+</div>
+</details>
 
 
 ###### ERROR

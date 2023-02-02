@@ -25,6 +25,8 @@ codekit-config.json
 .jekyll-cache
 .jekyll-metadata
 .sass-cache
-
+# 여기부터 추가된 서버에 올리지 않는 부분 . 이부분을 올리면 글이 나오지 않습니다...
+_asset_bundler_cache
+_site
 # .vscode
 run.bat
