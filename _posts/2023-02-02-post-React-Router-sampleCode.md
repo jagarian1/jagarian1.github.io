@@ -116,9 +116,11 @@ export default function Products() {
 
 
 ✨ App.js
+
 <details>
 <summary>접기/펼치기</summary>
 <div markdown="1">
+
 ```react
 import React from 'react';
 import './App.css';
@@ -149,6 +151,7 @@ export default function App() {
 <details>
 <summary>접기/펼치기</summary>
 <div markdown="1">
+
 ```react
 import { useEffect, useState } from 'react';
 
@@ -186,6 +189,7 @@ export default function useProducts({ salesOnly }) {
 <details>
 <summary>접기/펼치기</summary>
 <div markdown="1">
+
 ```react
 import React, { useState } from 'react';
 import Products from './Products';
