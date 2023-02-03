@@ -291,7 +291,7 @@
       <span class="page__meta-readtime">
         <i class="far fa-clock" aria-hidden="true"></i>
         
-          4 분 소요
+          3 분 소요
         
       </span>
     
@@ -349,19 +349,22 @@
 <p>공식문서 : tanstack.com   ReactQuery
 https://tanstack.com/query/latest/docs/react/installation</p>
 
-<p>API : 
+<p>API :<br />
 https://tanstack.com/query/latest/docs/react/reference/useQuery</p>
+
+<div class="language-react highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">useQuery</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@tanstack/react-query</span><span class="dl">'</span><span class="p">;</span>
+</code></pre></div></div>
 
 <hr />
 
 <h6 id="source">SOURCE</h6>
 
 <p>✨ src/components/Product.jsx</p>
+<details>
+<summary>Product.jsx</summary>
+<div>
 
-<div class="language-react highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">useQuery</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@tanstack/react-query</span><span class="dl">'</span><span class="p">;</span>
-</code></pre></div></div>
-
-<div class="language-react highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span> <span class="nx">useState</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span><span class="p">;</span>
+    <div class="language-react highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span> <span class="nx">useState</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span><span class="p">;</span>
 <span class="k">import</span> <span class="p">{</span> <span class="nx">useQuery</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@tanstack/react-query</span><span class="dl">'</span><span class="p">;</span>
 
 <span class="k">export</span> <span class="k">default</span> <span class="kd">function</span> <span class="nx">Products</span><span class="p">()</span> <span class="p">{</span>
@@ -409,12 +412,18 @@ https://tanstack.com/query/latest/docs/react/reference/useQuery</p>
     <span class="p">&lt;/&gt;</span>
   <span class="p">);</span>
 <span class="p">}</span>
-<span class="c1">//ui-monospace,"Cascadia Mono","Segoe UI Mono","Liberation Mono",Menlo,Monaco,Consolas,monospace;</span>
-</code></pre></div></div>
+
+</code></pre></div>    </div>
+  </div>
+</details>
 
 <p>✨ App.js</p>
 
-<div class="language-react highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span><span class="p">;</span>
+<details>
+<summary>App.js</summary>
+<div>
+
+    <div class="language-react highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span><span class="p">;</span>
 <span class="k">import</span> <span class="dl">'</span><span class="s1">./App.css</span><span class="dl">'</span><span class="p">;</span>
 <span class="k">import</span> <span class="nx">MainProducts</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./components/MainProducts</span><span class="dl">'</span><span class="p">;</span>
 <span class="k">import</span> <span class="p">{</span>
@@ -433,12 +442,17 @@ https://tanstack.com/query/latest/docs/react/reference/useQuery</p>
     <span class="p">&lt;/</span><span class="nc">QueryClientProvider</span><span class="p">&gt;</span>
   <span class="p">);</span>
 <span class="p">}</span>
-
-</code></pre></div></div>
+</code></pre></div>    </div>
+  </div>
+</details>
 
 <p>✨ src/hooks/use-project.jsx</p>
 
-<div class="language-react highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">useEffect</span><span class="p">,</span> <span class="nx">useState</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span><span class="p">;</span>
+<details>
+<summary>use-project.jsx</summary>
+<div>
+
+    <div class="language-react highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">useEffect</span><span class="p">,</span> <span class="nx">useState</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span><span class="p">;</span>
 
 <span class="k">export</span> <span class="k">default</span> <span class="kd">function</span> <span class="nx">useProducts</span><span class="p">({</span> <span class="nx">salesOnly</span> <span class="p">})</span> <span class="p">{</span>
   <span class="kd">const</span> <span class="p">[</span><span class="nx">loading</span><span class="p">,</span> <span class="nx">setLoading</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
@@ -464,11 +478,17 @@ https://tanstack.com/query/latest/docs/react/reference/useQuery</p>
   <span class="k">return</span> <span class="p">[</span><span class="nx">loading</span><span class="p">,</span> <span class="nx">error</span><span class="p">,</span> <span class="nx">products</span><span class="p">];</span>
 <span class="p">}</span>
 
-</code></pre></div></div>
+</code></pre></div>    </div>
+  </div>
+</details>
 
 <p>✨ src/components/MainProducts.jsx</p>
 
-<div class="language-react highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span> <span class="nx">useState</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span><span class="p">;</span>
+<details>
+<summary>MainProducts.jsx</summary>
+<div>
+
+    <div class="language-react highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span> <span class="nx">useState</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span><span class="p">;</span>
 <span class="k">import</span> <span class="nx">Products</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./Products</span><span class="dl">'</span><span class="p">;</span>
 
 <span class="k">export</span> <span class="k">default</span> <span class="kd">function</span> <span class="nx">MainProducts</span><span class="p">()</span> <span class="p">{</span>
@@ -491,65 +511,24 @@ https://tanstack.com/query/latest/docs/react/reference/useQuery</p>
     <span class="p">&lt;/</span><span class="nt">main</span><span class="p">&gt;</span>
   <span class="p">);</span>
 <span class="p">}</span>
-</code></pre></div></div>
+</code></pre></div>    </div>
+  </div>
+</details>
 
 <h6 id="error">ERROR</h6>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>react_devtools_backend.js:4012 
         
 TypeError: <span class="o">(</span>intermediate value<span class="o">)(</span>intermediate value<span class="o">)(</span>intermediate value<span class="o">)</span>.then is not a <span class="k">function
-    </span>at Products.staleTime <span class="o">[</span>as queryFn] <span class="o">(</span>bundle.js:237:64<span class="o">)</span>
-    at Object.fetchFn <span class="o">[</span>as fn] <span class="o">(</span>bundle.js:43688:27<span class="o">)</span>
-    at run <span class="o">(</span>bundle.js:44940:31<span class="o">)</span>
-    at bundle.js:44975:11
-overrideMethod @ react_devtools_backend.js:4012
-        
+
+</span>Uncaught Error: Objects are not valid as a React child <span class="o">(</span>found: <span class="o">[</span>object Error]<span class="o">)</span><span class="nb">.</span> If you meant to render a collection of children, use an array instead.
+
 Uncaught Error: Objects are not valid as a React child <span class="o">(</span>found: <span class="o">[</span>object Error]<span class="o">)</span><span class="nb">.</span> If you meant to render a collection of children, use an array instead.
-    at throwOnInvalidObjectType <span class="o">(</span>bundle.js:20230:13<span class="o">)</span>
-    at reconcileChildFibers <span class="o">(</span>bundle.js:21006:11<span class="o">)</span>
-    at reconcileChildren <span class="o">(</span>bundle.js:23940:32<span class="o">)</span>
-    at updateHostComponent <span class="o">(</span>bundle.js:24577:7<span class="o">)</span>
-    at beginWork <span class="o">(</span>bundle.js:26022:18<span class="o">)</span>
-    at HTMLUnknownElement.callCallback <span class="o">(</span>bundle.js:11008:18<span class="o">)</span>
-    at Object.invokeGuardedCallbackDev <span class="o">(</span>bundle.js:11052:20<span class="o">)</span>
-    at invokeGuardedCallback <span class="o">(</span>bundle.js:11109:35<span class="o">)</span>
-    at beginWork<span class="nv">$1</span> <span class="o">(</span>bundle.js:30983:11<span class="o">)</span>
-    at performUnitOfWork <span class="o">(</span>bundle.js:30230:16<span class="o">)</span>
 
-        
-       Uncaught Error: Objects are not valid as a React child <span class="o">(</span>found: <span class="o">[</span>object Error]<span class="o">)</span><span class="nb">.</span> If you meant to render a collection of children, use an array instead.
-    at throwOnInvalidObjectType <span class="o">(</span>bundle.js:20230:13<span class="o">)</span>
-    at reconcileChildFibers <span class="o">(</span>bundle.js:21006:11<span class="o">)</span>
-    at reconcileChildren <span class="o">(</span>bundle.js:23940:32<span class="o">)</span>
-    at updateHostComponent <span class="o">(</span>bundle.js:24577:7<span class="o">)</span>
-    at beginWork <span class="o">(</span>bundle.js:26022:18<span class="o">)</span>
-    at HTMLUnknownElement.callCallback <span class="o">(</span>bundle.js:11008:18<span class="o">)</span>
-    at Object.invokeGuardedCallbackDev <span class="o">(</span>bundle.js:11052:20<span class="o">)</span>
-    at invokeGuardedCallback <span class="o">(</span>bundle.js:11109:35<span class="o">)</span>
-    at beginWork<span class="nv">$1</span> <span class="o">(</span>bundle.js:30983:11<span class="o">)</span>
-    at performUnitOfWork <span class="o">(</span>bundle.js:30230:16<span class="o">)</span>
-
-        
 The above error occurred <span class="k">in </span>the &lt;p&gt; component:
-    at p
-    at Products <span class="o">(</span>http://localhost:3000/static/js/bundle.js:227:80<span class="o">)</span>
-    at div
-    at main
-    at MainProducts <span class="o">(</span>http://localhost:3000/static/js/bundle.js:117:98<span class="o">)</span>
-    at QueryClientProvider <span class="o">(</span>http://localhost:3000/static/js/bundle.js:47107:5<span class="o">)</span>
-    at App
 
 Uncaught Error: Objects are not valid as a React child <span class="o">(</span>found: <span class="o">[</span>object Error]<span class="o">)</span><span class="nb">.</span> If you meant to render a collection of children, use an array instead.
-    at throwOnInvalidObjectType <span class="o">(</span>bundle.js:20230:13<span class="o">)</span>
-    at reconcileChildFibers <span class="o">(</span>bundle.js:21006:11<span class="o">)</span>
-    at reconcileChildren <span class="o">(</span>bundle.js:23940:32<span class="o">)</span>
-    at updateHostComponent <span class="o">(</span>bundle.js:24577:7<span class="o">)</span>
-    at beginWork <span class="o">(</span>bundle.js:26022:18<span class="o">)</span>
-    at beginWork<span class="nv">$1</span> <span class="o">(</span>bundle.js:30961:18<span class="o">)</span>
-    at performUnitOfWork <span class="o">(</span>bundle.js:30230:16<span class="o">)</span>
-    at workLoopSync <span class="o">(</span>bundle.js:30153:9<span class="o">)</span>
-    at renderRootSync <span class="o">(</span>bundle.js:30126:11<span class="o">)</span>
-    at recoverFromConcurrentError <span class="o">(</span>bundle.js:29618:24<span class="o">)</span>
+
 </code></pre></div></div>
 
 <p>위와 같이 화면로딩후 넘겨야할 data에 아무런 값이 없고 “Uncaught Error: Objects are not valid as a React child (found: [object Error]). If you meant to render a collection of children, use an array instead.” 에러가 난다.</p>
@@ -591,12 +570,12 @@ GUIDE : <a href="https://tanstack.com/query/latest/docs/react/guides/queries">Qu
   </tbody>
 </table>
 
-<p>……………………………………………………. ;)
-에러 화면 :</p>
+<p>……………………………………………………. ;)</p>
+
+<p>에러 화면 :</p>
 
 <p><img src="../assets/images/2023-02-02-post-React-Router-sampleCode/image-20230202110820784.png" alt="image-20230202110820784" /></p>
 
-<p>여기까지… 좀 자야 겠어요 zzzzzzzzz</p>
 
         
       </section>
@@ -773,6 +752,50 @@ GUIDE : <a href="https://tanstack.com/query/latest/docs/react/guides/queries">Qu
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
+        <a href="/posts/post-javascript-es6-Arrow_function-part1/" rel="permalink">Javascript ES6
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          최대 1 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">⚡️ EC6 Javascritp Arrow Function 1
+
+  화살표 함수(Arrow Function)
+
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
         <a href="/posts/post-git-GIT-master-doit/" rel="permalink">GIT MASTER
 </a>
       
@@ -792,47 +815,6 @@ GUIDE : <a href="https://tanstack.com/query/latest/docs/react/guides/queries">Qu
         <i class="far fa-clock" aria-hidden="true"></i>
         
           7 분 소요
-        
-      </span>
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">
-
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/posts/post-react-JSX/" rel="permalink">React
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-
-    
-
-    
-      
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
-        
-          2 분 소요
         
       </span>
     

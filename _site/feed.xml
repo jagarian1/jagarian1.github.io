@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-02-03T01:26:04+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">WINGMAN Blog</title><subtitle>An amazing life.</subtitle><author><name>제로미</name></author><entry><title type="html">React Sample Code 공유</title><link href="http://localhost:4000/posts/post-React-Router-sampleCode/" rel="alternate" type="text/html" title="React Sample Code 공유" /><published>2023-02-02T00:00:00+09:00</published><updated>2023-02-02T00:00:00+09:00</updated><id>http://localhost:4000/posts/post-React-Router-sampleCode</id><content type="html" xml:base="http://localhost:4000/posts/post-React-Router-sampleCode/">&lt;p&gt;&lt;img src=&quot;../assets/images/2023-02-02-post-React-Router-sampleCode/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-02-04T02:18:51+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">WINGMAN Blog</title><subtitle>An amazing life.</subtitle><author><name>제로미</name></author><entry><title type="html">React Sample Code 공유</title><link href="http://localhost:4000/posts/post-React-Router-sampleCode/" rel="alternate" type="text/html" title="React Sample Code 공유" /><published>2023-02-02T00:00:00+09:00</published><updated>2023-02-02T00:00:00+09:00</updated><id>http://localhost:4000/posts/post-React-Router-sampleCode</id><content type="html" xml:base="http://localhost:4000/posts/post-React-Router-sampleCode/">&lt;p&gt;&lt;img src=&quot;../assets/images/2023-02-02-post-React-Router-sampleCode/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;h5 id=&quot;-react-query&quot;&gt;✨ React Query&lt;/h5&gt;
 
@@ -36,19 +36,22 @@
 &lt;p&gt;공식문서 : tanstack.com   ReactQuery
 https://tanstack.com/query/latest/docs/react/installation&lt;/p&gt;
 
-&lt;p&gt;API : 
+&lt;p&gt;API :&lt;br /&gt;
 https://tanstack.com/query/latest/docs/react/reference/useQuery&lt;/p&gt;
+
+&lt;div class=&quot;language-react highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;useQuery&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;@tanstack/react-query&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;hr /&gt;
 
 &lt;h6 id=&quot;source&quot;&gt;SOURCE&lt;/h6&gt;
 
 &lt;p&gt;✨ src/components/Product.jsx&lt;/p&gt;
+&lt;details&gt;
+&lt;summary&gt;Product.jsx&lt;/summary&gt;
+&lt;div&gt;
 
-&lt;div class=&quot;language-react highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;useQuery&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;@tanstack/react-query&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;language-react highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;useState&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;react&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;div class=&quot;language-react highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;useState&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;react&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;useQuery&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;@tanstack/react-query&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 
 &lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Products&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
@@ -96,12 +99,18 @@ https://tanstack.com/query/latest/docs/react/reference/useQuery&lt;/p&gt;
     &lt;span class=&quot;p&quot;&gt;&amp;lt;/&amp;gt;&lt;/span&gt;
   &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;//ui-monospace,&quot;Cascadia Mono&quot;,&quot;Segoe UI Mono&quot;,&quot;Liberation Mono&quot;,Menlo,Monaco,Consolas,monospace;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/details&gt;
 
 &lt;p&gt;✨ App.js&lt;/p&gt;
 
-&lt;div class=&quot;language-react highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;react&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;details&gt;
+&lt;summary&gt;App.js&lt;/summary&gt;
+&lt;div&gt;
+
+    &lt;div class=&quot;language-react highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;react&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;./App.css&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;MainProducts&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;./components/MainProducts&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
@@ -120,12 +129,17 @@ https://tanstack.com/query/latest/docs/react/reference/useQuery&lt;/p&gt;
     &lt;span class=&quot;p&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;QueryClientProvider&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
   &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/details&gt;
 
 &lt;p&gt;✨ src/hooks/use-project.jsx&lt;/p&gt;
 
-&lt;div class=&quot;language-react highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;useEffect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;useState&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;react&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;details&gt;
+&lt;summary&gt;use-project.jsx&lt;/summary&gt;
+&lt;div&gt;
+
+    &lt;div class=&quot;language-react highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;useEffect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;useState&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;react&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 
 &lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;useProducts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;salesOnly&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;loading&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;setLoading&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;useState&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
@@ -151,11 +165,17 @@ https://tanstack.com/query/latest/docs/react/reference/useQuery&lt;/p&gt;
   &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;loading&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;error&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;products&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/details&gt;
 
 &lt;p&gt;✨ src/components/MainProducts.jsx&lt;/p&gt;
 
-&lt;div class=&quot;language-react highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;useState&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;react&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;details&gt;
+&lt;summary&gt;MainProducts.jsx&lt;/summary&gt;
+&lt;div&gt;
+
+    &lt;div class=&quot;language-react highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;React&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;useState&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;react&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;k&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Products&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;./Products&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 
 &lt;span class=&quot;k&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;default&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;MainProducts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
@@ -178,65 +198,24 @@ https://tanstack.com/query/latest/docs/react/reference/useQuery&lt;/p&gt;
     &lt;span class=&quot;p&quot;&gt;&amp;lt;/&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;&amp;gt;&lt;/span&gt;
   &lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/details&gt;
 
 &lt;h6 id=&quot;error&quot;&gt;ERROR&lt;/h6&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;react_devtools_backend.js:4012 
         
 TypeError: &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;intermediate value&lt;span class=&quot;o&quot;&gt;)(&lt;/span&gt;intermediate value&lt;span class=&quot;o&quot;&gt;)(&lt;/span&gt;intermediate value&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;.then is not a &lt;span class=&quot;k&quot;&gt;function
-    &lt;/span&gt;at Products.staleTime &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;as queryFn] &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;bundle.js:237:64&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    at Object.fetchFn &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;as fn] &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;bundle.js:43688:27&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    at run &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;bundle.js:44940:31&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    at bundle.js:44975:11
-overrideMethod @ react_devtools_backend.js:4012
-        
+
+&lt;/span&gt;Uncaught Error: Objects are not valid as a React child &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;found: &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;object Error]&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; If you meant to render a collection of children, use an array instead.
+
 Uncaught Error: Objects are not valid as a React child &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;found: &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;object Error]&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; If you meant to render a collection of children, use an array instead.
-    at throwOnInvalidObjectType &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;bundle.js:20230:13&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    at reconcileChildFibers &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;bundle.js:21006:11&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    at reconcileChildren &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;bundle.js:23940:32&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    at updateHostComponent &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;bundle.js:24577:7&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    at beginWork &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;bundle.js:26022:18&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    at HTMLUnknownElement.callCallback &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;bundle.js:11008:18&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    at Object.invokeGuardedCallbackDev &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;bundle.js:11052:20&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    at invokeGuardedCallback &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;bundle.js:11109:35&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    at beginWork&lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;bundle.js:30983:11&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    at performUnitOfWork &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;bundle.js:30230:16&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
 
-        
-       Uncaught Error: Objects are not valid as a React child &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;found: &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;object Error]&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; If you meant to render a collection of children, use an array instead.
-    at throwOnInvalidObjectType &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;bundle.js:20230:13&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    at reconcileChildFibers &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;bundle.js:21006:11&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    at reconcileChildren &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;bundle.js:23940:32&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    at updateHostComponent &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;bundle.js:24577:7&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    at beginWork &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;bundle.js:26022:18&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    at HTMLUnknownElement.callCallback &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;bundle.js:11008:18&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    at Object.invokeGuardedCallbackDev &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;bundle.js:11052:20&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    at invokeGuardedCallback &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;bundle.js:11109:35&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    at beginWork&lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;bundle.js:30983:11&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    at performUnitOfWork &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;bundle.js:30230:16&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-
-        
 The above error occurred &lt;span class=&quot;k&quot;&gt;in &lt;/span&gt;the &amp;lt;p&amp;gt; component:
-    at p
-    at Products &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;http://localhost:3000/static/js/bundle.js:227:80&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    at div
-    at main
-    at MainProducts &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;http://localhost:3000/static/js/bundle.js:117:98&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    at QueryClientProvider &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;http://localhost:3000/static/js/bundle.js:47107:5&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    at App
 
 Uncaught Error: Objects are not valid as a React child &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;found: &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;object Error]&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;.&lt;/span&gt; If you meant to render a collection of children, use an array instead.
-    at throwOnInvalidObjectType &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;bundle.js:20230:13&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    at reconcileChildFibers &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;bundle.js:21006:11&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    at reconcileChildren &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;bundle.js:23940:32&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    at updateHostComponent &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;bundle.js:24577:7&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    at beginWork &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;bundle.js:26022:18&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    at beginWork&lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;bundle.js:30961:18&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    at performUnitOfWork &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;bundle.js:30230:16&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    at workLoopSync &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;bundle.js:30153:9&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    at renderRootSync &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;bundle.js:30126:11&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-    at recoverFromConcurrentError &lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;bundle.js:29618:24&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;위와 같이 화면로딩후 넘겨야할 data에 아무런 값이 없고 “Uncaught Error: Objects are not valid as a React child (found: [object Error]). If you meant to render a collection of children, use an array instead.” 에러가 난다.&lt;/p&gt;
@@ -278,12 +257,11 @@ GUIDE : &lt;a href=&quot;https://tanstack.com/query/latest/docs/react/guides/que
   &lt;/tbody&gt;
 &lt;/table&gt;
 
-&lt;p&gt;……………………………………………………. ;)
-에러 화면 :&lt;/p&gt;
+&lt;p&gt;……………………………………………………. ;)&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;../assets/images/2023-02-02-post-React-Router-sampleCode/image-20230202110820784.png&quot; alt=&quot;image-20230202110820784&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;에러 화면 :&lt;/p&gt;
 
-&lt;p&gt;여기까지… 좀 자야 겠어요 zzzzzzzzz&lt;/p&gt;</content><author><name>제로미</name></author><category term="posts" /><category term="React" /><summary type="html"></summary></entry><entry><title type="html">Functional Programming</title><link href="http://localhost:4000/posts/post-javascript-FunctionalPrograming/" rel="alternate" type="text/html" title="Functional Programming" /><published>2023-01-27T00:00:00+09:00</published><updated>2023-01-26T19:06:00+09:00</updated><id>http://localhost:4000/posts/post-javascript-FunctionalPrograming</id><content type="html" xml:base="http://localhost:4000/posts/post-javascript-FunctionalPrograming/">&lt;blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;../assets/images/2023-02-02-post-React-Router-sampleCode/image-20230202110820784.png&quot; alt=&quot;image-20230202110820784&quot; /&gt;&lt;/p&gt;</content><author><name>제로미</name></author><category term="posts" /><category term="React" /><summary type="html"></summary></entry><entry><title type="html">Functional Programming</title><link href="http://localhost:4000/posts/post-javascript-FunctionalPrograming/" rel="alternate" type="text/html" title="Functional Programming" /><published>2023-01-27T00:00:00+09:00</published><updated>2023-01-26T19:06:00+09:00</updated><id>http://localhost:4000/posts/post-javascript-FunctionalPrograming</id><content type="html" xml:base="http://localhost:4000/posts/post-javascript-FunctionalPrograming/">&lt;blockquote&gt;
   &lt;p&gt;원본 : O’Reilly Functional Thinking - 닐 포트 지음 … 에서 인용 하였습니다.&lt;/p&gt;
 &lt;/blockquote&gt;
 
@@ -534,7 +512,59 @@ GUIDE : &lt;a href=&quot;https://tanstack.com/query/latest/docs/react/guides/que
 
 &lt;hr /&gt;
 
-&lt;p&gt;저자의 사이트 &lt;a href=&quot;https://nealford.com/&quot;&gt;[nealford.com • 홈](https://nealford.com/)&lt;/a&gt;&lt;/p&gt;</content><author><name>제로미</name></author><category term="posts" /><category term="javascript" /><summary type="html">원본 : O’Reilly Functional Thinking - 닐 포트 지음 … 에서 인용 하였습니다.</summary></entry><entry><title type="html">Javascript ES6</title><link href="http://localhost:4000/posts/post-javascript-es6-Arrow_function-part2/" rel="alternate" type="text/html" title="Javascript ES6" /><published>2023-01-21T00:00:00+09:00</published><updated>2023-01-20T19:06:00+09:00</updated><id>http://localhost:4000/posts/post-javascript-es6-Arrow_function-part2</id><content type="html" xml:base="http://localhost:4000/posts/post-javascript-es6-Arrow_function-part2/">&lt;h5 id=&quot;️-ec6-javascritp-arrow-function&quot;&gt;⚡️ EC6 Javascritp Arrow Function&lt;/h5&gt;
+&lt;p&gt;저자의 사이트 &lt;a href=&quot;https://nealford.com/&quot;&gt;[nealford.com • 홈](https://nealford.com/)&lt;/a&gt;&lt;/p&gt;</content><author><name>제로미</name></author><category term="posts" /><category term="javascript" /><summary type="html">원본 : O’Reilly Functional Thinking - 닐 포트 지음 … 에서 인용 하였습니다.</summary></entry><entry><title type="html">Javascript ES6</title><link href="http://localhost:4000/posts/post-javascript-es6-Arrow_function-part1/" rel="alternate" type="text/html" title="Javascript ES6" /><published>2023-01-21T00:00:00+09:00</published><updated>2023-01-20T19:06:00+09:00</updated><id>http://localhost:4000/posts/post-javascript-es6-Arrow_function-part1</id><content type="html" xml:base="http://localhost:4000/posts/post-javascript-es6-Arrow_function-part1/">&lt;h5 id=&quot;️-ec6-javascritp-arrow-function-1&quot;&gt;⚡️ EC6 Javascritp Arrow Function 1&lt;/h5&gt;
+&lt;ul&gt;
+  &lt;li&gt;화살표 함수(Arrow Function)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;ES5의 다음 코드와 유사 합니다. 예제2.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;다음 예제에서는 다음 예제에서는 화살표 함수를 만드는 방법을 보여 줍니다.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;⚡️예제 1&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;circumference&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ans&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;pi&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ans&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;circumference&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;3.141592&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Outputs 18.849552&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;⚡️예제 2&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;circumference&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;area&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;pi&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;area&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;circumference&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;3.141592&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//Output 18.849552&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;우리가 이전 써왔던 ES5 문법의 자바스크립트 예제입니다. 예제2.active&lt;/p&gt;
+
+&lt;p&gt;단일 명령문만 포함되어 있고 해당 명령문의 결과를 반환하려는 경우 대괄호를 사용하여 코드를 래핑할 필요가 없습니다. 이것은 그것을 한 줄짜리로 만듭니다. 다음 예제에서는 이를 보여 줍니다&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;circuference&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;pi&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;circumference&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;3.141592&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;{} 대괄호를 사용하지 않으면 본문의 문 값이 자동으로 반환 됩니다. 
+앞의 코드는 다음과 같습니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;cirumference&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;pi&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;}&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;result&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;circuference&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;3.14&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 18.14&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;continue …&lt;/p&gt;</content><author><name>제로미</name></author><category term="posts" /><category term="Javascript" /><summary type="html">⚡️ EC6 Javascritp Arrow Function 1 화살표 함수(Arrow Function)</summary></entry><entry><title type="html">Javascript ES6</title><link href="http://localhost:4000/posts/post-javascript-es6-Arrow_function-part2/" rel="alternate" type="text/html" title="Javascript ES6" /><published>2023-01-21T00:00:00+09:00</published><updated>2023-01-20T19:06:00+09:00</updated><id>http://localhost:4000/posts/post-javascript-es6-Arrow_function-part2</id><content type="html" xml:base="http://localhost:4000/posts/post-javascript-es6-Arrow_function-part2/">&lt;h5 id=&quot;️-ec6-javascritp-arrow-function&quot;&gt;⚡️ EC6 Javascritp Arrow Function&lt;/h5&gt;
 &lt;ul&gt;
   &lt;li&gt;화살표 기능을 피해야 하는 경우&lt;/li&gt;
 &lt;/ul&gt;
