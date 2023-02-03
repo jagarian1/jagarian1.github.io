@@ -10,7 +10,7 @@ toc: true
 toc_sticky: true
 ---
 
-![](../assets/images/2023-01-10-post-react-JSX/christopher-gower-m_HRfLhgABo-unsplash.jpg)
+![title](../assets/images/2023-01-10-post-react-JSX/christopher-gower-m_HRfLhgABo-unsplash.jpg)
 
 #### JSX가 왜 필요 할까?
 
@@ -30,7 +30,7 @@ react.org  에서는 Javascript의 모든 기능이 포함되어 있다고 합�
 
 JSX는 (이전 Facebook)에 의해 만들어 집니다.  XHP 또 다른 확장 구문과 비슷 합니다. - by WIKI
 
-코드 1 ) 
+코드 1 )
 
 ```react
 // index.js
@@ -64,7 +64,7 @@ export default App;
 
 이것을 설명하기 위해 위키와 react.org 에서는 관심사의 분리, 느슨한 결합, 추상화의 한형태, 더많은 자유도가 생긴다 는 표현으로 설명하고 있군요.
 
-이것을 쉽게 이해 하려고 이글을 남기고 있습니다. 
+이것을 쉽게 이해 하려고 이글을 남기고 있습니다.
 
 React는 10년은 가지고 놀만한 아이디어 라고 하니. 좀더 같이 알아 보고자 합니다.
 
@@ -84,11 +84,11 @@ const element = <img src={user.avatarUrl}></img>;
 ...
 ```
 
-먼저 **React**를 말하고자 하는건 JSX의 태생이 Facebook에서 만든 자바스크립트 라이브러리에서 XHP 개량판에 그 기원을 두고 있다고 한다. 
+먼저 **React**를 말하고자 하는건 JSX의 태생이 Facebook에서 만든 자바스크립트 라이브러리에서 XHP 개량판에 그 기원을 두고 있다고 한다.
 
 그럼 원론으로 돌아가 이걸 왜 사용 하는걸까요.
 
-위에 예제 코드가 html 같은 정체불명의 **JSX** 코드 인것 입니다. **ESMA6** 기반 자바스크립트에 
+위에 예제 코드가 html 같은 정체불명의 **JSX** 코드 인것 입니다. **ESMA6** 기반 자바스크립트에
 
 html을 넣은듯한 Virtual DOM.의 최적화 작업  html의 **DOM의 랜더링** 이라 생각 됩니다.
 
@@ -100,9 +100,7 @@ html을 넣은듯한 Virtual DOM.의 최적화 작업  html의 **DOM의 랜더�
 
 React 에서는 컴파일해야 하는 과정이 있으며 Component라는 개별적인  뷰 단위를 가집니다. `render()`
 
-그리고 **Redux** *(Redux(리덕스)란 JavaScript(자바스트립트) 상태관리 라이브러리이다. · Redux(리덕스)의 본질은 Node.js 모듈이다.)* 라는 것을 사용해 상태관리를 하는 라이브러리를 사용합니다.  *상태관리는 여기서 더 찾아 보시기 바랍니다.* [ Redux.js.org ](https://ko.redux.js.org/introduction/getting-started)
-
-
+그리고 **Redux** *(Redux(리덕스)란 JavaScript(자바스트립트) 상태관리 라이브러리이다. · Redux(리덕스)의 본질은 Node.js 모듈이다.)* 라는 것을 사용해 상태관리를 하는 라이브러리를 사용합니다.  *상태관리는 여기서 더 찾아 보시기 바랍니다.* [Redux.js.org](https://ko.redux.js.org/introduction/getting-started)
 
 - 자바스크립트 표현식 JavaScript expressions
 
@@ -130,11 +128,9 @@ const App = () => {
  <h1>11</h1>
 ```
 
-
-
 - 조건식
 
-  JSX 내에서는 If  else 문을 사용할 수 없지만 조건식을 대신 사용할 수 있습니다. 
+  JSX 내에서는 If  else 문을 사용할 수 없지만 조건식을 대신 사용할 수 있습니다.
 
   ```react
   const App = () => {
@@ -153,25 +149,19 @@ const App = () => {
   } /* https://en.wikipedia.org/wiki/JSX_(JavaScript) */
   ```
 
-  
-
 - 속성
 
   JSXX는 HTML 에서 제공하는 요소 속성을 미러링하도록 설계된 다양한 요소 속성을 제공한다.
 
-  
-
 JSX로 작성된 코드는 웹 브라우져에서 이해하기 위해 Babel과 같은(트랜스파일러) 도구로 변환해야 합니다.
 
-이제 React 생태계로 들어 가려 합니다. 
+이제 React 생태계로 들어 가려 합니다.
 
-요즘 React 를 늦게 배우고 있는 개발자 입니다.
 
-**참고한 자료**
 
-- [react.org] (https://ko.reactjs.org)
+{: .notice}
+**📕** - 참고한 자료
 
+- [react.org](https://ko.reactjs.org)
 - [XML에 대한 ECMAScript](https://en.wikipedia.org/wiki/ECMAScript_for_XML)
-
-- https://dobbit.github.io/redux/
-- https://react.vlpt.us/redux/
+- [벨로퍼트와 함꼐하는 모던 리엑트](https://react.vlpt.us/redux)

@@ -21,8 +21,6 @@ toc_sticky: true
 
   3. remote 명령으로 origin의 모든것을 set-head 해줍니다. ✨
 
-   
-
 ##### ✨ commands
 
 ```bash

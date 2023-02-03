@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-02-04T03:03:17+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">WINGMAN Blog</title><subtitle>An amazing life.</subtitle><author><name>제로미</name></author><entry><title type="html">React Sample Code 공유</title><link href="http://localhost:4000/posts/post-React-Router-sampleCode/" rel="alternate" type="text/html" title="React Sample Code 공유" /><published>2023-02-02T00:00:00+09:00</published><updated>2023-02-02T00:00:00+09:00</updated><id>http://localhost:4000/posts/post-React-Router-sampleCode</id><content type="html" xml:base="http://localhost:4000/posts/post-React-Router-sampleCode/">&lt;p&gt;&lt;img src=&quot;../assets/images/2023-02-02-post-React-Router-sampleCode/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-02-04T06:03:02+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">WINGMAN Blog</title><subtitle>An amazing life.</subtitle><author><name>제로미</name></author><entry><title type="html">React Sample Code 공유</title><link href="http://localhost:4000/posts/post-React-Router-sampleCode/" rel="alternate" type="text/html" title="React Sample Code 공유" /><published>2023-02-02T00:00:00+09:00</published><updated>2023-02-02T00:00:00+09:00</updated><id>http://localhost:4000/posts/post-React-Router-sampleCode</id><content type="html" xml:base="http://localhost:4000/posts/post-React-Router-sampleCode/">&lt;p&gt;&lt;img src=&quot;../assets/images/2023-02-02-post-React-Router-sampleCode/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;h5 id=&quot;-react-query&quot;&gt;✨ React Query&lt;/h5&gt;
 
@@ -519,6 +519,12 @@ GUIDE : &lt;a href=&quot;https://tanstack.com/query/latest/docs/react/guides/que
 
 &lt;hr /&gt;
 
+&lt;ol&gt;
+  &lt;li&gt;화살표 함수는 언뜻보기에 일반 JavaScript 함수를 만드는 멋진 방법 일뿐입니다 (그러나 몇 가지 놀라움이 있습니다). 화살표 함수를 사용하면 실제로 작동하는 간결한 한 줄짜리 함수를 만들 수 있습니다!&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;다음 예제에서는 화살표 함수를 만드는 방법을 보여 줍니다.&lt;/p&gt;
+
 &lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;ES5의 다음 코드와 유사 합니다. 예제2.&lt;/p&gt;
@@ -564,7 +570,79 @@ GUIDE : &lt;a href=&quot;https://tanstack.com/query/latest/docs/react/guides/que
 &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;result&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 18.14&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;continue …&lt;/p&gt;</content><author><name>제로미</name></author><category term="posts" /><category term="Javascript" /><summary type="html">⚡️ EC6 Javascritp Arrow Function 1 화살표 함수(Arrow Function)</summary></entry><entry><title type="html">Javascript ES6</title><link href="http://localhost:4000/posts/post-javascript-es6-Arrow_function-part2/" rel="alternate" type="text/html" title="Javascript ES6" /><published>2023-01-21T00:00:00+09:00</published><updated>2023-01-20T19:06:00+09:00</updated><id>http://localhost:4000/posts/post-javascript-es6-Arrow_function-part2</id><content type="html" xml:base="http://localhost:4000/posts/post-javascript-es6-Arrow_function-part2/">&lt;h5 id=&quot;️-ec6-javascritp-arrow-function&quot;&gt;⚡️ EC6 Javascritp Arrow Function&lt;/h5&gt;
+&lt;p&gt;continue …&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;화살표 함수에서 “this”의 값&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;div class=&quot;language-react highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;car&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;Bugatti&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;fuel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// site A&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;addFuel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+             &lt;span class=&quot;c1&quot;&gt;// site B&lt;/span&gt;
+             &lt;span class=&quot;nx&quot;&gt;setInterval&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+              &lt;span class=&quot;c1&quot;&gt;// site C&lt;/span&gt;
+              &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fuel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+              &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;The fuel is now &lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fuel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+             &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+           &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-react highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;var&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;car&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;Bagatti&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;fuel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// Site A&lt;/span&gt;
+  &lt;span class=&quot;na&quot;&gt;addFuel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;c1&quot;&gt;//site B &lt;/span&gt;
+            &lt;span class=&quot;nx&quot;&gt;setInterval&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+              &lt;span class=&quot;c1&quot;&gt;//site C &lt;/span&gt;
+              &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fuel&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+              &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;The fuel is now &lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;fuel&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1000&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+          &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-wiki&quot;&gt;‼ ⁉ 화살표 함수는 new와 함께 실행할 수 없습니다.
+this가 없기 때문에 화살표 함수는 생성자 함수로 사용할 수 없다는 제약이 있습니다. 화살표 함수는 new와 함께 호출할 수 없습니다.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-wiki&quot;&gt;!! 화살표 함수 vs. bind
+화살표 함수와 일반 함수를 .bind(this)를 사용해서 호출하는 것 사이에는 미묘한 차이가 있습니다 .bind(this)는 함수의 &apos;한정된 버전(bound version)&apos;을 만듭니다.
+화살표 함수는 어떤 것도 바인딩시키지 않습니다. 화살표 함수엔 단지 this가 없을 뿐입니다. 화살표 함수에서 this를 사용하면 일반 변수 서칭과 마찬가지로 this의 값을 외부 렉시컬 환경에서 찾습니다.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;화살표-함수엔-arguments가-없습니다&quot;&gt;&lt;a href=&quot;https://ko.javascript.info/arrow-functions#ref-1917&quot;&gt;화살표 함수엔 ‘arguments’가 없습니다&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;링크 참조&lt;/p&gt;
+
+&lt;h3 id=&quot;템플릿-문자열&quot;&gt;템플릿 문자열&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;템플릿 문자열&lt;/strong&gt;은 문자열을 만들기 위한 새로운 리터럴일 뿐이므로 다양한 작업을 더 쉽게 수행할 수 있습니다. 포함된 식, 여러 줄 문자열, 문자열 보간, 문자열 서식 지정, 문자열 태그 지정 등과 같은 기능을 제공합니다. 그것들은 항상 처리되고 런타임에 일반 자바 스크립트 문자열로 변환됩니다. 따라서 일반 문자열을 사용하는 모든 곳에서 사용할 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;템플릿 문자열은 작은따옴표 또는 큰따옴표 대신 백틱(&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt; &lt;/code&gt;)을 사용하여 작성됩니다. 다음은 간단한 템플릿 문자열의 예입니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;str1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;`hello`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//template string&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;str2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;world!!!&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;str1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;str2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//output &quot;false&quot;&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;str3&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;str1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;str2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;`&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;str3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//  hello world!!!&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;화살표 함수가 일반 함수와 다른 점은 다음과 같습니다.&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;this&lt;/code&gt;를 가지지 않습니다.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;arguments&lt;/code&gt;를 지원하지 않습니다.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;new&lt;/code&gt;와 함께 호출할 수 없습니다.&lt;/li&gt;
+  &lt;li&gt;이 외에도 화살표 함수는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;super&lt;/code&gt;가 없다는 특징&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;화살표 함수는 컨텍스트가 있는 긴 코드보다는 자체 ‘컨텍스트’가 없는 짧은 코드를 담을 용도로 만들어졌습니다. 그리고 이 목적에 잘 들어맞는 특징을 보입니다.&lt;/p&gt;</content><author><name>제로미</name></author><category term="posts" /><category term="Javascript" /><summary type="html">⚡️ EC6 Javascritp Arrow Function 1 화살표 함수(Arrow Function)</summary></entry><entry><title type="html">Javascript ES6</title><link href="http://localhost:4000/posts/post-javascript-es6-Arrow_function-part2/" rel="alternate" type="text/html" title="Javascript ES6" /><published>2023-01-21T00:00:00+09:00</published><updated>2023-01-20T19:06:00+09:00</updated><id>http://localhost:4000/posts/post-javascript-es6-Arrow_function-part2</id><content type="html" xml:base="http://localhost:4000/posts/post-javascript-es6-Arrow_function-part2/">&lt;h5 id=&quot;️-ec6-javascritp-arrow-function&quot;&gt;⚡️ EC6 Javascritp Arrow Function&lt;/h5&gt;
 &lt;ul&gt;
   &lt;li&gt;화살표 기능을 피해야 하는 경우&lt;/li&gt;
 &lt;/ul&gt;
@@ -965,53 +1043,201 @@ usage: git push &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&amp;lt;options&am
   &lt;li&gt;Status: In Progress&lt;/li&gt;
 &lt;/ul&gt;</content><author><name>제로미</name></author><category term="posts" /><category term="GIT COMMANDS" /><summary type="html"></summary></entry><entry><title type="html">MY MUSIC</title><link href="http://localhost:4000/posts/post-MyMUSICList227545/" rel="alternate" type="text/html" title="MY MUSIC" /><published>2023-01-10T00:00:00+09:00</published><updated>2023-01-11T14:06:00+09:00</updated><id>http://localhost:4000/posts/post-MyMUSICList227545</id><content type="html" xml:base="http://localhost:4000/posts/post-MyMUSICList227545/">&lt;h5 id=&quot;my-music-list&quot;&gt;My MUSIC List&lt;/h5&gt;
 
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;- Blog Post Draft
+&lt;ul&gt;
+  &lt;li&gt;Blog Post Draft&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-wiki&quot;&gt;
+Johann Sebastian Bach
+  Suite No. 3 in D Major, BWV 1068: II. Air
+
+Lo Fi
+The Chinchilla! Foot tapping lounge tunes for getting stuff done at your own speed.
+
+The Drop
+Uptempo EDM • Infectious, energetic, dance-floor beats to keep you engaged.
+
+Symphonica
+Classical Plus • Custom mastered orchestral music for improved focus.
+
+Tranquility
+Focus Spa • Esoteric, mystical, and calming soundscapes for an ambient experience.
+
+Organica
+Acoustical, organic • Natural, solo performances on guitar and piano by humans.
+
+PowerTool
+ADHD, ADD • Industrial, glitch. Intense, noisy EDM channel scientifically proven to help.
+
+The Duke
+Baroque Piano • 17th century Bach on a modern piano tuned for focus.
+
+Bach Beats
+Electro Bach • Preludes, fugues and DJ beats. 1720s chamber strings meet 2020s electronica.
+
+Edwardian
+Classical Piano • Custom engineered, remastered and re-edited for focus.
+
+Atmosphere
+Ambient, soundscapes • Peaceful, mellow, and subtle hypnotic spaces.
+
+Aquascope
+Water, nature • Meditative soundscapes featuring rain, waves, streams, and more.
+
+Cinematic
+Classical, orchestral • Emotionally connecting and highly evocative.
+
+Kora
+World, ethnic • Unique, delicate, inviting African harp recordings. 75 min loop.
+
+
+more...
+&lt;/code&gt;&lt;/pre&gt;</content><author><name>제로미</name></author><category term="posts" /><category term="MUSIC" /><summary type="html">My MUSIC List</summary></entry><entry><title type="html">Javascript ES6 Lexical Scope</title><link href="http://localhost:4000/posts/post-javascript-es6-lexicalscope/" rel="alternate" type="text/html" title="Javascript ES6 Lexical Scope" /><published>2023-01-10T00:00:00+09:00</published><updated>2022-01-10T22:06:00+09:00</updated><id>http://localhost:4000/posts/post-javascript-es6-lexicalscope</id><content type="html" xml:base="http://localhost:4000/posts/post-javascript-es6-lexicalscope/">&lt;h5 id=&quot;javascript--lexical-scope&quot;&gt;Javascript  Lexical Scope&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;클로져 (Closure) : 함수가 선언된 렉시컬 환경&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Lexical Scope 의 정적 스코프&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;outterFunc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;innerFunc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//10&lt;/span&gt;
+  &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+  &lt;span class=&quot;nx&quot;&gt;innerFunc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;outterFunc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;``` plan text&lt;/p&gt;
+&lt;p&gt;중첨 함수 내부에서 자시을 포함하고 있는 외부 함수 outterFunc의 x 변수에 접근이 가능하다.&lt;/p&gt;
 
-&lt;p&gt;Johann Sebastian Bach
-  Suite No. 3 in D Major, BWV 1068: II. Air&lt;/p&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 
-&lt;p&gt;&lt;strong&gt;Lo Fi&lt;/strong&gt;
-The Chinchilla! Foot tapping lounge tunes for getting stuff done at your own speed.&lt;/p&gt;
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;outterFunc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;s&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;innerFunc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 
-&lt;p&gt;&lt;strong&gt;The Drop&lt;/strong&gt;
-Uptempo EDM • Infectious, energetic, dance-floor beats to keep you engaged.&lt;/p&gt;
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;innerFunc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;//1&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 
-&lt;p&gt;&lt;strong&gt;Symphonica&lt;/strong&gt;
-Classical Plus • Custom mastered orchestral music for improved focus.&lt;/p&gt;
+&lt;span class=&quot;nx&quot;&gt;outterFunc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;strong&gt;Tranquility&lt;/strong&gt;
-Focus Spa • Esoteric, mystical, and calming soundscapes for an ambient experience.&lt;/p&gt;
+&lt;p&gt;그러나 내부에서 정의된 중첩 함수가 아니라면 innerFunc 함수를 outterFunc 함수의 내부에서 호출한다면 outterFunc 함수의 변수에 접근할수가 없다.
+이러한 현상이 자바스크립트가 렉시컬 스코프를 따르는 프로그래밍 언어 이기 떄문이다.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Organica&lt;/strong&gt;
-Acoustical, organic • Natural, solo performances on guitar and piano by humans.&lt;/p&gt;
+&lt;hr /&gt;
 
-&lt;p&gt;&lt;strong&gt;PowerTool&lt;/strong&gt;
-ADHD, ADD • Industrial, glitch. Intense, noisy EDM channel scientifically proven to help.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;클로져 (Closure) : 함수가 선언된 렉시컬 환경
+클로져는 외부 변수를 기억하고 이 외부 변수에 접근할 수 있는 함수를 의미 합니다.
+자바 스크립트에서는 모든 함수가 자연스럽게 클로져가 됩니다. 
+물론 예외는 있습니다… &lt;a href=&quot;https://ko.javascript.info/new-function&quot;&gt;new Function 문법&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;&lt;strong&gt;The Duke&lt;/strong&gt;
-Baroque Piano • 17th century Bach on a modern piano tuned for focus.&lt;/p&gt;
+&lt;p class=&quot;notice&quot;&gt;&lt;strong&gt;Watch out!&lt;/strong&gt; 함수는 특별한 프로퍼티 [[Environment]]에 저장된 정보를 이용해 자기 자신이 태어난 곳을 기억합니다. [[Environment]]는 함수가 만들어진 렉시컬 환경을 참조합니다.&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Bach Beats&lt;/strong&gt;
-Electro Bach • Preludes, fugues and DJ beats. 1720s chamber strings meet 2020s electronica.&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;전역 렉시컬 환경과 현재의 렉시컬 환경&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;&lt;strong&gt;Edwardian&lt;/strong&gt;
-Classical Piano • Custom engineered, remastered and re-edited for focus.&lt;/p&gt;
+&lt;p&gt;** ReferenceError: value is not defined&lt;/p&gt;
 
-&lt;p&gt;&lt;strong&gt;Atmosphere&lt;/strong&gt;
-Ambient, soundscapes • Peaceful, mellow, and subtle hypnotic spaces.&lt;/p&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; 
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;getFunc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 
-&lt;p&gt;&lt;strong&gt;Aquascope&lt;/strong&gt;
-Water, nature • Meditative soundscapes featuring rain, waves, streams, and more.&lt;/p&gt;
+  &lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;Function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;alert(value)&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 
-&lt;p&gt;&lt;strong&gt;Cinematic&lt;/strong&gt;
-Classical, orchestral • Emotionally connecting and highly evocative.&lt;/p&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;func&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 
-&lt;p&gt;&lt;strong&gt;Kora&lt;/strong&gt;
-World, ethnic • Unique, delicate, inviting African harp recordings. 75 min loop.
-```&lt;/p&gt;</content><author><name>제로미</name></author><category term="posts" /><category term="MUSIC" /><summary type="html">My MUSIC List</summary></entry><entry><title type="html">React</title><link href="http://localhost:4000/posts/post-react-JSX/" rel="alternate" type="text/html" title="React" /><published>2023-01-10T00:00:00+09:00</published><updated>2023-01-10T22:06:00+09:00</updated><id>http://localhost:4000/posts/post-react-JSX</id><content type="html" xml:base="http://localhost:4000/posts/post-react-JSX/">&lt;p&gt;&lt;img src=&quot;../assets/images/2023-01-10-post-react-JSX/christopher-gower-m_HRfLhgABo-unsplash.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;span class=&quot;nx&quot;&gt;getFunc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()();&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// ReferenceError: value is not defined&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;getFunc의 렉시컬 환경에 있는 값 “test”가 출력됩니다.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; 
+&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;getFunc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;test&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+
+  &lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;func&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;func&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;getFunc&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()();&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// getFunc의 렉시컬 환경에 있는 값 &quot;test&quot;가 출력됩니다.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;함수 내부에서 외부 변수에 접근하는 것은 아키텍처 관점에서도 좋지 않고 에러에 취약합니다.&lt;/p&gt;
+
+&lt;p&gt;new Function으로 만든 함수에 무언가를 넘겨주고 싶다면 인수를 사용하세요.&lt;/p&gt;
+
+&lt;h5 id=&quot;정리&quot;&gt;정리&lt;/h5&gt;
+
+&lt;p class=&quot;notice&quot;&gt;&lt;strong&gt;Watch out!&lt;/strong&gt; new Function을 이용해 만든 함수의 [[Environment]]는 외부 렉시컬 환경이 아닌 전역 렉시컬 환경을 참조하므로 외부 변수를 사용할 수 없습니다.&lt;/p&gt;</content><author><name>제로미</name></author><category term="posts" /><category term="Javascript" /><summary type="html">Javascript Lexical Scope</summary></entry><entry><title type="html">When U git Change Default Branch Renamed!</title><link href="http://localhost:4000/posts/post-git-WhenChangeDefaultBranchRenamed2/" rel="alternate" type="text/html" title="When U git Change Default Branch Renamed!" /><published>2023-01-10T00:00:00+09:00</published><updated>2023-01-10T00:00:00+09:00</updated><id>http://localhost:4000/posts/post-git-WhenChangeDefaultBranchRenamed2</id><content type="html" xml:base="http://localhost:4000/posts/post-git-WhenChangeDefaultBranchRenamed2/">&lt;h5 id=&quot;-git-default-branch-renamed&quot;&gt;✨ git Default Branch Renamed&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;github 에서 default 브렌치를 이름 변경하면 로컬에서 cmd 창에 아래와 같이 작업&lt;/p&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;
+        &lt;p&gt;브렌치 마스터에서 변경된 이름으로 하고  ✨&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;fetch origin  branch -u 변경된 branch 이름으로 ✨&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;remote 명령으로 origin의 모든것을 set-head 해줍니다. ✨&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;-commands&quot;&gt;✨ commands&lt;/h5&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git branch &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; master devlop 
+git fetch origin 
+git branch &lt;span class=&quot;nt&quot;&gt;-u&lt;/span&gt; origin/devlop devlop 
+git remote set-head origin &lt;span class=&quot;nt&quot;&gt;-a&lt;/span&gt; 
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>제로미</name></author><category term="posts" /><category term="GIT" /><summary type="html">✨ git Default Branch Renamed</summary></entry><entry><title type="html">JAVA SPRING</title><link href="http://localhost:4000/posts/post-categorys/" rel="alternate" type="text/html" title="JAVA SPRING" /><published>2023-01-10T00:00:00+09:00</published><updated>2023-01-10T22:06:00+09:00</updated><id>http://localhost:4000/posts/post-categorys</id><content type="html" xml:base="http://localhost:4000/posts/post-categorys/">&lt;h5 id=&quot;spring--config&quot;&gt;SPRING  CONFIG&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;WebMvcConfigurer&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;WebMvcConfigurer 설정 메모&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;nd&quot;&gt;@Bean&lt;/span&gt;
+&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;WebMvcConfigurer&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;corsConfigurer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;WebMvcConfigurer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
+        &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;addCorsMappings&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;CorsRegistry&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;registry&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;registry&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;addMapping&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/**&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;allowedOrigins&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://127.0.0.1:9999&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
+        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;o&quot;&gt;};&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>제로미</name></author><category term="posts" /><category term="SPRING" /><summary type="html">SPRING CONFIG</summary></entry><entry><title type="html">React</title><link href="http://localhost:4000/posts/post-react-JSX/" rel="alternate" type="text/html" title="React" /><published>2023-01-10T00:00:00+09:00</published><updated>2023-01-10T22:06:00+09:00</updated><id>http://localhost:4000/posts/post-react-JSX</id><content type="html" xml:base="http://localhost:4000/posts/post-react-JSX/">&lt;p&gt;&lt;img src=&quot;../assets/images/2023-01-10-post-react-JSX/christopher-gower-m_HRfLhgABo-unsplash.jpg&quot; alt=&quot;title&quot; /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;jsx가-왜-필요-할까&quot;&gt;JSX가 왜 필요 할까?&lt;/h4&gt;
 
@@ -1098,7 +1324,7 @@ World, ethnic • Unique, delicate, inviting African harp recordings. 75 min loo
 
 &lt;p&gt;React 에서는 컴파일해야 하는 과정이 있으며 Component라는 개별적인  뷰 단위를 가집니다. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;render()&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;그리고 &lt;strong&gt;Redux&lt;/strong&gt; &lt;em&gt;(Redux(리덕스)란 JavaScript(자바스트립트) 상태관리 라이브러리이다. · Redux(리덕스)의 본질은 Node.js 모듈이다.)&lt;/em&gt; 라는 것을 사용해 상태관리를 하는 라이브러리를 사용합니다.  &lt;em&gt;상태관리는 여기서 더 찾아 보시기 바랍니다.&lt;/em&gt; &lt;a href=&quot;https://ko.redux.js.org/introduction/getting-started&quot;&gt; Redux.js.org &lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;그리고 &lt;strong&gt;Redux&lt;/strong&gt; &lt;em&gt;(Redux(리덕스)란 JavaScript(자바스트립트) 상태관리 라이브러리이다. · Redux(리덕스)의 본질은 Node.js 모듈이다.)&lt;/em&gt; 라는 것을 사용해 상태관리를 하는 라이브러리를 사용합니다.  &lt;em&gt;상태관리는 여기서 더 찾아 보시기 바랍니다.&lt;/em&gt; &lt;a href=&quot;https://ko.redux.js.org/introduction/getting-started&quot;&gt;Redux.js.org&lt;/a&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;자바스크립트 표현식 JavaScript expressions&lt;/li&gt;
@@ -1158,67 +1384,10 @@ World, ethnic • Unique, delicate, inviting African harp recordings. 75 min loo
 
 &lt;p&gt;이제 React 생태계로 들어 가려 합니다.&lt;/p&gt;
 
-&lt;p&gt;요즘 React 를 늦게 배우고 있는 개발자 입니다.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;참고한 자료&lt;/strong&gt;&lt;/p&gt;
+&lt;p class=&quot;notice&quot;&gt;&lt;strong&gt;📕&lt;/strong&gt; - 참고한 자료&lt;/p&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;[react.org] (https://ko.reactjs.org)&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/ECMAScript_for_XML&quot;&gt;XML에 대한 ECMAScript&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;https://dobbit.github.io/redux/&lt;/li&gt;
-  &lt;li&gt;https://react.vlpt.us/redux/&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>제로미</name></author><category term="posts" /><category term="JSX" /><summary type="html"></summary></entry><entry><title type="html">When U git Change Default Branch Renamed!</title><link href="http://localhost:4000/posts/post-git-WhenChangeDefaultBranchRenamed2/" rel="alternate" type="text/html" title="When U git Change Default Branch Renamed!" /><published>2023-01-10T00:00:00+09:00</published><updated>2023-01-10T00:00:00+09:00</updated><id>http://localhost:4000/posts/post-git-WhenChangeDefaultBranchRenamed2</id><content type="html" xml:base="http://localhost:4000/posts/post-git-WhenChangeDefaultBranchRenamed2/">&lt;h5 id=&quot;-git-default-branch-renamed&quot;&gt;✨ git Default Branch Renamed&lt;/h5&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;github 에서 default 브렌치를 이름 변경하면 로컬에서 cmd 창에 아래와 같이 작업&lt;/p&gt;
-
-    &lt;ol&gt;
-      &lt;li&gt;
-        &lt;p&gt;브렌치 마스터에서 변경된 이름으로 하고  ✨&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;fetch origin  branch -u 변경된 branch 이름으로 ✨&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;remote 명령으로 origin의 모든것을 set-head 해줍니다. ✨&lt;/p&gt;
-      &lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h5 id=&quot;-commands&quot;&gt;✨ commands&lt;/h5&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git branch &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; master devlop 
-git fetch origin 
-git branch &lt;span class=&quot;nt&quot;&gt;-u&lt;/span&gt; origin/devlop devlop 
-git remote set-head origin &lt;span class=&quot;nt&quot;&gt;-a&lt;/span&gt; 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>제로미</name></author><category term="posts" /><category term="GIT" /><summary type="html">✨ git Default Branch Renamed</summary></entry><entry><title type="html">JAVA SPRING</title><link href="http://localhost:4000/posts/post-categorys/" rel="alternate" type="text/html" title="JAVA SPRING" /><published>2023-01-10T00:00:00+09:00</published><updated>2023-01-10T22:06:00+09:00</updated><id>http://localhost:4000/posts/post-categorys</id><content type="html" xml:base="http://localhost:4000/posts/post-categorys/">&lt;h5 id=&quot;spring--config&quot;&gt;SPRING  CONFIG&lt;/h5&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;WebMvcConfigurer&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;WebMvcConfigurer 설정 메모&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-java highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nd&quot;&gt;@Bean&lt;/span&gt;
-&lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;WebMvcConfigurer&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;corsConfigurer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;WebMvcConfigurer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-        &lt;span class=&quot;nd&quot;&gt;@Override&lt;/span&gt;
-        &lt;span class=&quot;kd&quot;&gt;public&lt;/span&gt; &lt;span class=&quot;kt&quot;&gt;void&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;addCorsMappings&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;CorsRegistry&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;registry&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;{&lt;/span&gt;
-            &lt;span class=&quot;n&quot;&gt;registry&lt;/span&gt;
-            &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;addMapping&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/**&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
-            &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;allowedOrigins&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;http://127.0.0.1:9999&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;);&lt;/span&gt;
-        &lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-    &lt;span class=&quot;o&quot;&gt;};&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;}&lt;/span&gt;
-
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>제로미</name></author><category term="posts" /><category term="SPRING" /><summary type="html">SPRING CONFIG</summary></entry></feed>
+  &lt;li&gt;&lt;a href=&quot;https://ko.reactjs.org&quot;&gt;react.org&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/ECMAScript_for_XML&quot;&gt;XML에 대한 ECMAScript&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://react.vlpt.us/redux&quot;&gt;벨로퍼트와 함꼐하는 모던 리엑트&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>제로미</name></author><category term="posts" /><category term="JSX" /><summary type="html"></summary></entry></feed>

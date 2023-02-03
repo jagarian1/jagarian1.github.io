@@ -11,56 +11,52 @@ toc_sticky: true
 
 ##### My MUSIC List
 
-    - Blog Post Draft
+- Blog Post Draft
 
-``` plan text
+```wiki
 
 Johann Sebastian Bach
   Suite No. 3 in D Major, BWV 1068: II. Air
-  
 
-
-
-
-
-
-
-**Lo Fi**
+Lo Fi
 The Chinchilla! Foot tapping lounge tunes for getting stuff done at your own speed.
 
-**The Drop**
+The Drop
 Uptempo EDM • Infectious, energetic, dance-floor beats to keep you engaged.
 
-**Symphonica**
+Symphonica
 Classical Plus • Custom mastered orchestral music for improved focus.
 
-**Tranquility**
+Tranquility
 Focus Spa • Esoteric, mystical, and calming soundscapes for an ambient experience.
 
-**Organica**
+Organica
 Acoustical, organic • Natural, solo performances on guitar and piano by humans.
 
-**PowerTool**
+PowerTool
 ADHD, ADD • Industrial, glitch. Intense, noisy EDM channel scientifically proven to help.
 
-**The Duke**
+The Duke
 Baroque Piano • 17th century Bach on a modern piano tuned for focus.
 
-**Bach Beats**
+Bach Beats
 Electro Bach • Preludes, fugues and DJ beats. 1720s chamber strings meet 2020s electronica.
 
-**Edwardian**
+Edwardian
 Classical Piano • Custom engineered, remastered and re-edited for focus.
 
-**Atmosphere**
+Atmosphere
 Ambient, soundscapes • Peaceful, mellow, and subtle hypnotic spaces.
 
-**Aquascope**
+Aquascope
 Water, nature • Meditative soundscapes featuring rain, waves, streams, and more.
 
-**Cinematic**
+Cinematic
 Classical, orchestral • Emotionally connecting and highly evocative.
 
-**Kora**
+Kora
 World, ethnic • Unique, delicate, inviting African harp recordings. 75 min loop.
+
+
+more...
 ```

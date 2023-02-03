@@ -12,12 +12,12 @@ toc_sticky: true
 
 ##### SPRING  CONFIG
 
-+  WebMvcConfigurer
++ WebMvcConfigurer
 
-- WebMvcConfigurer 설정 메모
-
++ WebMvcConfigurer 설정 메모
 
 ```java
+
 @Bean
 public WebMvcConfigurer corsConfigurer() {
     return new WebMvcConfigurer() {
@@ -29,6 +29,5 @@ public WebMvcConfigurer corsConfigurer() {
         }
     };
 }
-
 
 ```

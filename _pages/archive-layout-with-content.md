@@ -58,7 +58,7 @@ Definition List Title
 Startup
 :   A startup company or startup is a company or temporary organization designed to search for a repeatable and scalable business model.
 
-#dowork
+# dowork
 :   Coined by Rob Dyrdek and his personal body guard Christopher "Big Black" Boykins, "Do Work" works as a self motivator, to motivating your friends.
 
 Do It Live
@@ -66,23 +66,23 @@ Do It Live
 
 ## Unordered Lists (Nested)
 
-  * List item one 
-      * List item one 
-          * List item one
-          * List item two
-          * List item three
-          * List item four
-      * List item two
-      * List item three
-      * List item four
-  * List item two
-  * List item three
-  * List item four
+* List item one
+    * List item one
+        * List item one
+        * List item two
+        * List item three
+        * List item four
+    * List item two
+    * List item three
+    * List item four
+* List item two
+* List item three
+* List item four
 
 ## Ordered List (Nested)
 
-  1. List item one 
-      1. List item one 
+  1. List item one
+      1. List item one
           1. List item one
           2. List item two
           3. List item three

@@ -1,12 +1,12 @@
 var store = [{
         "title": "MY MUSIC",
-        "excerpt":"My MUSIC List - Blog Post Draft ``` plan text Johann Sebastian Bach Suite No. 3 in D Major, BWV 1068: II. Air Lo Fi The Chinchilla! Foot tapping lounge tunes for getting stuff done at your own speed. The Drop Uptempo EDM • Infectious, energetic, dance-floor beats to keep...","categories": ["posts"],
+        "excerpt":"My MUSIC List Blog Post Draft Johann Sebastian Bach Suite No. 3 in D Major, BWV 1068: II. Air Lo Fi The Chinchilla! Foot tapping lounge tunes for getting stuff done at your own speed. The Drop Uptempo EDM • Infectious, energetic, dance-floor beats to keep you engaged. Symphonica Classical...","categories": ["posts"],
         "tags": ["MUSIC"],
         "url": "/posts/post-MyMUSICList227545/",
         "teaser": null
       },{
         "title": "JAVA SPRING",
-        "excerpt":"SPRING  CONFIG           WebMvcConfigurer            WebMvcConfigurer 설정 메모       @Bean public WebMvcConfigurer corsConfigurer() {     return new WebMvcConfigurer() {         @Override         public void addCorsMappings(CorsRegistry registry) {             registry             .addMapping(\"/**\")             .allowedOrigins(\"http://127.0.0.1:9999\");         }     }; }    ","categories": ["posts"],
+        "excerpt":"SPRING  CONFIG           WebMvcConfigurer            WebMvcConfigurer 설정 메모        @Bean public WebMvcConfigurer corsConfigurer() {     return new WebMvcConfigurer() {         @Override         public void addCorsMappings(CorsRegistry registry) {             registry             .addMapping(\"/**\")             .allowedOrigins(\"http://127.0.0.1:9999\");         }     }; }   ","categories": ["posts"],
         "tags": ["SPRING"],
         "url": "/posts/post-categorys/",
         "teaser": null
@@ -15,6 +15,12 @@ var store = [{
         "excerpt":"✨ git Default Branch Renamed github 에서 default 브렌치를 이름 변경하면 로컬에서 cmd 창에 아래와 같이 작업 브렌치 마스터에서 변경된 이름으로 하고 ✨ fetch origin branch -u 변경된 branch 이름으로 ✨ remote 명령으로 origin의 모든것을 set-head 해줍니다. ✨ ✨ commands git branch -m master devlop git fetch origin git branch...","categories": ["posts"],
         "tags": ["GIT"],
         "url": "/posts/post-git-WhenChangeDefaultBranchRenamed2/",
+        "teaser": null
+      },{
+        "title": "Javascript ES6 Lexical Scope",
+        "excerpt":"Javascript Lexical Scope 클로져 (Closure) : 함수가 선언된 렉시컬 환경 Lexical Scope 의 정적 스코프 const x = 1; function outterFunc() { const s = 10; function innerFunc() { console.log(x); //10 } innerFunc(); } outterFunc(); 중첨 함수 내부에서 자시을 포함하고 있는 외부 함수 outterFunc의 x 변수에 접근이 가능하다. const x...","categories": ["posts"],
+        "tags": ["Javascript"],
+        "url": "/posts/post-javascript-es6-lexicalscope/",
         "teaser": null
       },{
         "title": "React",
@@ -30,7 +36,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Javascript ES6 ",
-        "excerpt":"⚡️ EC6 Javascritp Arrow Function 1 화살표 함수(Arrow Function) ES5의 다음 코드와 유사 합니다. 예제2. 다음 예제에서는 화살표 함수를 만드는 방법을 보여 줍니다. ⚡️예제 1 let circumference = (pi, r) =&gt; { let ans = 2 * pi * r; return ans; } let result = circumference(3.141592, 3); console.log(result); //...","categories": ["posts"],
+        "excerpt":"⚡️ EC6 Javascritp Arrow Function 1 화살표 함수(Arrow Function) 화살표 함수는 언뜻보기에 일반 JavaScript 함수를 만드는 멋진 방법 일뿐입니다 (그러나 몇 가지 놀라움이 있습니다). 화살표 함수를 사용하면 실제로 작동하는 간결한 한 줄짜리 함수를 만들 수 있습니다! 다음 예제에서는 화살표 함수를 만드는 방법을 보여 줍니다. ES5의 다음 코드와 유사 합니다. 예제2....","categories": ["posts"],
         "tags": ["Javascript"],
         "url": "/posts/post-javascript-es6-Arrow_function-part1/",
         "teaser": null
