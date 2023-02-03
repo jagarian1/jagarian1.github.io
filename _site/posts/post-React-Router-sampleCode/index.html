@@ -1,0 +1,919 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="ko" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>React Sample Code 공유 - WINGMAN Blog</title>
+<meta name="description" content="">
+
+
+  <meta name="author" content="제로미">
+  
+  <meta property="article:author" content="제로미">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="WINGMAN Blog">
+<meta property="og:title" content="React Sample Code 공유">
+<meta property="og:url" content="http://localhost:4000/posts/post-React-Router-sampleCode/">
+
+
+  <meta property="og:description" content="">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2023-02-02T00:00:00+09:00">
+
+
+
+  <meta property="article:modified_time" content="2023-02-02T00:00:00+09:00">
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/posts/post-React-Router-sampleCode/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Jerome",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="WINGMAN Blog Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/logo.ico/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/logo.ico/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/logo.ico/favicon-16x16.png">
+<link rel="manifest" href="/assets/logo.ico/site.webmanifest">
+<link rel="mask-icon" href="/assets/logo.ico/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Do Something the Way You Want
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/">Home</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">Introduce</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/">Category</a>
+            </li><li class="masthead__menu-item">
+              <a href="/year-archive/">Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags/">Tags</a>
+            </li><li class="masthead__menu-item">
+              <a href="/sitemap/">Sitemap</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">토글 메뉴</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">제로미</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p><strong>Do Something</strong> Anything</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">팔로우</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Seoul Kor</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="mailto:jeromeoffice191@email.com" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+        
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="React Sample Code 공유">
+    <meta itemprop="description" content="">
+    <meta itemprop="datePublished" content="2023-02-02T00:00:00+09:00">
+    <meta itemprop="dateModified" content="2023-02-02T00:00:00+09:00">
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/posts/post-React-Router-sampleCode/" class="u-url" itemprop="url">React Sample Code 공유
+</a>
+          </h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          4 분 소요
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On This Page</h4></header>
+              <ul class="toc__menu"><li><a href="#-react-query">✨ React Query</a><ul><li><a href="#tanstackreact-query">@tanstack/react-query</a></li><li><a href="#install">INSTALL</a></li><li><a href="#source">SOURCE</a></li><li><a href="#error">ERROR</a></li></ul></li></ul>
+
+            </nav>
+          </aside>
+        
+        <p><img src="../assets/images/2023-02-02-post-React-Router-sampleCode/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg" alt="" /></p>
+
+<h5 id="-react-query">✨ React Query</h5>
+
+<h6 id="tanstackreact-query">@tanstack/react-query</h6>
+
+<ul>
+  <li>
+    <p>사용하는 이유  :  Custom Hook 의 문제로 인해.    1.Cache   2.Retry 기능이 없음.</p>
+
+    <p>React Query 사용하여 이런 문제를 해결..</p>
+  </li>
+</ul>
+
+<h6 id="install">INSTALL</h6>
+
+<p>환경설정   yarn 으로 설치한다.</p>
+
+<ul>
+  <li>
+    <p>@tanstack/react-query 를 설치한다.</p>
+
+    <ol>
+      <li>yarn create react-app query-init 
+✨ 디렉토리 상위에서 프로젝트(query-init)를 생성합니다.</li>
+      <li>cd query-init ✨   yarn init ✨</li>
+      <li>yarn add @tanstack/react-query<br />
+✨명령으로 react-query를 설치 해줍니다.</li>
+      <li>yarn add @tanstack/react-query-devtools<br />
+✨명령으로 react-query-devtools를 설치 해줍니다.</li>
+      <li>yarn start 하면 페이지가 열립니다…</li>
+    </ol>
+  </li>
+</ul>
+
+<p>공식문서 : tanstack.com   ReactQuery
+https://tanstack.com/query/latest/docs/react/installation</p>
+
+<p>API : 
+https://tanstack.com/query/latest/docs/react/reference/useQuery</p>
+
+<hr />
+
+<h6 id="source">SOURCE</h6>
+
+<p>✨ src/components/Product.jsx</p>
+
+<div class="language-react highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">useQuery</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@tanstack/react-query</span><span class="dl">'</span><span class="p">;</span>
+</code></pre></div></div>
+
+<div class="language-react highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span> <span class="nx">useState</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">useQuery</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@tanstack/react-query</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="kd">function</span> <span class="nx">Products</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="p">[</span><span class="nx">checked</span><span class="p">,</span> <span class="nx">setChecked</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
+  <span class="c1">// const [isLoading, error, products] = useProducts({ salesOnly: checked });</span>
+  <span class="kd">const</span> <span class="nx">handleChange</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="nx">setChecked</span><span class="p">((</span><span class="nx">prev</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="o">!</span><span class="nx">prev</span><span class="p">);</span>
+
+  <span class="kd">const</span> <span class="p">{</span>
+    <span class="nx">isLoading</span><span class="p">,</span>
+    <span class="nx">error</span><span class="p">,</span>
+    <span class="na">data</span><span class="p">:</span> <span class="nx">products</span><span class="p">,</span> <span class="c1">//여기서 data를 인식 못하고 값이 넘어가지 않음.</span>
+  <span class="p">}</span> <span class="o">=</span> <span class="nx">useQuery</span><span class="p">([</span><span class="dl">'</span><span class="s1">products</span><span class="dl">'</span><span class="p">,</span> <span class="nx">checked</span><span class="p">],</span> <span class="k">async</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">fetching...</span><span class="dl">'</span><span class="p">,</span> <span class="nx">checked</span><span class="p">);</span>
+    <span class="k">return</span> <span class="nx">fetch</span><span class="p">(</span><span class="s2">`data/</span><span class="p">${</span><span class="nx">checked</span> <span class="p">?</span> <span class="dl">'</span><span class="s1">sale_</span><span class="dl">'</span> <span class="p">:</span> <span class="dl">''</span><span class="p">}</span><span class="s2">products.json`</span><span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">res</span><span class="p">.</span><span class="nx">json</span><span class="p">()</span>
+    <span class="p">));</span>
+  <span class="p">},</span>
+  <span class="p">{</span>
+    <span class="na">staleTime</span><span class="p">:</span> <span class="mi">1000</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">5</span><span class="p">,</span>
+  <span class="p">}</span>
+<span class="p">);</span>
+    
+  <span class="k">if</span> <span class="p">(</span><span class="nx">isLoading</span><span class="p">)</span> <span class="k">return</span> <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Loading...<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;;</span>
+
+  <span class="k">if</span> <span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="k">return</span> <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span><span class="si">{</span><span class="nx">error</span><span class="si">}</span><span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;;</span>
+
+  <span class="k">return</span> <span class="p">(</span>
+    <span class="p">&lt;&gt;</span>
+      <span class="p">&lt;</span><span class="nt">input</span>
+        <span class="na">id</span><span class="p">=</span><span class="s">'checkbox'</span>
+        <span class="na">type</span><span class="p">=</span><span class="s">'checkbox'</span>
+        <span class="na">value</span><span class="p">=</span><span class="si">{</span><span class="nx">checked</span><span class="si">}</span>
+        <span class="na">onChange</span><span class="p">=</span><span class="si">{</span><span class="nx">handleChange</span><span class="si">}</span>
+      <span class="p">/&gt;</span>
+      <span class="p">&lt;</span><span class="nt">label</span> <span class="na">htmlFor</span><span class="p">=</span><span class="s">'checkbox'</span><span class="p">&gt;</span> Show Only 🔥 Sale<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+        <span class="si">{</span><span class="nx">products</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">product</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">(</span>
+          <span class="p">&lt;</span><span class="nt">li</span> <span class="na">key</span><span class="p">=</span><span class="si">{</span><span class="nx">product</span><span class="p">.</span><span class="nx">id</span><span class="si">}</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">article</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span><span class="si">{</span><span class="nx">product</span><span class="p">.</span><span class="nx">name</span><span class="si">}</span><span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+              <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span><span class="si">{</span><span class="nx">product</span><span class="p">.</span><span class="nx">price</span><span class="si">}</span><span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">article</span><span class="p">&gt;</span>
+          <span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+        <span class="p">))</span><span class="si">}</span>
+      <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+    <span class="p">&lt;/&gt;</span>
+  <span class="p">);</span>
+<span class="p">}</span>
+<span class="c1">//ui-monospace,"Cascadia Mono","Segoe UI Mono","Liberation Mono",Menlo,Monaco,Consolas,monospace;</span>
+</code></pre></div></div>
+
+<p>✨ App.js</p>
+
+<div class="language-react highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="dl">'</span><span class="s1">./App.css</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">MainProducts</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./components/MainProducts</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span>
+  <span class="nx">QueryClient</span><span class="p">,</span>
+  <span class="nx">QueryClientProvider</span>
+<span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@tanstack/react-query</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="p">{</span> <span class="nx">ReactQueryDevtools</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@tanstack/react-query-devtools</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="kd">const</span> <span class="nx">queryClient</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">QueryClient</span><span class="p">();</span> <span class="c1">//예제에서 복사</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="kd">function</span> <span class="nx">App</span><span class="p">()</span> <span class="p">{</span>
+  <span class="k">return</span> <span class="p">(</span>
+    <span class="p">&lt;</span><span class="nc">QueryClientProvider</span> <span class="na">client</span><span class="p">=</span><span class="si">{</span><span class="nx">queryClient</span><span class="si">}</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nc">MainProducts</span> <span class="p">/&gt;</span>
+      <span class="p">&lt;</span><span class="nc">ReactQueryDevtools</span> <span class="na">initialIsOpen</span><span class="p">=</span><span class="si">{</span><span class="kc">true</span><span class="si">}</span> <span class="p">/&gt;</span>
+    <span class="p">&lt;/</span><span class="nc">QueryClientProvider</span><span class="p">&gt;</span>
+  <span class="p">);</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<p>✨ src/hooks/use-project.jsx</p>
+
+<div class="language-react highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">useEffect</span><span class="p">,</span> <span class="nx">useState</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="kd">function</span> <span class="nx">useProducts</span><span class="p">({</span> <span class="nx">salesOnly</span> <span class="p">})</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="p">[</span><span class="nx">loading</span><span class="p">,</span> <span class="nx">setLoading</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
+  <span class="kd">const</span> <span class="p">[</span><span class="nx">error</span><span class="p">,</span> <span class="nx">setError</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">();</span>
+  <span class="kd">const</span> <span class="p">[</span><span class="nx">products</span><span class="p">,</span> <span class="nx">setProducts</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">([]);</span>
+  <span class="nx">useEffect</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">1 fetching....</span><span class="dl">'</span><span class="p">);</span>
+    <span class="nx">setLoading</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+    <span class="nx">setError</span><span class="p">(</span><span class="kc">undefined</span><span class="p">);</span>
+    <span class="nx">fetch</span><span class="p">(</span><span class="s2">`data/</span><span class="p">${</span><span class="nx">salesOnly</span> <span class="p">?</span> <span class="dl">'</span><span class="s1">sale_</span><span class="dl">'</span> <span class="p">:</span> <span class="dl">''</span><span class="p">}</span><span class="s2">products.json`</span><span class="p">)</span>
+      <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">res</span><span class="p">.</span><span class="nx">json</span><span class="p">())</span>
+      <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">data</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">🔥뜨끈한 데이터 네트워크에서 받아옴</span><span class="dl">'</span><span class="p">);</span>
+        <span class="nx">setProducts</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
+      <span class="p">})</span>
+      <span class="p">.</span><span class="k">catch</span><span class="p">((</span><span class="nx">e</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">setError</span><span class="p">(</span><span class="dl">'</span><span class="s1">에러가 발생 !</span><span class="dl">'</span><span class="p">))</span>
+      <span class="p">.</span><span class="k">finally</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="nx">setLoading</span><span class="p">(</span><span class="kc">false</span><span class="p">));</span>
+    <span class="k">return</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">🧹 깨끗하게 청소</span><span class="dl">'</span><span class="p">);</span>
+    <span class="p">};</span>
+  <span class="p">},</span> <span class="p">[</span><span class="nx">salesOnly</span><span class="p">]);</span>
+
+  <span class="k">return</span> <span class="p">[</span><span class="nx">loading</span><span class="p">,</span> <span class="nx">error</span><span class="p">,</span> <span class="nx">products</span><span class="p">];</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<p>✨ src/components/MainProducts.jsx</p>
+
+<div class="language-react highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span> <span class="nx">useState</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">Products</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./Products</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="kd">function</span> <span class="nx">MainProducts</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="p">[</span><span class="nx">showLeftProducts</span><span class="p">,</span> <span class="nx">setShowLeftProducts</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+  <span class="kd">const</span> <span class="p">[</span><span class="nx">showRightProducts</span><span class="p">,</span> <span class="nx">setShowRightProducts</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+  <span class="k">return</span> <span class="p">(</span>
+    <span class="p">&lt;</span><span class="nt">main</span> <span class="na">className</span><span class="p">=</span><span class="s">'container'</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="si">{</span><span class="nx">showLeftProducts</span> <span class="o">&amp;&amp;</span> <span class="p">&lt;</span><span class="nc">Products</span> <span class="p">/&gt;</span><span class="si">}</span>
+        <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onClick</span><span class="p">=</span><span class="si">{</span><span class="p">()</span> <span class="o">=&gt;</span> <span class="nx">setShowLeftProducts</span><span class="p">((</span><span class="nx">show</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="o">!</span><span class="nx">show</span><span class="p">)</span><span class="si">}</span><span class="p">&gt;</span>
+          Toggle
+        <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+      <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="si">{</span><span class="nx">showRightProducts</span> <span class="o">&amp;&amp;</span> <span class="p">&lt;</span><span class="nc">Products</span> <span class="p">/&gt;</span><span class="si">}</span>
+        <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onClick</span><span class="p">=</span><span class="si">{</span><span class="p">()</span> <span class="o">=&gt;</span> <span class="nx">setShowRightProducts</span><span class="p">((</span><span class="nx">show</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="o">!</span><span class="nx">show</span><span class="p">)</span><span class="si">}</span><span class="p">&gt;</span>
+          Toggle
+        <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">main</span><span class="p">&gt;</span>
+  <span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h6 id="error">ERROR</h6>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>react_devtools_backend.js:4012 
+        
+TypeError: <span class="o">(</span>intermediate value<span class="o">)(</span>intermediate value<span class="o">)(</span>intermediate value<span class="o">)</span>.then is not a <span class="k">function
+    </span>at Products.staleTime <span class="o">[</span>as queryFn] <span class="o">(</span>bundle.js:237:64<span class="o">)</span>
+    at Object.fetchFn <span class="o">[</span>as fn] <span class="o">(</span>bundle.js:43688:27<span class="o">)</span>
+    at run <span class="o">(</span>bundle.js:44940:31<span class="o">)</span>
+    at bundle.js:44975:11
+overrideMethod @ react_devtools_backend.js:4012
+        
+Uncaught Error: Objects are not valid as a React child <span class="o">(</span>found: <span class="o">[</span>object Error]<span class="o">)</span><span class="nb">.</span> If you meant to render a collection of children, use an array instead.
+    at throwOnInvalidObjectType <span class="o">(</span>bundle.js:20230:13<span class="o">)</span>
+    at reconcileChildFibers <span class="o">(</span>bundle.js:21006:11<span class="o">)</span>
+    at reconcileChildren <span class="o">(</span>bundle.js:23940:32<span class="o">)</span>
+    at updateHostComponent <span class="o">(</span>bundle.js:24577:7<span class="o">)</span>
+    at beginWork <span class="o">(</span>bundle.js:26022:18<span class="o">)</span>
+    at HTMLUnknownElement.callCallback <span class="o">(</span>bundle.js:11008:18<span class="o">)</span>
+    at Object.invokeGuardedCallbackDev <span class="o">(</span>bundle.js:11052:20<span class="o">)</span>
+    at invokeGuardedCallback <span class="o">(</span>bundle.js:11109:35<span class="o">)</span>
+    at beginWork<span class="nv">$1</span> <span class="o">(</span>bundle.js:30983:11<span class="o">)</span>
+    at performUnitOfWork <span class="o">(</span>bundle.js:30230:16<span class="o">)</span>
+
+        
+       Uncaught Error: Objects are not valid as a React child <span class="o">(</span>found: <span class="o">[</span>object Error]<span class="o">)</span><span class="nb">.</span> If you meant to render a collection of children, use an array instead.
+    at throwOnInvalidObjectType <span class="o">(</span>bundle.js:20230:13<span class="o">)</span>
+    at reconcileChildFibers <span class="o">(</span>bundle.js:21006:11<span class="o">)</span>
+    at reconcileChildren <span class="o">(</span>bundle.js:23940:32<span class="o">)</span>
+    at updateHostComponent <span class="o">(</span>bundle.js:24577:7<span class="o">)</span>
+    at beginWork <span class="o">(</span>bundle.js:26022:18<span class="o">)</span>
+    at HTMLUnknownElement.callCallback <span class="o">(</span>bundle.js:11008:18<span class="o">)</span>
+    at Object.invokeGuardedCallbackDev <span class="o">(</span>bundle.js:11052:20<span class="o">)</span>
+    at invokeGuardedCallback <span class="o">(</span>bundle.js:11109:35<span class="o">)</span>
+    at beginWork<span class="nv">$1</span> <span class="o">(</span>bundle.js:30983:11<span class="o">)</span>
+    at performUnitOfWork <span class="o">(</span>bundle.js:30230:16<span class="o">)</span>
+
+        
+The above error occurred <span class="k">in </span>the &lt;p&gt; component:
+    at p
+    at Products <span class="o">(</span>http://localhost:3000/static/js/bundle.js:227:80<span class="o">)</span>
+    at div
+    at main
+    at MainProducts <span class="o">(</span>http://localhost:3000/static/js/bundle.js:117:98<span class="o">)</span>
+    at QueryClientProvider <span class="o">(</span>http://localhost:3000/static/js/bundle.js:47107:5<span class="o">)</span>
+    at App
+
+Uncaught Error: Objects are not valid as a React child <span class="o">(</span>found: <span class="o">[</span>object Error]<span class="o">)</span><span class="nb">.</span> If you meant to render a collection of children, use an array instead.
+    at throwOnInvalidObjectType <span class="o">(</span>bundle.js:20230:13<span class="o">)</span>
+    at reconcileChildFibers <span class="o">(</span>bundle.js:21006:11<span class="o">)</span>
+    at reconcileChildren <span class="o">(</span>bundle.js:23940:32<span class="o">)</span>
+    at updateHostComponent <span class="o">(</span>bundle.js:24577:7<span class="o">)</span>
+    at beginWork <span class="o">(</span>bundle.js:26022:18<span class="o">)</span>
+    at beginWork<span class="nv">$1</span> <span class="o">(</span>bundle.js:30961:18<span class="o">)</span>
+    at performUnitOfWork <span class="o">(</span>bundle.js:30230:16<span class="o">)</span>
+    at workLoopSync <span class="o">(</span>bundle.js:30153:9<span class="o">)</span>
+    at renderRootSync <span class="o">(</span>bundle.js:30126:11<span class="o">)</span>
+    at recoverFromConcurrentError <span class="o">(</span>bundle.js:29618:24<span class="o">)</span>
+</code></pre></div></div>
+
+<p>위와 같이 화면로딩후 넘겨야할 data에 아무런 값이 없고 “Uncaught Error: Objects are not valid as a React child (found: [object Error]). If you meant to render a collection of children, use an array instead.” 에러가 난다.</p>
+
+<p>해결을 위해 공식문서에 API가 변경 됬는지 확인해봐야 하는 작업이 필요할 거 같은데.
+2일쨰 확인이 안되고 있다.
+API : <a href="https://tanstack.com/query/latest/docs/react/reference/useQuery">useQuery | TanStack Query Docs</a>
+GUIDE : <a href="https://tanstack.com/query/latest/docs/react/guides/queries">Queries | TanStack Query Docs</a></p>
+
+<div class="language-react highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">Todos</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="p">{</span> <span class="nx">isLoading</span><span class="p">,</span> <span class="nx">isError</span><span class="p">,</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">error</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">useQuery</span><span class="p">({</span>
+    <span class="na">queryKey</span><span class="p">:</span> <span class="p">[</span><span class="dl">'</span><span class="s1">todos</span><span class="dl">'</span><span class="p">],</span>
+    <span class="na">queryFn</span><span class="p">:</span> <span class="nx">fetchTodoList</span><span class="p">,</span>
+  <span class="p">})</span> 
+  <span class="p">.....</span>
+<span class="kd">function</span> <span class="nx">Todos</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kd">const</span> <span class="p">{</span> <span class="nx">status</span><span class="p">,</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">error</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">useQuery</span><span class="p">({</span>
+    <span class="na">queryKey</span><span class="p">:</span> <span class="p">[</span><span class="dl">'</span><span class="s1">todos</span><span class="dl">'</span><span class="p">],</span>
+    <span class="na">queryFn</span><span class="p">:</span> <span class="nx">fetchTodoList</span><span class="p">,</span>
+  <span class="p">})</span>
+  <span class="p">....</span>
+<span class="nx">So</span> <span class="nx">keep</span> <span class="k">in</span> <span class="nx">mind</span> <span class="nx">that</span> <span class="nx">a</span> <span class="nx">query</span> <span class="nx">can</span> <span class="nx">be</span> <span class="k">in</span> <span class="nx">state</span> <span class="nx">without</span> <span class="nx">actually</span> <span class="nx">fetching</span> <span class="nx">data</span><span class="p">.</span> <span class="nx">As</span> <span class="nx">a</span> <span class="nx">rule</span> <span class="k">of</span> <span class="nx">thumb</span><span class="p">:</span><span class="nx">loading</span>
+
+<span class="nx">The</span> <span class="nx">gives</span> <span class="nx">information</span> <span class="nx">about</span> <span class="nx">the</span> <span class="p">:</span> <span class="nx">Do</span> <span class="nx">we</span> <span class="nx">have</span> <span class="nx">any</span> <span class="nx">or</span> <span class="nx">not</span><span class="p">?</span><span class="nx">statusdata</span>
+<span class="nx">The</span> <span class="nx">gives</span> <span class="nx">information</span> <span class="nx">about</span> <span class="nx">the</span> <span class="p">:</span> <span class="nx">Is</span> <span class="nx">it</span> <span class="nx">running</span> <span class="nx">or</span> <span class="nx">not</span><span class="p">?</span><span class="nx">fetchStatusqueryFn</span>
+<span class="nx">Further</span> <span class="nx">Reading</span>
+<span class="nx">For</span> <span class="nx">an</span> <span class="nx">alternative</span> <span class="nx">way</span> <span class="k">of</span> <span class="nx">performing</span> <span class="nx">status</span> <span class="nx">checks</span><span class="p">,</span> <span class="nx">have</span> <span class="nx">a</span> <span class="nx">look</span> <span class="nx">at</span> <span class="nx">the</span> <span class="nx">Community</span> <span class="nx">Resources</span><span class="p">.</span>
+</code></pre></div></div>
+
+<p>가이드대로 위와 같이 변경 된듯 합니다. data 를 쓰지 않고 queryKey 로 사용하라는건지 …
+근래 바뀐듯 합니다. 커뮤니티를 가보라고 쓰여 있으니 더 뒤져 봐야 할거 같은데요.</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>커뮤니티 : [쿼리 데이터 변환 반응</td>
+      <td>TkDodo의 블로그](https://tkdodo.eu/blog/react-query-data-transformations)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>……………………………………………………. ;)
+에러 화면 :</p>
+
+<p><img src="../assets/images/2023-02-02-post-React-Router-sampleCode/image-20230202110820784.png" alt="image-20230202110820784" /></p>
+
+<p>여기까지… 좀 자야 겠어요 zzzzzzzzz</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#react" class="page__taxonomy-item p-category" rel="tag">React</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#posts" class="page__taxonomy-item p-category" rel="tag">posts</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2023-02-02">February 2, 2023</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">공유하기</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=React+Sample+Code+%EA%B3%B5%EC%9C%A0%20http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fpost-React-Router-sampleCode%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fpost-React-Router-sampleCode%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fpost-React-Router-sampleCode%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/posts/post-javascript-FunctionalPrograming/" class="pagination--pager" title="Functional Programming
+">이전</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">다음</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h2 class="page__related-title">참고</h2>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/posts/post-javascript-FunctionalPrograming/" rel="permalink">Functional Programming
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  원본 : O’Reilly Functional Thinking - 닐 포트 지음 … 에서 인용 하였습니다.
+
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/posts/post-javascript-es6-Arrow_function-part2/" rel="permalink">Javascript ES6
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          최대 1 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">⚡️ EC6 Javascritp Arrow Function
+
+  화살표 기능을 피해야 하는 경우
+
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/posts/post-git-GIT-master-doit/" rel="permalink">GIT MASTER
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          7 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/posts/post-react-JSX/" rel="permalink">React
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>팔로우:</strong></li>
+    
+
+    
+      
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> 피드</a></li>
+    
+  </ul>
+</div>
+
+<!-- <div class="page__footer-copyright">&copy; 2023 Jerome. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div> -->
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "http://localhost:4000/posts/post-React-Router-sampleCode/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/posts/post-React-Router-sampleCode"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+    };
+    (function() { /* DON'T EDIT BELOW THIS LINE */
+      var d = document, s = d.createElement('script');
+      s.src = 'https://jeromemi.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+
+
+  </body>
+</html>

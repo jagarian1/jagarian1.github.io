@@ -1,0 +1,795 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="ko" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>React - WINGMAN Blog</title>
+<meta name="description" content="">
+
+
+  <meta name="author" content="제로미">
+  
+  <meta property="article:author" content="제로미">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="WINGMAN Blog">
+<meta property="og:title" content="React">
+<meta property="og:url" content="http://localhost:4000/posts/post-react-JSX/">
+
+
+  <meta property="og:description" content="">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2023-01-10T00:00:00+09:00">
+
+
+
+  <meta property="article:modified_time" content="2023-01-10T22:06:00+09:00">
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/posts/post-react-JSX/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Jerome",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="WINGMAN Blog Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/logo.ico/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/logo.ico/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/logo.ico/favicon-16x16.png">
+<link rel="manifest" href="/assets/logo.ico/site.webmanifest">
+<link rel="mask-icon" href="/assets/logo.ico/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Do Something the Way You Want
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/">Home</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">Introduce</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/">Category</a>
+            </li><li class="masthead__menu-item">
+              <a href="/year-archive/">Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags/">Tags</a>
+            </li><li class="masthead__menu-item">
+              <a href="/sitemap/">Sitemap</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">토글 메뉴</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">제로미</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p><strong>Do Something</strong> Anything</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">팔로우</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Seoul Kor</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="mailto:jeromeoffice191@email.com" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+        
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="React">
+    <meta itemprop="description" content="">
+    <meta itemprop="datePublished" content="2023-01-10T00:00:00+09:00">
+    <meta itemprop="dateModified" content="2023-01-10T22:06:00+09:00">
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/posts/post-react-JSX/" class="u-url" itemprop="url">React
+</a>
+          </h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 분 소요
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On This Page</h4></header>
+              <ul class="toc__menu"><li><a href="#jsx가-왜-필요-할까">JSX가 왜 필요 할까?</a></li></ul>
+
+            </nav>
+          </aside>
+        
+        <p><img src="../assets/images/2023-01-10-post-react-JSX/christopher-gower-m_HRfLhgABo-unsplash.jpg" alt="" /></p>
+
+<h4 id="jsx가-왜-필요-할까">JSX가 왜 필요 할까?</h4>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">element</span> <span class="o">=</span> <span class="o">&lt;</span><span class="nx">h1</span><span class="o">&gt;</span><span class="nx">Hello</span><span class="p">,</span> <span class="nx">world</span><span class="o">!&lt;</span><span class="sr">/h1&gt;</span><span class="err">;
+</span></code></pre></div></div>
+
+<blockquote>
+  <p>JSX (<strong>JavaScript Syntax Extension</strong> and occasionally referred as <strong>JavaScript <a href="https://en.wikipedia.org/wiki/XML">XML</a></strong>)</p>
+</blockquote>
+
+<p>React를 위해 태어난 새로운 자바스크립트 문법</p>
+
+<p>JSX 소개 – React (reactjs.org) =&gt;  자바스트립트 구문 확장, 떄론 자바스크립트 XML</p>
+
+<p>react.org  에서는 Javascript의 모든 기능이 포함되어 있다고 합니다.</p>
+
+<p>즉 자바 스크립트 언어 구문에 대한 React 확장 이라고 합니다. HTML과 흡사 합니다.</p>
+
+<p>JSX는 (이전 Facebook)에 의해 만들어 집니다.  XHP 또 다른 확장 구문과 비슷 합니다. - by WIKI</p>
+
+<p>코드 1 )</p>
+
+<div class="language-react highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// index.js</span>
+<span class="k">import</span> <span class="nx">React</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span><span class="p">;</span>
+<span class="k">import</span> <span class="nx">App</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./App</span><span class="dl">'</span><span class="p">;</span>
+
+<span class="kd">const</span> <span class="nx">root</span> <span class="o">=</span> <span class="nx">ReactDOM</span><span class="p">.</span><span class="nx">createRoot</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">root</span><span class="dl">'</span><span class="p">));</span>
+<span class="nx">root</span><span class="p">.</span><span class="nx">render</span><span class="p">(</span>
+  <span class="p">&lt;</span><span class="nc">React</span><span class="p">.</span><span class="nc">StrictMode</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nc">App</span> <span class="p">/&gt;</span>
+  <span class="p">&lt;/</span><span class="nc">React</span><span class="p">.</span><span class="nc">StrictMode</span><span class="p">&gt;</span>
+<span class="p">);</span>
+
+<span class="c1">// App.jsx or App.js</span>
+<span class="k">import</span> <span class="dl">'</span><span class="s1">./App.css</span><span class="dl">'</span><span class="p">;</span>
+<span class="kd">function</span> <span class="nx">App</span><span class="p">()</span> <span class="p">{</span>
+    <span class="kd">const</span> <span class="nx">name</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">React</span><span class="dl">'</span><span class="p">;</span>
+  <span class="k">return</span> <span class="p">(</span>
+    <span class="p">&lt;&gt;</span>
+      <span class="p">&lt;</span><span class="nt">h1</span> <span class="p">&gt;</span><span class="si">{</span><span class="s2">`Hello! </span><span class="p">${</span><span class="nx">name</span><span class="p">}</span><span class="s2">`</span><span class="si">}</span> World!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    <span class="p">&lt;/&gt;</span>
+  <span class="p">);</span>
+<span class="p">}</span>
+
+<span class="k">export</span> <span class="k">default</span> <span class="nx">App</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>그러면. JSX 가 왜 필요 할까? 왜 사용 하는걸까요.</p>
+
+<hr />
+
+<p>이것을 설명하기 위해 위키와 react.org 에서는 관심사의 분리, 느슨한 결합, 추상화의 한형태, 더많은 자유도가 생긴다 는 표현으로 설명하고 있군요.</p>
+
+<p>이것을 쉽게 이해 하려고 이글을 남기고 있습니다.</p>
+
+<p>React는 10년은 가지고 놀만한 아이디어 라고 하니. 좀더 같이 알아 보고자 합니다.</p>
+
+<p>자바를 처음 공부할때도 스프링에서도 이러한 부분은 설명이 있었습니다.. (요부분은 나중에 자료를 찾아 보죠.)</p>
+
+<p>코드 2 )</p>
+
+<div class="language-react highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">element</span> <span class="o">=</span> <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="p">=</span><span class="s">"https://www.reactjs.org"</span><span class="p">&gt;</span> link <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;;</span>
+</code></pre></div></div>
+
+<div class="language-react highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">element</span> <span class="o">=</span> <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="p">=</span><span class="si">{</span><span class="nx">user</span><span class="p">.</span><span class="nx">avatarUrl</span><span class="si">}</span><span class="p">&gt;&lt;/</span><span class="nt">img</span><span class="p">&gt;;</span>
+</code></pre></div></div>
+
+<div class="language-react highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">...</span>
+</code></pre></div></div>
+
+<p>먼저 <strong>React</strong>를 말하고자 하는건 JSX의 태생이 Facebook에서 만든 자바스크립트 라이브러리에서 XHP 개량판에 그 기원을 두고 있다고 한다.</p>
+
+<p>그럼 원론으로 돌아가 이걸 왜 사용 하는걸까요.</p>
+
+<p>위에 예제 코드가 html 같은 정체불명의 <strong>JSX</strong> 코드 인것 입니다. <strong>ESMA6</strong> 기반 자바스크립트에</p>
+
+<p>html을 넣은듯한 Virtual DOM.의 최적화 작업  html의 <strong>DOM의 랜더링</strong> 이라 생각 됩니다.</p>
+
+<hr />
+
+<p>제가 여기에 글을  쓴 이유 중 하나가 React 에서 어디까지가 JSX이고 어디 부분이 React 인가 때문도 있었습니다.</p>
+
+<p>어쩌면 React JSX Redux의 설명이 될수도 있겠네요.</p>
+
+<p>React 에서는 컴파일해야 하는 과정이 있으며 Component라는 개별적인  뷰 단위를 가집니다. <code class="language-plaintext highlighter-rouge">render()</code></p>
+
+<p>그리고 <strong>Redux</strong> <em>(Redux(리덕스)란 JavaScript(자바스트립트) 상태관리 라이브러리이다. · Redux(리덕스)의 본질은 Node.js 모듈이다.)</em> 라는 것을 사용해 상태관리를 하는 라이브러리를 사용합니다.  <em>상태관리는 여기서 더 찾아 보시기 바랍니다.</em> <a href="https://ko.redux.js.org/introduction/getting-started"> Redux.js.org </a></p>
+
+<ul>
+  <li>자바스크립트 표현식 JavaScript expressions</li>
+</ul>
+
+<p>코드 3 ) JSX 예</p>
+
+<div class="language-react highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">App</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+   <span class="k">return</span> <span class="p">(</span>
+     <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+       <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Header<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+       <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Content<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+       <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Footer<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+     <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+   <span class="p">);</span> 
+<span class="p">}</span>
+</code></pre></div></div>
+
+<div class="language-react highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span><span class="si">{</span><span class="mi">10</span><span class="o">+</span><span class="mi">1</span><span class="si">}</span><span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</code></pre></div></div>
+
+<p>렌더링 후</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nt">&lt;h1&gt;</span>11<span class="nt">&lt;/h1&gt;</span>
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p>조건식</p>
+
+    <p>JSX 내에서는 If  else 문을 사용할 수 없지만 조건식을 대신 사용할 수 있습니다.</p>
+
+    <div class="language-react highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">App</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+   <span class="kd">const</span> <span class="nx">sections</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">];</span>
+   <span class="k">return</span> <span class="p">(</span>
+     <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+       <span class="si">{</span><span class="nx">sections</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">n</span><span class="p">,</span><span class="nx">i</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">(</span>
+        <span class="cm">/* 'key' is used by react to keep track of list items and their changes */</span>
+        <span class="cm">/* Each 'key' must be unique */</span>
+           <span class="p">&lt;</span><span class="nt">div</span> <span class="na">key</span><span class="p">=</span><span class="si">{</span><span class="dl">"</span><span class="s2">section-</span><span class="dl">"</span> <span class="o">+</span> <span class="nx">n</span><span class="si">}</span><span class="p">&gt;</span>
+               Section <span class="si">{</span><span class="nx">n</span><span class="si">}</span> <span class="si">{</span><span class="nx">i</span> <span class="o">===</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>(first)<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span><span class="si">}</span>
+           <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+       <span class="p">))</span><span class="si">}</span>
+     <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+   <span class="p">);</span>
+<span class="p">}</span> <span class="cm">/* https://en.wikipedia.org/wiki/JSX_(JavaScript) */</span>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>속성</p>
+
+    <p>JSXX는 HTML 에서 제공하는 요소 속성을 미러링하도록 설계된 다양한 요소 속성을 제공한다.</p>
+  </li>
+</ul>
+
+<p>JSX로 작성된 코드는 웹 브라우져에서 이해하기 위해 Babel과 같은(트랜스파일러) 도구로 변환해야 합니다.</p>
+
+<p>이제 React 생태계로 들어 가려 합니다.</p>
+
+<p>요즘 React 를 늦게 배우고 있는 개발자 입니다.</p>
+
+<p><strong>참고한 자료</strong></p>
+
+<ul>
+  <li>
+    <p>[react.org] (https://ko.reactjs.org)</p>
+  </li>
+  <li>
+    <p><a href="https://en.wikipedia.org/wiki/ECMAScript_for_XML">XML에 대한 ECMAScript</a></p>
+  </li>
+  <li>https://dobbit.github.io/redux/</li>
+  <li>https://react.vlpt.us/redux/</li>
+</ul>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#jsx" class="page__taxonomy-item p-category" rel="tag">JSX</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#posts" class="page__taxonomy-item p-category" rel="tag">posts</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2023-01-10">January 10, 2023</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">공유하기</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=React%20http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fpost-react-JSX%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fpost-react-JSX%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fpost-react-JSX%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/posts/post-git-WhenChangeDefaultBranchRenamed2/" class="pagination--pager" title="When U git Change Default Branch Renamed!
+">이전</a>
+    
+    
+      <a href="/posts/post-git-GIT-master-doit/" class="pagination--pager" title="GIT MASTER
+">다음</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h2 class="page__related-title">참고</h2>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/posts/post-React-Router-sampleCode/" rel="permalink">React Sample Code 공유
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          4 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/posts/post-javascript-FunctionalPrograming/" rel="permalink">Functional Programming
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          4 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  원본 : O’Reilly Functional Thinking - 닐 포트 지음 … 에서 인용 하였습니다.
+
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/posts/post-javascript-es6-Arrow_function-part2/" rel="permalink">Javascript ES6
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          최대 1 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">⚡️ EC6 Javascritp Arrow Function
+
+  화살표 기능을 피해야 하는 경우
+
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/posts/post-git-GIT-master-doit/" rel="permalink">GIT MASTER
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          7 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>팔로우:</strong></li>
+    
+
+    
+      
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> 피드</a></li>
+    
+  </ul>
+</div>
+
+<!-- <div class="page__footer-copyright">&copy; 2023 Jerome. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div> -->
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "http://localhost:4000/posts/post-react-JSX/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/posts/post-react-JSX"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+    };
+    (function() { /* DON'T EDIT BELOW THIS LINE */
+      var d = document, s = d.createElement('script');
+      s.src = 'https://jeromemi.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+
+
+  </body>
+</html>

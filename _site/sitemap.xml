@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- <lastmod>{{ site.time | date: '%Y-%m-%d' }}</lastmod> -->
+  <lastmod>{{ post.last_modified_at | date: '%Y-%m-%d' }}</lastmod>
+  {% for post in site.posts %}
+    <url>
+      <loc>{{ site.url }}{{ site.baseurl }}{{ post.url }}</loc>
+      {% if post.lastmod == null %}
+        <lastmod></lastmod>
+      {% else %}
+        <lastmod>{{ post.last_modified_at | date: '%Y-%m-%d' }}</lastmod>
+      {% endif %}
+
+      {% if post.sitemap.changefreq == null %}
+        <changefreq>weekly</changefreq>
+      {% else %}
+        <changefreq></changefreq>
+      {% endif %}
+
+      {% if post.sitemap.priority == null %}
+          <priority>0.5</priority>
+      {% else %}
+        <priority></priority>
+      {% endif %}
+
+    </url>
+  {% endfor %}
+</urlset>

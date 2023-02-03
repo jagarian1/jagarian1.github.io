@@ -1,0 +1,884 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="ko" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Functional Programming - WINGMAN Blog</title>
+<meta name="description" content="원본 : O’Reilly Functional Thinking - 닐 포트 지음 … 에서 인용 하였습니다.">
+
+
+  <meta name="author" content="제로미">
+  
+  <meta property="article:author" content="제로미">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="WINGMAN Blog">
+<meta property="og:title" content="Functional Programming">
+<meta property="og:url" content="http://localhost:4000/posts/post-javascript-FunctionalPrograming/">
+
+
+  <meta property="og:description" content="원본 : O’Reilly Functional Thinking - 닐 포트 지음 … 에서 인용 하였습니다.">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2023-01-27T00:00:00+09:00">
+
+
+
+  <meta property="article:modified_time" content="2023-01-26T19:06:00+09:00">
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/posts/post-javascript-FunctionalPrograming/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Jerome",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="WINGMAN Blog Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/logo.ico/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/logo.ico/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/logo.ico/favicon-16x16.png">
+<link rel="manifest" href="/assets/logo.ico/site.webmanifest">
+<link rel="mask-icon" href="/assets/logo.ico/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Do Something the Way You Want
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/">Home</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">Introduce</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/">Category</a>
+            </li><li class="masthead__menu-item">
+              <a href="/year-archive/">Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags/">Tags</a>
+            </li><li class="masthead__menu-item">
+              <a href="/sitemap/">Sitemap</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">토글 메뉴</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">제로미</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p><strong>Do Something</strong> Anything</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">팔로우</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Seoul Kor</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="mailto:jeromeoffice191@email.com" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+        
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Functional Programming">
+    <meta itemprop="description" content="  원본 : O’Reilly Functional Thinking - 닐 포트 지음 … 에서 인용 하였습니다.">
+    <meta itemprop="datePublished" content="2023-01-27T00:00:00+09:00">
+    <meta itemprop="dateModified" content="2023-01-26T19:06:00+09:00">
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/posts/post-javascript-FunctionalPrograming/" class="u-url" itemprop="url">Functional Programming
+</a>
+          </h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          3 분 소요
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On This Page</h4></header>
+              <ul class="toc__menu"><li><a href="#chapter-1">CHAPTER 1</a><ul><li><a href="#1-why">1 WHY</a></li></ul></li><li><a href="#chapter-2">CHAPTER 2</a><ul><li><a href="#2-전환">2 전환</a></li></ul></li><li><a href="#chapter-3">CHAPTER 3</a><ul><li><a href="#제-3장">제 3장</a></li></ul></li><li><a href="#chapter-4">CHAPTER 4</a><ul><li><a href="#제-4장">제 4장</a></li></ul></li><li><a href="#chapter-5">CHAPTER 5</a><ul><li><a href="#제-5장">제 5장</a></li></ul></li><li><a href="#chapter-6">CHAPTER 6</a><ul><li><a href="#제-6장">제 6장</a></li></ul></li><li><a href="#chapter-7">CHAPTER 7</a><ul><li><a href="#제-7장">제 7장</a></li></ul></li><li><a href="#chapter-8">CHAPTER 8</a><ul><li><a href="#제-8장">제 8장</a></li></ul></li></ul>
+
+            </nav>
+          </aside>
+        
+        <blockquote>
+  <p>원본 : O’Reilly Functional Thinking - 닐 포트 지음 … 에서 인용 하였습니다.</p>
+</blockquote>
+
+<p><img src="../assets/images/2023-01-27-post-javascript-FunctionalPrograming/bram-naus-n8Qb1ZAkK88-unsplash.jpg" alt="" /></p>
+
+<h2 id="chapter-1">CHAPTER 1</h2>
+
+<h3 id="1-why">1 WHY</h3>
+
+<ul>
+  <li>함수형 프로그래밍 이란?</li>
+</ul>
+
+<p>1-1 함수형 프로그래밍은 순수 함수 작성에 중점을 둔 <strong>프로그래밍 패러다임</strong> 입니다.</p>
+
+<p>수학 함수를 기반으로 하며 부작용을 줄이고 코드를 더 쉽게 이해,  유지 관리 및 테스트할 수 있도록 설계되었습니다.</p>
+
+<p>순수 함수는 동일한 입력이 주어지면 항상 동일한 출력을 반환하고 응용 프로그램 또는 데이터베이스의 상태 수정과 같은 관찰 가능한 부작용이 없는 함수입니다.</p>
+
+<p>함수형 프로그래밍은 선언적 프로그래밍의 사용을 강조하는데, 이는 수행 방법에 대한 구현 세부 사항보다는 원하는 동작을 표현하는 관행입니다.</p>
+
+<p>이를 통해 개발자는 구현 세부 사항보다는 문제 해결에 집중할 수 있습니다.</p>
+
+<p>함수형 프로그래밍은 또한 <strong>생성 후 변경할 수 없는 데이터 구조인 변경 불가능한 데이터 구조의 사용을 권장</strong>합니다.
+이를 통해 <strong>장기적으로 코드 작성이 더 안정적이고 유지 관리가 쉬워 집니다</strong>.</p>
+
+<blockquote>
+  <p><a href="http://bit.ly/1tm4xQI">마이클 페더스 트위터 </a> &gt; <strong>OO makes code understandable by encapsulating moving parts. FP makes code understandable by minimizing moving parts.</strong>
+객체 지향 프로그래밍은 움직이는 부분을 캡슐화 하여 코드 이해를 돕고,
+함수형 프로그래밍은 움직이는 부분을 최소화하여 코드 이해를 돕는다.   – 구글</p>
+
+  <p><a href="https://twitter.com/mfeathers">Michael Feathers</a> <a href="https://twitter.com/mfeathers">@mfeathers</a> <a href="https://twitter.com/mfeathers"><img src="https://pbs.twimg.com/profile_images/1169288003950264321/lqTYfvHO_normal.jpg" alt="img" /></a></p>
+</blockquote>
+
+<p>여기서 OO 는 객체 지향 프로그래밍 이 되고 FP는 함수형 프로그래밍이 될 것이다.</p>
+
+<p>저는 개발자로 이전에 쓰이던 개념과 다른 개념의 코딩이 … 이러한 이유로 바뀌어 나가는 걸
+적응하지 못했던 경험이 있습니다. 앞으로 다른 사고방식으로 사고하는 법을 배우기 위해 위의 책을 정리하려고 쓰는 글입니다.</p>
+
+<p>책에는 스칼라나 클로져 C 언어나 파이션 으로 예제가 구성되어 난해해 보이지만 핵심만 잡아서 풀어볼 생각입니다.
+책에는 <strong>이제 왜 WHY 모든 언어가 점차적으로 함수형이 되어 가는 지를 알아보자</strong> 라고 되어있다.</p>
+
+<p>클로져 : (Lexical) Closure. 클로저는 함수가 선언될 당시의 환경(environment)을 기억했다가 나중에 호출 되었을 때 원래의 환경에 따라 수행되는 함수이다. 이름이 클로저 인 이유는 함수 선언 시의 <strong>scope(lexical scope) 를 포섭(closure)하여 이후 실행될 때 이용하기 때문</strong>이다. 자주 ‘<a href="https://namu.wiki/w/람다식">이름 없는 함수(익명함수)</a>’ 와 혼동되곤 한다. 많은 언어의 익명함수가 closure 를 포함하기 때문에 편하게 부를 땐 서로 구분 없이 부르기도 한다. - by <a href="https://namu.wiki/w/클로저">클로저 - 나무 위키 (namu.wiki)</a></p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">function</span> <span class="nf">plus</span> <span class="o">(</span><span class="n">a</span><span class="o">)</span> <span class="o">{</span>
+  <span class="k">return</span> <span class="nf">function</span> <span class="o">(</span><span class="n">x</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="n">a</span> <span class="o">+</span> <span class="n">x</span><span class="o">;</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+<span class="kt">var</span> <span class="n">plus3</span> <span class="o">=</span> <span class="n">plus</span><span class="o">(</span><span class="mi">3</span><span class="o">);</span>
+<span class="kt">var</span> <span class="n">plus5</span> <span class="o">=</span> <span class="n">plus</span><span class="o">(</span><span class="mi">5</span><span class="o">);</span>
+</code></pre></div></div>
+
+<p><strong>메모이제이션</strong> memorization : 21page 함수의 연산결과를 저장했다가 같은 입력이 주어지면
+연산을 하지 않고 리턴 하는 최적화 기법.</p>
+
+<p><strong>컴플렉트</strong> (complect) : 20apge 꼬아서 연결하다 또는 섞어 짜다. 라는 표현으로 명령형 프로그래밍을 하다보면
+여러작업 효율을 높이기 위해 한루프에 넣음으로써 작업들을 복잡하게 하는 경우가 종종있다.
+함수형 프로그래밍에서는 map() filter() 같은 <strong>고계 함수</strong> 를 통해 추상화의 단계를 높여서 문제를 더욱 명료하게 볼 수 있다.
+나는 여러 예제를 통해 이렇게 본의 아니게 복잡해지는 경우에 대해 함수형 사고가 해독제 역할을 하는 것을 보일 것이다.</p>
+
+<p><strong>고계 함수</strong> HOF 또는 고차 함수라 한다. <strong>고차 함수 (High-Order-Funtion)</strong> 🍎🍌🥝</p>
+
+<ol>
+  <li>함수를 다루는 함수</li>
+  <li>함수를 인자로 받거나 함수를 결과 값으로 뱉는 함수..
+프로그래밍이 동작하는 중에 함수가 만들어지는.</li>
+</ol>
+
+<p><strong>일급객체(First-Class Citizen)</strong> : 🍎🍌🥝
+일급객체 (First-Class Citizen)는 컴퓨터 과학에서 기본적이고 모든 기능들을 가지고 있는 객체의 상태를 의미합니다.
+일급 객체는 <strong>함수, 변수 등의 다른 객체에 할당할 수 있고,</strong>
+<strong>인수로 다른 함수들에게 넘겨줄 수 있으며,</strong>
+<strong>그 객체 자신이 함수로 인식되어 반환 값 으로 사용될 수 있습니다.</strong></p>
+
+<hr />
+
+<h2 id="chapter-2">CHAPTER 2</h2>
+
+<h3 id="2-전환">2 전환</h3>
+
+<p>2-1. 함수형 코드를 작성하기 위해서는, 함수형 언어인 스칼라나 클로져 의 전환이 필요한 것이 아니라 문제에 접근하는 방식의 전환이 필요하다. 명령형 프로그래밍 차이를 보자</p>
+
+<p>java8 버전 명령형 프로그래밍</p>
+
+<p>예제 2-1</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">TheCompanyProcess</span> <span class="o">{</span>
+  <span class="kd">public</span> <span class="nc">String</span> <span class="nf">cleanNames</span><span class="o">(</span><span class="nc">List</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;</span> <span class="n">listOfNames</span><span class="o">)</span> <span class="o">{</span>
+      <span class="nc">StringBuilder</span> <span class="n">result</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">StringBuilder</span><span class="o">();</span>
+      <span class="k">for</span> <span class="o">(</span><span class="kt">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="o">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">listOfNames</span><span class="o">.</span><span class="na">size</span><span class="o">();</span> <span class="n">i</span><span class="o">++)</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">listOfNames</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">i</span><span class="o">).</span><span class="na">length</span><span class="o">()</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="o">)</span> <span class="o">{</span>
+          <span class="n">result</span><span class="o">.</span><span class="na">append</span><span class="o">(</span><span class="n">capitalizeString</span><span class="o">(</span><span class="n">listOfNames</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="n">i</span><span class="o">))).</span><span class="na">append</span><span class="o">(</span><span class="s">","</span><span class="o">);</span>
+        <span class="o">}</span>
+      <span class="o">}</span>
+      <span class="k">return</span> <span class="n">result</span><span class="o">.</span><span class="na">substring</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span> <span class="n">result</span><span class="o">.</span><span class="na">length</span><span class="o">()</span> <span class="o">-</span><span class="mi">1</span><span class="o">).</span><span class="na">toString</span><span class="o">();</span>
+  <span class="o">}</span>
+
+
+  <span class="kd">public</span> <span class="nc">String</span> <span class="kd">class</span> <span class="nf">capitalizeString</span><span class="o">(</span><span class="nc">String</span> <span class="n">s</span><span class="o">)</span> <span class="o">{</span>
+      <span class="k">return</span> <span class="n">s</span><span class="o">.</span><span class="na">substring</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span> <span class="mi">1</span><span class="o">).</span><span class="na">toUpperCase</span><span class="o">()</span> <span class="o">+</span> <span class="n">s</span><span class="o">.</span><span class="na">substring</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span> <span class="n">s</span><span class="o">.</span><span class="na">length</span><span class="o">());</span>
+  <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>예제 2-2</p>
+
+<p>함수형 처리</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">listOfEmp</span>
+    <span class="o">-&gt;</span> <span class="n">filter</span><span class="o">(</span><span class="n">x</span><span class="o">.</span><span class="na">length</span><span class="o">&gt;</span> <span class="mi">1</span><span class="o">)</span>
+    <span class="o">-&gt;</span> <span class="n">transform</span><span class="o">(</span><span class="n">x</span><span class="o">.</span><span class="na">capitalize</span><span class="o">)</span>
+    <span class="o">-&gt;</span> <span class="n">convert</span><span class="o">(</span><span class="n">x</span> <span class="o">+</span> <span class="s">","</span> <span class="o">+</span> <span class="n">y</span><span class="o">)</span>
+</code></pre></div></div>
+
+<p>예제 2-3</p>
+
+<p>2-1 을 스칼라로 표현</p>
+
+<div class="language-scala highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">val</span> <span class="nv">employrees</span> <span class="k">=</span> <span class="nc">List</span><span class="o">(</span><span class="s">"neal"</span><span class="o">,</span> <span class="s">"s"</span><span class="o">,</span> <span class="s">"stu"</span><span class="o">,</span> <span class="s">"j"</span><span class="o">,</span> <span class="s">"rich"</span><span class="o">,</span> <span class="s">"bob"</span><span class="o">,</span> <span class="s">"aiden"</span><span class="o">,</span> <span class="s">"j"</span> <span class="o">,</span> <span class="s">"ethan"</span>
+<span class="o">,</span> <span class="s">"liam"</span><span class="o">,</span> <span class="s">"mason"</span><span class="o">,</span> <span class="s">"noah"</span><span class="o">,</span> <span class="s">"lucas"</span><span class="o">,</span> <span class="s">"jacob"</span><span class="o">,</span> <span class="s">"jayden"</span><span class="o">,</span> <span class="s">"jack"</span><span class="o">)</span>
+
+<span class="k">var</span> <span class="n">result</span> <span class="k">=</span> <span class="n">employees</span>
+   <span class="o">.</span><span class="py">filter</span><span class="o">(</span><span class="nv">_</span><span class="o">.</span><span class="py">length</span><span class="o">()</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="o">)</span>
+   <span class="o">.</span><span class="py">map</span><span class="o">(</span><span class="nv">_</span><span class="o">.</span><span class="py">capitalize</span><span class="o">)</span>
+   <span class="o">.</span><span class="py">reduce</span><span class="o">(</span><span class="k">_</span><span class="o">+</span> <span class="s">","</span> <span class="o">+</span><span class="k">_</span><span class="o">)</span>
+</code></pre></div></div>
+
+<p>예제 2-4</p>
+
+<p>TheCompanyProcess 자바 버전</p>
+
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">//... 위 생략</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Process</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="nc">String</span> <span class="nf">clearNames</span><span class="o">(</span><span class="nc">List</span><span class="o">&lt;</span><span class="nc">String</span><span class="o">&gt;</span> <span class="n">names</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">names</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="k">return</span> <span class="s">""</span><span class="o">;</span>
+        <span class="k">return</span> <span class="n">names</span>
+            <span class="o">.</span><span class="na">stream</span><span class="o">()</span>
+            <span class="o">.</span><span class="na">filter</span><span class="o">(</span><span class="n">name</span> <span class="o">-&gt;</span> <span class="n">name</span><span class="o">.</span><span class="na">length</span><span class="o">()</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="o">)</span>
+            <span class="o">.</span><span class="na">map</span><span class="o">(</span><span class="n">name</span> <span class="o">-&gt;</span> <span class="n">capitalize</span><span class="o">(</span><span class="n">name</span><span class="o">))</span>
+            <span class="o">.</span><span class="na">collect</span><span class="o">(</span><span class="nc">Collectors</span><span class="o">.</span><span class="na">joining</span><span class="o">(</span><span class="s">","</span><span class="o">));</span>
+    <span class="o">}</span>
+    <span class="kd">private</span> <span class="nc">String</span> <span class="nf">capitalize</span><span class="o">(</span><span class="nc">String</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">retirn</span> <span class="n">e</span><span class="o">.</span><span class="na">substring</span><span class="o">(</span><span class="mi">0</span><span class="o">,</span> <span class="mi">1</span><span class="o">).</span><span class="na">toUpperCase</span><span class="o">()</span> <span class="o">+</span> <span class="n">e</span><span class="o">.</span><span class="na">substring</span><span class="o">(</span><span class="mi">1</span><span class="o">,</span> <span class="n">e</span><span class="o">.</span><span class="na">length</span><span class="o">());</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div></div>
+
+<p>글에서 보면 reduce() 대신 collect() 를 썼는데 이것은 자바 String 클래스 에 대해서 는 좀 더 효율적이라고 써있다.</p>
+
+<p>저렇게 return 하는 방식은 요즘 ECMA6 자바스크립트 에서 쓰이는 방식과 다를 게 없네.</p>
+
+<p>책이 쓰여 진지 2011 년 즈음 이미 이때 저자는 함수형 방식을 이미 구현하고 있었다는 게 부러울 뿐이다.</p>
+
+<p>그럼 이후로는 다음에 정리해보자.</p>
+
+<p>TIP : 절차보다는 결과에 집중하라.</p>
+
+<hr />
+
+<blockquote>
+  <p>인용</p>
+</blockquote>
+
+<h2 id="chapter-3">CHAPTER 3</h2>
+
+<h3 id="제-3장">제 3장</h3>
+
+<p>3-1 양도하라</p>
+
+<ul>
+  <li>본문</li>
+</ul>
+
+<hr />
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
+
+<h2 id="chapter-4">CHAPTER 4</h2>
+
+<h3 id="제-4장">제 4장</h3>
+
+<p>4-1 열심히 보다는 현명하게</p>
+
+<ul>
+  <li>본문</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="chapter-5">CHAPTER 5</h2>
+
+<h3 id="제-5장">제 5장</h3>
+
+<p>5-1 진화하라</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="chapter-6">CHAPTER 6</h2>
+
+<h3 id="제-6장">제 6장</h3>
+
+<p>6-1 전진하라</p>
+
+<ul>
+  <li>본문</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="chapter-7">CHAPTER 7</h2>
+
+<h3 id="제-7장">제 7장</h3>
+
+<p>7-1 실용적 사고</p>
+
+<ul>
+  <li>본문</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="chapter-8">CHAPTER 8</h2>
+
+<h3 id="제-8장">제 8장</h3>
+
+<p>8-1 폴리글랏과 폴리페러다임</p>
+
+<ul>
+  <li>본문</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
+
+<hr />
+
+<p>저자의 사이트 <a href="https://nealford.com/">[nealford.com • 홈](https://nealford.com/)</a></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#javascript" class="page__taxonomy-item p-category" rel="tag">javascript</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#posts" class="page__taxonomy-item p-category" rel="tag">posts</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2023-01-26">January 26, 2023</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">공유하기</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Functional+Programming%20http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fpost-javascript-FunctionalPrograming%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fpost-javascript-FunctionalPrograming%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fpost-javascript-FunctionalPrograming%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/posts/post-javascript-es6-Arrow_function-part2/" class="pagination--pager" title="Javascript ES6
+">이전</a>
+    
+    
+      <a href="/posts/post-React-Router-sampleCode/" class="pagination--pager" title="React Sample Code 공유
+">다음</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h2 class="page__related-title">참고</h2>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/posts/post-React-Router-sampleCode/" rel="permalink">React Sample Code 공유
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          4 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/posts/post-javascript-es6-Arrow_function-part2/" rel="permalink">Javascript ES6
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          최대 1 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">⚡️ EC6 Javascritp Arrow Function
+
+  화살표 기능을 피해야 하는 경우
+
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/posts/post-git-GIT-master-doit/" rel="permalink">GIT MASTER
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          7 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/posts/post-react-JSX/" rel="permalink">React
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          2 분 소요
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>팔로우:</strong></li>
+    
+
+    
+      
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> 피드</a></li>
+    
+  </ul>
+</div>
+
+<!-- <div class="page__footer-copyright">&copy; 2023 Jerome. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div> -->
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "http://localhost:4000/posts/post-javascript-FunctionalPrograming/";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/posts/post-javascript-FunctionalPrograming"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+    };
+    (function() { /* DON'T EDIT BELOW THIS LINE */
+      var d = document, s = d.createElement('script');
+      s.src = 'https://jeromemi.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+
+
+  </body>
+</html>
