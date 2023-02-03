@@ -27,11 +27,11 @@ subtitle: # site tagline that appears below site title in masthead
 name: "Jerome"
 description: "An amazing life."
 url: "https://jagarian1.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl: "" #예기치 못한 오류일떄 연결되는 url 입니다.
+baseurl: "" #
 
 repository: "jagarian1/jagarian1.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser: # 폴백일떄 보여지는 이미지 입니다.  e.g. "/assets/images/500x300.png"
-logo: # 화면에 보여지느 로그 이미지 입니다.  e.g. "/assets/images/88x88.png"
+logo: # e.g. "/assets/images/88x88.png"
 masthead_title: "Do Something the Way You Want" # 화면 타이틀 입니다., use " " for no title
 breadcrumbs: false # true, false (default)
 words_per_minute: 200
@@ -175,7 +175,7 @@ kramdown:
   toc: true
   toc_sticky: true
   toc_levels: 1..6
-  toc_label: "페이지 주요 목차"
+  toc_label: "페이지 목차"
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
@@ -186,10 +186,10 @@ sass:
 
 #blog 표시방법
 # Outputting
-permalink: /:categories/:title/
-paginate: 15
+permalink: /:categories/:title/:title.html
+paginate: 5
 paginate_path: /page:num/
-preserve_timezones: false
+preserve_timezones: true
 timezone: Asia/Seoul #  https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # Plugins (previously gems:)
@@ -210,15 +210,6 @@ whitelist:
   - jekyll-include-cache
 
 # Archives
-#  Type
-#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
-#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
-#  Path (examples)
-#  - Archive page should exist at path when using Liquid method or you can
-#    expect broken links (especially with breadcrumbs enabled)
-#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
-#  - <base_path>/categories/my-awesome-category/index.html ~> path: /categories/
-#  - <base_path>/my-awesome-category/index.html ~> path: /
 category_archive:
   type: liquid
   path: /categories/
@@ -242,8 +233,9 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
-      comments: true # comments
+      read_time: false # 읽는데 걸리는 소요시간
+      show_date: true  # 포스팅 날짜 표시
+      comments: true # 
       share: true
       related: true
 
@@ -251,9 +243,11 @@ defaults:
   - scope:
       path: "_pages"
       type: pages
-      # author_profile: true
+    values:
+      layout: single
+      author_profile: true
 
 collections:
   about:
     output: true
-    permalink: /:collection/:path/
+    permalink: /:collection/:path/:title.html

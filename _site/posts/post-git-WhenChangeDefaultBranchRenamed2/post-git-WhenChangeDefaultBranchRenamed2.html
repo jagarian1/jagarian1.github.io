@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Javascript ES6 Lexical Scope - WINGMAN Blog</title>
-<meta name="description" content="Javascript  Lexical Scope">
+<!-- begin _includes/seo.html --><title>When U git Change Default Branch Renamed! - WINGMAN Blog</title>
+<meta name="description" content="✨ git Default Branch Renamed">
 
 
   <meta name="author" content="제로미">
@@ -22,11 +22,11 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:site_name" content="WINGMAN Blog">
-<meta property="og:title" content="Javascript ES6 Lexical Scope">
-<meta property="og:url" content="http://localhost:4000/posts/post-javascript-es6-lexicalscope/">
+<meta property="og:title" content="When U git Change Default Branch Renamed!">
+<meta property="og:url" content="http://localhost:4000/posts/post-git-WhenChangeDefaultBranchRenamed2/post-git-WhenChangeDefaultBranchRenamed2.html">
 
 
-  <meta property="og:description" content="Javascript  Lexical Scope">
+  <meta property="og:description" content="✨ git Default Branch Renamed">
 
 
 
@@ -38,7 +38,7 @@
 
 
 
-  <meta property="article:modified_time" content="2022-01-10T22:06:00+09:00">
+  <meta property="article:modified_time" content="2023-01-10T00:00:00+09:00">
 
 
 
@@ -47,7 +47,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/posts/post-javascript-es6-lexicalscope/">
+<link rel="canonical" href="http://localhost:4000/posts/post-git-WhenChangeDefaultBranchRenamed2/post-git-WhenChangeDefaultBranchRenamed2.html">
 
 
 
@@ -265,35 +265,32 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Javascript ES6 Lexical Scope">
-    <meta itemprop="description" content="Javascript  Lexical Scope">
+    <meta itemprop="headline" content="When U git Change Default Branch Renamed!">
+    <meta itemprop="description" content="✨ git Default Branch Renamed">
     <meta itemprop="datePublished" content="2023-01-10T00:00:00+09:00">
-    <meta itemprop="dateModified" content="2022-01-10T22:06:00+09:00">
+    <meta itemprop="dateModified" content="2023-01-10T00:00:00+09:00">
 
     <div class="page__inner-wrap">
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/posts/post-javascript-es6-lexicalscope/" class="u-url" itemprop="url">Javascript ES6 Lexical Scope
+            <a href="http://localhost:4000/posts/post-git-WhenChangeDefaultBranchRenamed2/post-git-WhenChangeDefaultBranchRenamed2.html" class="u-url" itemprop="url">When U git Change Default Branch Renamed!
 </a>
           </h1>
           
 
   <p class="page__meta">
     
-
-    
-
-    
       
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
         
-          1 분 소요
-        
+        <time datetime="2023-01-10T00:00:00+09:00">January 10, 2023</time>
       </span>
+    
+
+    
+
     
   </p>
 
@@ -306,107 +303,38 @@
           <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On This Page</h4></header>
-              <ul class="toc__menu"><li><a href="#javascript--lexical-scope">Javascript  Lexical Scope</a></li><li><a href="#정리">정리</a></li></ul>
+              <ul class="toc__menu"><li><a href="#-git-default-branch-renamed">✨ git Default Branch Renamed</a></li><li><a href="#-commands">✨ commands</a></li></ul>
 
             </nav>
           </aside>
         
-        <h5 id="javascript--lexical-scope">Javascript  Lexical Scope</h5>
+        <h5 id="-git-default-branch-renamed">✨ git Default Branch Renamed</h5>
 
 <ul>
   <li>
-    <p>클로져 (Closure) : 함수가 선언된 렉시컬 환경</p>
+    <p>github 에서 default 브렌치를 이름 변경하면 로컬에서 cmd 창에 아래와 같이 작업</p>
+
+    <ol>
+      <li>
+        <p>브렌치 마스터에서 변경된 이름으로 하고  ✨</p>
+      </li>
+      <li>
+        <p>fetch origin  branch -u 변경된 branch 이름으로 ✨</p>
+      </li>
+      <li>
+        <p>remote 명령으로 origin의 모든것을 set-head 해줍니다. ✨</p>
+      </li>
+    </ol>
   </li>
-  <li>
-    <p>Lexical Scope 의 정적 스코프</p>
-  </li>
 </ul>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+<h5 id="-commands">✨ commands</h5>
 
-<span class="kd">function</span> <span class="nx">outterFunc</span><span class="p">()</span> <span class="p">{</span>
-  <span class="kd">const</span> <span class="nx">s</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
-
-  <span class="kd">function</span> <span class="nx">innerFunc</span><span class="p">()</span> <span class="p">{</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span><span class="p">);</span> <span class="c1">//10</span>
-  <span class="p">}</span>
-
-  <span class="nx">innerFunc</span><span class="p">();</span>
-<span class="p">}</span>
-
-<span class="nx">outterFunc</span><span class="p">();</span>
-
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git branch <span class="nt">-m</span> master devlop 
+git fetch origin 
+git branch <span class="nt">-u</span> origin/devlop devlop 
+git remote set-head origin <span class="nt">-a</span> 
 </code></pre></div></div>
-
-<p>중첨 함수 내부에서 자시을 포함하고 있는 외부 함수 outterFunc의 x 변수에 접근이 가능하다.</p>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-
-<span class="kd">function</span> <span class="nx">outterFunc</span><span class="p">()</span> <span class="p">{</span>
-  <span class="kd">const</span> <span class="nx">s</span> <span class="o">=</span> <span class="mi">10</span><span class="p">;</span>
-  <span class="nx">innerFunc</span><span class="p">();</span>
-<span class="p">}</span>
-
-<span class="kd">function</span> <span class="nx">innerFunc</span><span class="p">()</span> <span class="p">{</span>
-  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">x</span><span class="p">);</span> <span class="c1">//1</span>
-<span class="p">}</span>
-
-<span class="nx">outterFunc</span><span class="p">();</span>
-</code></pre></div></div>
-
-<p>그러나 내부에서 정의된 중첩 함수가 아니라면 innerFunc 함수를 outterFunc 함수의 내부에서 호출한다면 outterFunc 함수의 변수에 접근할수가 없다.
-이러한 현상이 자바스크립트가 렉시컬 스코프를 따르는 프로그래밍 언어 이기 떄문이다.</p>
-
-<hr />
-
-<ul>
-  <li>클로져 (Closure) : 함수가 선언된 렉시컬 환경
-클로져는 외부 변수를 기억하고 이 외부 변수에 접근할 수 있는 함수를 의미 합니다.
-자바 스크립트에서는 모든 함수가 자연스럽게 클로져가 됩니다. 
-물론 예외는 있습니다… <a href="https://ko.javascript.info/new-function">new Function 문법</a></li>
-</ul>
-
-<p class="notice"><strong>Watch out!</strong> 함수는 특별한 프로퍼티 [[Environment]]에 저장된 정보를 이용해 자기 자신이 태어난 곳을 기억합니다. [[Environment]]는 함수가 만들어진 렉시컬 환경을 참조합니다.</p>
-
-<ul>
-  <li>전역 렉시컬 환경과 현재의 렉시컬 환경</li>
-</ul>
-
-<p>** ReferenceError: value is not defined</p>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 
-<span class="kd">function</span> <span class="nx">getFunc</span><span class="p">()</span> <span class="p">{</span>
-  <span class="kd">let</span> <span class="nx">value</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">test</span><span class="dl">"</span><span class="p">;</span>
-
-  <span class="kd">let</span> <span class="nx">func</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Function</span><span class="p">(</span><span class="dl">'</span><span class="s1">alert(value)</span><span class="dl">'</span><span class="p">);</span>
-
-  <span class="k">return</span> <span class="nx">func</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="nx">getFunc</span><span class="p">()();</span> <span class="c1">// ReferenceError: value is not defined</span>
-</code></pre></div></div>
-
-<p><strong>getFunc의 렉시컬 환경에 있는 값 “test”가 출력됩니다.</strong></p>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code> 
-<span class="kd">function</span> <span class="nx">getFunc</span><span class="p">()</span> <span class="p">{</span>
-  <span class="kd">let</span> <span class="nx">value</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">test</span><span class="dl">"</span><span class="p">;</span>
-
-  <span class="kd">let</span> <span class="nx">func</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span> <span class="nx">alert</span><span class="p">(</span><span class="nx">value</span><span class="p">);</span> <span class="p">};</span>
-
-  <span class="k">return</span> <span class="nx">func</span><span class="p">;</span>
-<span class="p">}</span>
-
-<span class="nx">getFunc</span><span class="p">()();</span> <span class="c1">// getFunc의 렉시컬 환경에 있는 값 "test"가 출력됩니다.</span>
-</code></pre></div></div>
-
-<p>함수 내부에서 외부 변수에 접근하는 것은 아키텍처 관점에서도 좋지 않고 에러에 취약합니다.</p>
-
-<p>new Function으로 만든 함수에 무언가를 넘겨주고 싶다면 인수를 사용하세요.</p>
-
-<h5 id="정리">정리</h5>
-
-<p class="notice"><strong>Watch out!</strong> new Function을 이용해 만든 함수의 [[Environment]]는 외부 렉시컬 환경이 아닌 전역 렉시컬 환경을 참조하므로 외부 변수를 사용할 수 없습니다.</p>
 
 
         
@@ -424,7 +352,7 @@
     <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
     <span itemprop="keywords">
     
-      <a href="/tags/#javascript" class="page__taxonomy-item p-category" rel="tag">Javascript</a>
+      <a href="/tags/#git" class="page__taxonomy-item p-category" rel="tag">GIT</a>
     
     </span>
   </p>
@@ -449,7 +377,7 @@
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2022-01-10">January 10, 2022</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2023-01-10">January 10, 2023</time></p>
 
       </footer>
 
@@ -458,22 +386,22 @@
     <h4 class="page__share-title">공유하기</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=Javascript+ES6+Lexical+Scope%20http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fpost-javascript-es6-lexicalscope%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=When+U+git+Change+Default+Branch+Renamed%21%20http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fpost-git-WhenChangeDefaultBranchRenamed2%2Fpost-git-WhenChangeDefaultBranchRenamed2.html" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fpost-javascript-es6-lexicalscope%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fpost-git-WhenChangeDefaultBranchRenamed2%2Fpost-git-WhenChangeDefaultBranchRenamed2.html" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fpost-javascript-es6-lexicalscope%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fpost-git-WhenChangeDefaultBranchRenamed2%2Fpost-git-WhenChangeDefaultBranchRenamed2.html" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/posts/post-git-WhenChangeDefaultBranchRenamed2/" class="pagination--pager" title="When U git Change Default Branch Renamed!
+      <a href="/posts/post-categorys/post-categorys.html" class="pagination--pager" title="JAVA SPRING
 ">이전</a>
     
     
-      <a href="/posts/post-react-JSX/" class="pagination--pager" title="React
+      <a href="/posts/post-javascript-es6-lexicalscope/post-javascript-es6-lexicalscope.html" class="pagination--pager" title="Javascript ES6 Lexical Scope
 ">다음</a>
     
   </nav>
@@ -498,7 +426,7 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/posts/post-React-Router-sampleCode/" rel="permalink">React Sample Code 공유
+        <a href="/posts/post-React-Router-sampleCode/post-React-Router-sampleCode.html" rel="permalink">React Sample Code 공유
 </a>
       
     </h2>
@@ -506,19 +434,16 @@
 
   <p class="page__meta">
     
-
-    
-
-    
       
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
         
-          3 분 소요
-        
+        <time datetime="2023-02-02T00:00:00+09:00">February 2, 2023</time>
       </span>
+    
+
+    
+
     
   </p>
 
@@ -539,7 +464,7 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/posts/post-javascript-FunctionalPrograming/" rel="permalink">Functional Programming
+        <a href="/posts/post-javascript-FunctionalPrograming/post-javascript-FunctionalPrograming.html" rel="permalink">Functional Programming
 </a>
       
     </h2>
@@ -547,19 +472,16 @@
 
   <p class="page__meta">
     
-
-    
-
-    
       
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
         
-          4 분 소요
-        
+        <time datetime="2023-01-27T00:00:00+09:00">January 27, 2023</time>
       </span>
+    
+
+    
+
     
   </p>
 
@@ -582,7 +504,7 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/posts/post-javascript-es6-Arrow_function-part2/" rel="permalink">Javascript ES6
+        <a href="/posts/post-javascript-es6-Arrow_function-part2/post-javascript-es6-Arrow_function-part2.html" rel="permalink">Javascript ES6
 </a>
       
     </h2>
@@ -590,19 +512,16 @@
 
   <p class="page__meta">
     
-
-    
-
-    
       
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
         
-          최대 1 분 소요
-        
+        <time datetime="2023-01-21T00:00:00+09:00">January 21, 2023</time>
       </span>
+    
+
+    
+
     
   </p>
 
@@ -626,7 +545,7 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/posts/post-javascript-es6-Arrow_function-part1/" rel="permalink">Javascript ES6
+        <a href="/posts/post-javascript-es6-Arrow_function-part1/post-javascript-es6-Arrow_function-part1.html" rel="permalink">Javascript ES6
 </a>
       
     </h2>
@@ -634,19 +553,16 @@
 
   <p class="page__meta">
     
-
-    
-
-    
       
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
         
-          2 분 소요
-        
+        <time datetime="2023-01-21T00:00:00+09:00">January 21, 2023</time>
       </span>
+    
+
+    
+
     
   </p>
 
@@ -711,8 +627,8 @@
     
   <script>
     var disqus_config = function () {
-      this.page.url = "http://localhost:4000/posts/post-javascript-es6-lexicalscope/";  /* Replace PAGE_URL with your page's canonical URL variable */
-      this.page.identifier = "/posts/post-javascript-es6-lexicalscope"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+      this.page.url = "http://localhost:4000/posts/post-git-WhenChangeDefaultBranchRenamed2/post-git-WhenChangeDefaultBranchRenamed2.html";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/posts/post-git-WhenChangeDefaultBranchRenamed2/post-git-WhenChangeDefaultBranchRenamed2"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
     };
     (function() { /* DON'T EDIT BELOW THIS LINE */
       var d = document, s = d.createElement('script');

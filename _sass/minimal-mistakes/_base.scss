@@ -152,7 +152,12 @@ button:focus {
 /* code */
 
 tt,
-code,
+code{
+  // background-color: ; //#F9F2F4
+  // border-radius: ;
+  // color: #c72542;
+}
+
 kbd,
 samp,
 pre {

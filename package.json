@@ -1,23 +1,23 @@
 {
-  "name": "minimal-mistakes",
+  "name": "jagarian1",
   "private": true,
   "version": "4.24.0",
-  "description": "Minimal Mistakes 2 column Jekyll theme.",
+  "description": "2 column Jekyll theme.",
   "repository": {
     "type": "git",
-    "url": "git://github.com/mmistakes/minimal-mistakes.git"
+    "url": "git://github.com/jagarian1/jagarian1.github.io.git"
   },
   "keywords": [
     "jekyll",
     "theme",
     "minimal"
   ],
-  "author": "Michael Rose",
+  "author": "jagarian1",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/mmistakes/minimal-mistakes/issues"
+    "url": 
   },
-  "homepage": "https://mmistakes.github.io/minimal-mistakes/",
+  "homepage": "",
   "engines": {
     "node": ">= 0.10.0"
   },

@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Javascript ES6  - WINGMAN Blog</title>
-<meta name="description" content="⚡️ EC6 Javascritp Arrow Function    화살표 기능을 피해야 하는 경우">
+<!-- begin _includes/seo.html --><title>JAVA SPRING - WINGMAN Blog</title>
+<meta name="description" content="SPRING  CONFIG">
 
 
   <meta name="author" content="제로미">
@@ -22,32 +22,32 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:site_name" content="WINGMAN Blog">
-<meta property="og:title" content="Javascript ES6">
-<meta property="og:url" content="http://localhost:4000/posts/post-javascript-es6-Arrow_function-part2/">
+<meta property="og:title" content="JAVA SPRING">
+<meta property="og:url" content="http://localhost:4000/posts/post-categorys/post-categorys.html">
 
 
-  <meta property="og:description" content="⚡️ EC6 Javascritp Arrow Function    화살표 기능을 피해야 하는 경우">
-
-
-
+  <meta property="og:description" content="SPRING  CONFIG">
 
 
 
 
-  <meta property="article:published_time" content="2023-01-21T00:00:00+09:00">
 
 
 
-  <meta property="article:modified_time" content="2023-01-20T19:06:00+09:00">
+  <meta property="article:published_time" content="2023-01-10T00:00:00+09:00">
 
 
 
-  
+  <meta property="article:modified_time" content="2023-01-10T22:06:00+09:00">
+
+
 
   
 
+  
 
-<link rel="canonical" href="http://localhost:4000/posts/post-javascript-es6-Arrow_function-part2/">
+
+<link rel="canonical" href="http://localhost:4000/posts/post-categorys/post-categorys.html">
 
 
 
@@ -265,35 +265,32 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Javascript ES6">
-    <meta itemprop="description" content="⚡️ EC6 Javascritp Arrow Function  화살표 기능을 피해야 하는 경우">
-    <meta itemprop="datePublished" content="2023-01-21T00:00:00+09:00">
-    <meta itemprop="dateModified" content="2023-01-20T19:06:00+09:00">
+    <meta itemprop="headline" content="JAVA SPRING">
+    <meta itemprop="description" content="SPRING  CONFIG">
+    <meta itemprop="datePublished" content="2023-01-10T00:00:00+09:00">
+    <meta itemprop="dateModified" content="2023-01-10T22:06:00+09:00">
 
     <div class="page__inner-wrap">
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/posts/post-javascript-es6-Arrow_function-part2/" class="u-url" itemprop="url">Javascript ES6
+            <a href="http://localhost:4000/posts/post-categorys/post-categorys.html" class="u-url" itemprop="url">JAVA SPRING
 </a>
           </h1>
           
 
   <p class="page__meta">
     
-
-    
-
-    
       
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
         
-          최대 1 분 소요
-        
+        <time datetime="2023-01-10T00:00:00+09:00">January 10, 2023</time>
       </span>
+    
+
+    
+
     
   </p>
 
@@ -303,62 +300,38 @@
 
       <section class="page__content e-content" itemprop="text">
         
-          <aside class="sidebar__right ">
+          <aside class="sidebar__right sticky">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On This Page</h4></header>
-              <ul class="toc__menu"><li><a href="#️-ec6-javascritp-arrow-function">⚡️ EC6 Javascritp Arrow Function</a></li></ul>
+              <ul class="toc__menu"><li><a href="#spring--config">SPRING  CONFIG</a></li></ul>
 
             </nav>
           </aside>
         
-        <h5 id="️-ec6-javascritp-arrow-function">⚡️ EC6 Javascritp Arrow Function</h5>
-<ul>
-  <li>화살표 기능을 피해야 하는 경우</li>
-</ul>
-
-<hr />
+        <h5 id="spring--config">SPRING  CONFIG</h5>
 
 <ul>
   <li>
-    <p>키워드의 상속에 대해 알고있는 것을 사용하여 화살표 함수를 사용해서는 안되는 몇 가지 인스턴스를 정의 할 수 있습니다.</p>
+    <p>WebMvcConfigurer</p>
   </li>
   <li>
-    <p>다음 두 예제에서는 화살표 함수을 사용하여 함수 안쪽에서 주의해야 하는 경우를 보여 줍니다.</p>
+    <p>WebMvcConfigurer 설정 메모</p>
   </li>
 </ul>
 
-<p>⚡️예제 1</p>
+<div class="language-java highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="nd">@Bean</span>
+<span class="kd">public</span> <span class="nc">WebMvcConfigurer</span> <span class="nf">corsConfigurer</span><span class="o">()</span> <span class="o">{</span>
+    <span class="k">return</span> <span class="k">new</span> <span class="nf">WebMvcConfigurer</span><span class="o">()</span> <span class="o">{</span>
+        <span class="nd">@Override</span>
+        <span class="kd">public</span> <span class="kt">void</span> <span class="nf">addCorsMappings</span><span class="o">(</span><span class="nc">CorsRegistry</span> <span class="n">registry</span><span class="o">)</span> <span class="o">{</span>
+            <span class="n">registry</span>
+            <span class="o">.</span><span class="na">addMapping</span><span class="o">(</span><span class="s">"/**"</span><span class="o">)</span>
+            <span class="o">.</span><span class="na">allowedOrigins</span><span class="o">(</span><span class="s">"http://127.0.0.1:9999"</span><span class="o">);</span>
+        <span class="o">}</span>
+    <span class="o">};</span>
+<span class="o">}</span>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">button</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">"</span><span class="s2">btn</span><span class="dl">"</span><span class="p">);</span>
-<span class="nx">button</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">click</span><span class="dl">"</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
-  <span class="c1">// error: *this* refers to the `Window` Object 🌟</span>
-  <span class="k">this</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">toggle</span><span class="p">(</span><span class="dl">"</span><span class="s2">on</span><span class="dl">"</span><span class="p">);</span>
-<span class="p">});</span>
-</code></pre></div></div>
-
-<p>⚡️예제 2</p>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">person1</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="na">age</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
-  <span class="na">grow</span><span class="p">:</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
-    <span class="k">this</span><span class="p">.</span><span class="nx">age</span><span class="o">++</span><span class="p">;</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">age</span><span class="p">);</span>
-  <span class="p">},</span>
-<span class="p">};</span>
-
-<span class="nx">person1</span><span class="p">.</span><span class="nx">grow</span><span class="p">();</span>
-<span class="c1">// 11</span>
-
-<span class="kd">const</span> <span class="nx">person2</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="na">age</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
-  <span class="na">grow</span><span class="p">:</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
-    <span class="c1">// error: *this* refers to the `Window` Object 🌟</span>
-    <span class="k">this</span><span class="p">.</span><span class="nx">age</span><span class="o">++</span><span class="p">;</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">age</span><span class="p">);</span>
-  <span class="p">},</span>
-<span class="p">};</span>
-
-<span class="nx">person2</span><span class="p">.</span><span class="nx">grow</span><span class="p">();</span>
 </code></pre></div></div>
 
         
@@ -376,7 +349,7 @@
     <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
     <span itemprop="keywords">
     
-      <a href="/tags/#javascript" class="page__taxonomy-item p-category" rel="tag">Javascript</a>
+      <a href="/tags/#spring" class="page__taxonomy-item p-category" rel="tag">SPRING</a>
     
     </span>
   </p>
@@ -401,7 +374,7 @@
 
         
 
-  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2023-01-20">January 20, 2023</time></p>
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="2023-01-10">January 10, 2023</time></p>
 
       </footer>
 
@@ -410,22 +383,22 @@
     <h4 class="page__share-title">공유하기</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=Javascript+ES6+%20http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fpost-javascript-es6-Arrow_function-part2%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=JAVA+SPRING%20http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fpost-categorys%2Fpost-categorys.html" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fpost-javascript-es6-Arrow_function-part2%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fpost-categorys%2Fpost-categorys.html" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fpost-javascript-es6-Arrow_function-part2%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fpost-categorys%2Fpost-categorys.html" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
       
   <nav class="pagination">
     
-      <a href="/posts/post-javascript-es6-Arrow_function-part1/" class="pagination--pager" title="Javascript ES6
+      <a href="/posts/post-MyMUSICList227545/post-MyMUSICList227545.html" class="pagination--pager" title="MY MUSIC
 ">이전</a>
     
     
-      <a href="/posts/post-javascript-FunctionalPrograming/" class="pagination--pager" title="Functional Programming
+      <a href="/posts/post-git-WhenChangeDefaultBranchRenamed2/post-git-WhenChangeDefaultBranchRenamed2.html" class="pagination--pager" title="When U git Change Default Branch Renamed!
 ">다음</a>
     
   </nav>
@@ -450,7 +423,7 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/posts/post-React-Router-sampleCode/" rel="permalink">React Sample Code 공유
+        <a href="/posts/post-React-Router-sampleCode/post-React-Router-sampleCode.html" rel="permalink">React Sample Code 공유
 </a>
       
     </h2>
@@ -458,19 +431,16 @@
 
   <p class="page__meta">
     
-
-    
-
-    
       
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
         
-          3 분 소요
-        
+        <time datetime="2023-02-02T00:00:00+09:00">February 2, 2023</time>
       </span>
+    
+
+    
+
     
   </p>
 
@@ -491,7 +461,7 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/posts/post-javascript-FunctionalPrograming/" rel="permalink">Functional Programming
+        <a href="/posts/post-javascript-FunctionalPrograming/post-javascript-FunctionalPrograming.html" rel="permalink">Functional Programming
 </a>
       
     </h2>
@@ -499,19 +469,16 @@
 
   <p class="page__meta">
     
-
-    
-
-    
       
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
         
-          4 분 소요
-        
+        <time datetime="2023-01-27T00:00:00+09:00">January 27, 2023</time>
       </span>
+    
+
+    
+
     
   </p>
 
@@ -534,7 +501,7 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/posts/post-javascript-es6-Arrow_function-part1/" rel="permalink">Javascript ES6
+        <a href="/posts/post-javascript-es6-Arrow_function-part2/post-javascript-es6-Arrow_function-part2.html" rel="permalink">Javascript ES6
 </a>
       
     </h2>
@@ -542,26 +509,23 @@
 
   <p class="page__meta">
     
-
-    
-
-    
       
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
         
-          2 분 소요
-        
+        <time datetime="2023-01-21T00:00:00+09:00">January 21, 2023</time>
       </span>
+    
+
+    
+
     
   </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">⚡️ EC6 Javascritp Arrow Function 1
+    <p class="archive__item-excerpt" itemprop="description">⚡️ EC6 Javascritp Arrow Function
 
-  화살표 함수(Arrow Function)
+  화살표 기능을 피해야 하는 경우
 
 
 </p>
@@ -578,7 +542,7 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/posts/post-git-GIT-master-doit/" rel="permalink">GIT MASTER
+        <a href="/posts/post-javascript-es6-Arrow_function-part1/post-javascript-es6-Arrow_function-part1.html" rel="permalink">Javascript ES6
 </a>
       
     </h2>
@@ -586,24 +550,24 @@
 
   <p class="page__meta">
     
-
-    
-
-    
       
-      
-
-      <span class="page__meta-readtime">
-        <i class="far fa-clock" aria-hidden="true"></i>
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
         
-          7 분 소요
-        
+        <time datetime="2023-01-21T00:00:00+09:00">January 21, 2023</time>
       </span>
+    
+
+    
+
     
   </p>
 
 
-    <p class="archive__item-excerpt" itemprop="description">
+    <p class="archive__item-excerpt" itemprop="description">⚡️ EC6 Javascritp Arrow Function 1
+
+  화살표 함수(Arrow Function)
+
 
 </p>
   </article>
@@ -660,8 +624,8 @@
     
   <script>
     var disqus_config = function () {
-      this.page.url = "http://localhost:4000/posts/post-javascript-es6-Arrow_function-part2/";  /* Replace PAGE_URL with your page's canonical URL variable */
-      this.page.identifier = "/posts/post-javascript-es6-Arrow_function-part2"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+      this.page.url = "http://localhost:4000/posts/post-categorys/post-categorys.html";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/posts/post-categorys/post-categorys"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
     };
     (function() { /* DON'T EDIT BELOW THIS LINE */
       var d = document, s = d.createElement('script');
