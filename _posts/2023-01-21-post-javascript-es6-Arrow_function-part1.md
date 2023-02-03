@@ -3,7 +3,7 @@ title: "Javascript ES6 "
 search: true
 categories:
   - posts
-last_modified_at: 2023-01-20T05:06:00-05:00
+last_modified_at: 2022-02-02T05:06:00-05:00
 tags:
   - Javascript 
 toc: true
@@ -17,7 +17,7 @@ toc_sticky: false
 
  * ES5의 다음 코드와 유사 합니다. 예제2.
 
- * 다음 예제에서는 다음 예제에서는 화살표 함수를 만드는 방법을 보여 줍니다.
+ * 다음 예제에서는 화살표 함수를 만드는 방법을 보여 줍니다.
 
   ⚡️예제 1 
 
@@ -45,7 +45,7 @@ console.log(result); //Output 18.849552
 단일 명령문만 포함되어 있고 해당 명령문의 결과를 반환하려는 경우 대괄호를 사용하여 코드를 래핑할 필요가 없습니다. 이것은 그것을 한 줄짜리로 만듭니다. 다음 예제에서는 이를 보여 줍니다
 
 ```javascript
-let circuference = (pi, r) => 2 * pi * r;
+let circumference = (pi, r) => 2 * pi * r;
 let result = circumference(3.141592, 3);
 console.log(result); 
 ```
@@ -54,8 +54,8 @@ console.log(result);
 앞의 코드는 다음과 같습니다.
 
 ```javascript
-let cirumference = function(pi, r) { return 2 * pi * r;}
-let result = circuference(3.14, 3);
+let circumference = function(pi, r) { return 2 * pi * r;}
+let result = circumference(3.14, 3);
 console.log(result); // 18.14
 ```
 

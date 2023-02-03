@@ -30,7 +30,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Javascript ES6 ",
-        "excerpt":"⚡️ EC6 Javascritp Arrow Function 1 화살표 함수(Arrow Function) ES5의 다음 코드와 유사 합니다. 예제2. 다음 예제에서는 다음 예제에서는 화살표 함수를 만드는 방법을 보여 줍니다. ⚡️예제 1 let circumference = (pi, r) =&gt; { let ans = 2 * pi * r; return ans; } let result = circumference(3.141592, 3);...","categories": ["posts"],
+        "excerpt":"⚡️ EC6 Javascritp Arrow Function 1 화살표 함수(Arrow Function) ES5의 다음 코드와 유사 합니다. 예제2. 다음 예제에서는 화살표 함수를 만드는 방법을 보여 줍니다. ⚡️예제 1 let circumference = (pi, r) =&gt; { let ans = 2 * pi * r; return ans; } let result = circumference(3.141592, 3); console.log(result); //...","categories": ["posts"],
         "tags": ["Javascript"],
         "url": "/posts/post-javascript-es6-Arrow_function-part1/",
         "teaser": null
