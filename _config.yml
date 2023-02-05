@@ -238,6 +238,7 @@ defaults:
       comments: true # 
       share: true
       related: true
+      
 
   # _pages
   - scope:
@@ -251,3 +252,6 @@ collections:
   about:
     output: true
     permalink: /:collection/:path/:title.html
+    collections_dir: my_collections
+
+

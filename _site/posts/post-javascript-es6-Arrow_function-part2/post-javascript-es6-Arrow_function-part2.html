@@ -9,8 +9,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Javascript ES6  - WINGMAN Blog</title>
-<meta name="description" content="⚡️ EC6 Javascritp Arrow Function    화살표 기능을 피해야 하는 경우">
+<!-- begin _includes/seo.html --><title>ES6 Arrow Function part2 - WINGMAN Blog</title>
+<meta name="description" content="⚡️ Javascritp Arrow Function">
 
 
   <meta name="author" content="제로미">
@@ -22,11 +22,11 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:site_name" content="WINGMAN Blog">
-<meta property="og:title" content="Javascript ES6">
+<meta property="og:title" content="ES6 Arrow Function part2">
 <meta property="og:url" content="http://localhost:4000/posts/post-javascript-es6-Arrow_function-part2/post-javascript-es6-Arrow_function-part2.html">
 
 
-  <meta property="og:description" content="⚡️ EC6 Javascritp Arrow Function    화살표 기능을 피해야 하는 경우">
+  <meta property="og:description" content="⚡️ Javascritp Arrow Function">
 
 
 
@@ -265,8 +265,8 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Javascript ES6">
-    <meta itemprop="description" content="⚡️ EC6 Javascritp Arrow Function  화살표 기능을 피해야 하는 경우">
+    <meta itemprop="headline" content="ES6 Arrow Function part2">
+    <meta itemprop="description" content="⚡️ Javascritp Arrow Function">
     <meta itemprop="datePublished" content="2023-01-21T00:00:00+09:00">
     <meta itemprop="dateModified" content="2023-01-20T19:06:00+09:00">
 
@@ -274,7 +274,7 @@
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/posts/post-javascript-es6-Arrow_function-part2/post-javascript-es6-Arrow_function-part2.html" class="u-url" itemprop="url">Javascript ES6
+            <a href="http://localhost:4000/posts/post-javascript-es6-Arrow_function-part2/post-javascript-es6-Arrow_function-part2.html" class="u-url" itemprop="url">ES6 Arrow Function part2
 </a>
           </h1>
           
@@ -303,34 +303,33 @@
           <aside class="sidebar__right ">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On This Page</h4></header>
-              <ul class="toc__menu"><li><a href="#️-ec6-javascritp-arrow-function">⚡️ EC6 Javascritp Arrow Function</a></li></ul>
+              <ul class="toc__menu"><li><a href="#️-javascritp-arrow-function">⚡️ Javascritp Arrow Function</a></li></ul>
 
             </nav>
           </aside>
         
-        <h5 id="️-ec6-javascritp-arrow-function">⚡️ EC6 Javascritp Arrow Function</h5>
-<ul>
-  <li>화살표 기능을 피해야 하는 경우</li>
-</ul>
-
-<hr />
+        <h5 id="️-javascritp-arrow-function">⚡️ Javascritp Arrow Function</h5>
 
 <ul>
+  <li>
+    <p>화살표 기능을 피해야 하는 경우</p>
+  </li>
   <li>
     <p>키워드의 상속에 대해 알고있는 것을 사용하여 화살표 함수를 사용해서는 안되는 몇 가지 인스턴스를 정의 할 수 있습니다.</p>
   </li>
   <li>
     <p>다음 두 예제에서는 화살표 함수을 사용하여 함수 안쪽에서 주의해야 하는 경우를 보여 줍니다.</p>
+
+    <p>⚡️예제 1</p>
   </li>
 </ul>
-
-<p>⚡️예제 1</p>
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">button</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">querySelector</span><span class="p">(</span><span class="dl">"</span><span class="s2">btn</span><span class="dl">"</span><span class="p">);</span>
 <span class="nx">button</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">click</span><span class="dl">"</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
   <span class="c1">// error: *this* refers to the `Window` Object 🌟</span>
   <span class="k">this</span><span class="p">.</span><span class="nx">classList</span><span class="p">.</span><span class="nx">toggle</span><span class="p">(</span><span class="dl">"</span><span class="s2">on</span><span class="dl">"</span><span class="p">);</span>
 <span class="p">});</span>
+
 </code></pre></div></div>
 
 <p>⚡️예제 2</p>
@@ -357,6 +356,8 @@
 
 <span class="nx">person2</span><span class="p">.</span><span class="nx">grow</span><span class="p">();</span>
 </code></pre></div></div>
+
+<p>{: .notice}💡 정리</p>
 
         
       </section>
@@ -407,7 +408,7 @@
     <h4 class="page__share-title">공유하기</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=Javascript+ES6+%20http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fpost-javascript-es6-Arrow_function-part2%2Fpost-javascript-es6-Arrow_function-part2.html" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=ES6+Arrow+Function+part2%20http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fpost-javascript-es6-Arrow_function-part2%2Fpost-javascript-es6-Arrow_function-part2.html" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
   <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fpost-javascript-es6-Arrow_function-part2%2Fpost-javascript-es6-Arrow_function-part2.html" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
@@ -418,7 +419,7 @@
       
   <nav class="pagination">
     
-      <a href="/posts/post-javascript-es6-Arrow_function-part1/post-javascript-es6-Arrow_function-part1.html" class="pagination--pager" title="Javascript ES6
+      <a href="/posts/post-javascript-es6-Arrow_function-part1/post-javascript-es6-Arrow_function-part1.html" class="pagination--pager" title="ES6 Arrow Function part1
 ">이전</a>
     
     
@@ -525,7 +526,7 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/posts/post-javascript-es6-Arrow_function-part1/post-javascript-es6-Arrow_function-part1.html" rel="permalink">Javascript ES6
+        <a href="/posts/post-javascript-es6-Arrow_function-part1/post-javascript-es6-Arrow_function-part1.html" rel="permalink">ES6 Arrow Function part1
 </a>
       
     </h2>

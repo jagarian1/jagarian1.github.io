@@ -41,14 +41,14 @@ var store = [{
         "url": "/posts/post-git-GIT-master-doit/post-git-GIT-master-doit.html",
         "teaser": null
       },{
-        "title": "Javascript ES6 ",
-        "excerpt":"⚡️ EC6 Javascritp Arrow Function 1 화살표 함수(Arrow Function) 화살표 함수는 언뜻보기에 일반 JavaScript 함수를 만드는 멋진 방법 일뿐입니다 (그러나 몇 가지 놀라움이 있습니다). 화살표 함수를 사용하면 실제로 작동하는 간결한 한 줄짜리 함수를 만들 수 있습니다! 다음 예제에서는 화살표 함수를 만드는 방법을 보여 줍니다. ES5의 다음 코드와 유사 합니다. 예제2....","categories": ["posts"],
+        "title": "ES6 Arrow Function part1",
+        "excerpt":"⚡️ EC6 Javascritp Arrow Function 1 화살표 함수(Arrow Function) 화살표 함수는 언뜻보기에 일반 JavaScript 함수를 만드는 멋진 방법 일뿐입니다 (그러나 몇 가지 놀라움이 있습니다). 화살표 함수를 사용하면 실제로 작동하는 간결한 한 줄짜리 함수를 만들 수 있습니다! ES5의 다음 코드와 유사 합니다. 예제2. 다음 예제에서는 화살표 함수를 만드는 방법을 보여 줍니다....","categories": ["posts"],
         "tags": ["Javascript"],
         "url": "/posts/post-javascript-es6-Arrow_function-part1/post-javascript-es6-Arrow_function-part1.html",
         "teaser": null
       },{
-        "title": "Javascript ES6 ",
-        "excerpt":"⚡️ EC6 Javascritp Arrow Function 화살표 기능을 피해야 하는 경우 키워드의 상속에 대해 알고있는 것을 사용하여 화살표 함수를 사용해서는 안되는 몇 가지 인스턴스를 정의 할 수 있습니다. 다음 두 예제에서는 화살표 함수을 사용하여 함수 안쪽에서 주의해야 하는 경우를 보여 줍니다. ⚡️예제 1 const button = document.querySelector(\"btn\"); button.addEventListener(\"click\", () =&gt; {...","categories": ["posts"],
+        "title": "ES6 Arrow Function part2",
+        "excerpt":"⚡️ Javascritp Arrow Function 화살표 기능을 피해야 하는 경우 키워드의 상속에 대해 알고있는 것을 사용하여 화살표 함수를 사용해서는 안되는 몇 가지 인스턴스를 정의 할 수 있습니다. 다음 두 예제에서는 화살표 함수을 사용하여 함수 안쪽에서 주의해야 하는 경우를 보여 줍니다. ⚡️예제 1 const button = document.querySelector(\"btn\"); button.addEventListener(\"click\", () =&gt; { //...","categories": ["posts"],
         "tags": ["Javascript"],
         "url": "/posts/post-javascript-es6-Arrow_function-part2/post-javascript-es6-Arrow_function-part2.html",
         "teaser": null

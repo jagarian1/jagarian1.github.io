@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-02-04T09:11:16+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">WINGMAN Blog</title><subtitle>An amazing life.</subtitle><author><name>제로미</name></author><entry><title type="html">React Sample Code 공유</title><link href="http://localhost:4000/posts/post-React-Router-sampleCode/post-React-Router-sampleCode.html" rel="alternate" type="text/html" title="React Sample Code 공유" /><published>2023-02-02T00:00:00+09:00</published><updated>2023-02-02T00:00:00+09:00</updated><id>http://localhost:4000/posts/post-React-Router-sampleCode/post-React-Router-sampleCode</id><content type="html" xml:base="http://localhost:4000/posts/post-React-Router-sampleCode/post-React-Router-sampleCode.html">&lt;p&gt;&lt;img src=&quot;../assets/images/2023-02-02-post-React-Router-sampleCode/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-02-06T03:56:54+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">WINGMAN Blog</title><subtitle>An amazing life.</subtitle><author><name>제로미</name></author><entry><title type="html">React Sample Code 공유</title><link href="http://localhost:4000/posts/post-React-Router-sampleCode/post-React-Router-sampleCode.html" rel="alternate" type="text/html" title="React Sample Code 공유" /><published>2023-02-02T00:00:00+09:00</published><updated>2023-02-02T00:00:00+09:00</updated><id>http://localhost:4000/posts/post-React-Router-sampleCode/post-React-Router-sampleCode</id><content type="html" xml:base="http://localhost:4000/posts/post-React-Router-sampleCode/post-React-Router-sampleCode.html">&lt;p&gt;&lt;img src=&quot;../assets/images/2023-02-02-post-React-Router-sampleCode/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;h5 id=&quot;-react-query&quot;&gt;✨ React Query&lt;/h5&gt;
 
@@ -512,7 +512,7 @@ GUIDE : &lt;a href=&quot;https://tanstack.com/query/latest/docs/react/guides/que
 
 &lt;hr /&gt;
 
-&lt;p&gt;저자의 사이트 &lt;a href=&quot;https://nealford.com/&quot;&gt;[nealford.com • 홈](https://nealford.com/)&lt;/a&gt;&lt;/p&gt;</content><author><name>제로미</name></author><category term="posts" /><category term="javascript" /><summary type="html">원본 : O’Reilly Functional Thinking - 닐 포트 지음 … 에서 인용 하였습니다.</summary></entry><entry><title type="html">Javascript ES6</title><link href="http://localhost:4000/posts/post-javascript-es6-Arrow_function-part1/post-javascript-es6-Arrow_function-part1.html" rel="alternate" type="text/html" title="Javascript ES6" /><published>2023-01-21T00:00:00+09:00</published><updated>2022-02-02T19:06:00+09:00</updated><id>http://localhost:4000/posts/post-javascript-es6-Arrow_function-part1/post-javascript-es6-Arrow_function-part1</id><content type="html" xml:base="http://localhost:4000/posts/post-javascript-es6-Arrow_function-part1/post-javascript-es6-Arrow_function-part1.html">&lt;h5 id=&quot;️-ec6-javascritp-arrow-function-1&quot;&gt;⚡️ EC6 Javascritp Arrow Function 1&lt;/h5&gt;
+&lt;p&gt;저자의 사이트 &lt;a href=&quot;https://nealford.com/&quot;&gt;[nealford.com • 홈](https://nealford.com/)&lt;/a&gt;&lt;/p&gt;</content><author><name>제로미</name></author><category term="posts" /><category term="javascript" /><summary type="html">원본 : O’Reilly Functional Thinking - 닐 포트 지음 … 에서 인용 하였습니다.</summary></entry><entry><title type="html">ES6 Arrow Function part1</title><link href="http://localhost:4000/posts/post-javascript-es6-Arrow_function-part1/post-javascript-es6-Arrow_function-part1.html" rel="alternate" type="text/html" title="ES6 Arrow Function part1" /><published>2023-01-21T00:00:00+09:00</published><updated>2022-02-02T19:06:00+09:00</updated><id>http://localhost:4000/posts/post-javascript-es6-Arrow_function-part1/post-javascript-es6-Arrow_function-part1</id><content type="html" xml:base="http://localhost:4000/posts/post-javascript-es6-Arrow_function-part1/post-javascript-es6-Arrow_function-part1.html">&lt;h5 id=&quot;️-ec6-javascritp-arrow-function-1&quot;&gt;⚡️ EC6 Javascritp Arrow Function 1&lt;/h5&gt;
 &lt;ul&gt;
   &lt;li&gt;화살표 함수(Arrow Function)&lt;/li&gt;
 &lt;/ul&gt;
@@ -523,18 +523,16 @@ GUIDE : &lt;a href=&quot;https://tanstack.com/query/latest/docs/react/guides/que
   &lt;li&gt;화살표 함수는 언뜻보기에 일반 JavaScript 함수를 만드는 멋진 방법 일뿐입니다 (그러나 몇 가지 놀라움이 있습니다). 화살표 함수를 사용하면 실제로 작동하는 간결한 한 줄짜리 함수를 만들 수 있습니다!&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;다음 예제에서는 화살표 함수를 만드는 방법을 보여 줍니다.&lt;/p&gt;
-
 &lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;ES5의 다음 코드와 유사 합니다. 예제2.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;다음 예제에서는 화살표 함수를 만드는 방법을 보여 줍니다.&lt;/p&gt;
+
+    &lt;p&gt;⚡️예제 1&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;p&gt;⚡️예제 1&lt;/p&gt;
 
 &lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;circumference&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;ans&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;pi&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;r&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
@@ -607,14 +605,14 @@ GUIDE : &lt;a href=&quot;https://tanstack.com/query/latest/docs/react/guides/que
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-wiki&quot;&gt;‼ ⁉ 화살표 함수는 new와 함께 실행할 수 없습니다.
-this가 없기 때문에 화살표 함수는 생성자 함수로 사용할 수 없다는 제약이 있습니다. 화살표 함수는 new와 함께 호출할 수 없습니다.
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;{: .notice}💡
+ 화살표 함수는 new와 함께 실행할 수 없습니다.
+this가 없기 때문에 화살표 함수는 생성자 함수로 사용할 수 없다는 제약이 있습니다. 화살표 함수는 new와 함께 호출할 수 없습니다.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-wiki&quot;&gt;!! 화살표 함수 vs. bind
-화살표 함수와 일반 함수를 .bind(this)를 사용해서 호출하는 것 사이에는 미묘한 차이가 있습니다 .bind(this)는 함수의 &apos;한정된 버전(bound version)&apos;을 만듭니다.
-화살표 함수는 어떤 것도 바인딩시키지 않습니다. 화살표 함수엔 단지 this가 없을 뿐입니다. 화살표 함수에서 this를 사용하면 일반 변수 서칭과 마찬가지로 this의 값을 외부 렉시컬 환경에서 찾습니다.
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;{: .notice}💡
+ 화살표 함수 vs. bind
+화살표 함수와 일반 함수를 .bind(this)를 사용해서 호출하는 것 사이에는 미묘한 차이가 있습니다 .bind(this)는 함수의 ‘한정된 버전(bound version)’을 만듭니다.
+화살표 함수는 어떤 것도 바인딩시키지 않습니다. 화살표 함수엔 단지 this가 없을 뿐입니다. 화살표 함수에서 this를 사용하면 일반 변수 서칭과 마찬가지로 this의 값을 외부 렉시컬 환경에서 찾습니다.&lt;/p&gt;
 
 &lt;h2 id=&quot;화살표-함수엔-arguments가-없습니다&quot;&gt;&lt;a href=&quot;https://ko.javascript.info/arrow-functions#ref-1917&quot;&gt;화살표 함수엔 ‘arguments’가 없습니다&lt;/a&gt;&lt;/h2&gt;
 
@@ -642,29 +640,28 @@ this가 없기 때문에 화살표 함수는 생성자 함수로 사용할 수 �
   &lt;li&gt;이 외에도 화살표 함수는 &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;super&lt;/code&gt;가 없다는 특징&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;화살표 함수는 컨텍스트가 있는 긴 코드보다는 자체 ‘컨텍스트’가 없는 짧은 코드를 담을 용도로 만들어졌습니다. 그리고 이 목적에 잘 들어맞는 특징을 보입니다.&lt;/p&gt;</content><author><name>제로미</name></author><category term="posts" /><category term="Javascript" /><summary type="html">⚡️ EC6 Javascritp Arrow Function 1 화살표 함수(Arrow Function)</summary></entry><entry><title type="html">Javascript ES6</title><link href="http://localhost:4000/posts/post-javascript-es6-Arrow_function-part2/post-javascript-es6-Arrow_function-part2.html" rel="alternate" type="text/html" title="Javascript ES6" /><published>2023-01-21T00:00:00+09:00</published><updated>2023-01-20T19:06:00+09:00</updated><id>http://localhost:4000/posts/post-javascript-es6-Arrow_function-part2/post-javascript-es6-Arrow_function-part2</id><content type="html" xml:base="http://localhost:4000/posts/post-javascript-es6-Arrow_function-part2/post-javascript-es6-Arrow_function-part2.html">&lt;h5 id=&quot;️-ec6-javascritp-arrow-function&quot;&gt;⚡️ EC6 Javascritp Arrow Function&lt;/h5&gt;
-&lt;ul&gt;
-  &lt;li&gt;화살표 기능을 피해야 하는 경우&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
+&lt;p&gt;화살표 함수는 컨텍스트가 있는 긴 코드보다는 자체 ‘컨텍스트’가 없는 짧은 코드를 담을 용도로 만들어졌습니다. 그리고 이 목적에 잘 들어맞는 특징을 보입니다.&lt;/p&gt;</content><author><name>제로미</name></author><category term="posts" /><category term="Javascript" /><summary type="html">⚡️ EC6 Javascritp Arrow Function 1 화살표 함수(Arrow Function)</summary></entry><entry><title type="html">ES6 Arrow Function part2</title><link href="http://localhost:4000/posts/post-javascript-es6-Arrow_function-part2/post-javascript-es6-Arrow_function-part2.html" rel="alternate" type="text/html" title="ES6 Arrow Function part2" /><published>2023-01-21T00:00:00+09:00</published><updated>2023-01-20T19:06:00+09:00</updated><id>http://localhost:4000/posts/post-javascript-es6-Arrow_function-part2/post-javascript-es6-Arrow_function-part2</id><content type="html" xml:base="http://localhost:4000/posts/post-javascript-es6-Arrow_function-part2/post-javascript-es6-Arrow_function-part2.html">&lt;h5 id=&quot;️-javascritp-arrow-function&quot;&gt;⚡️ Javascritp Arrow Function&lt;/h5&gt;
 
 &lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;화살표 기능을 피해야 하는 경우&lt;/p&gt;
+  &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;키워드의 상속에 대해 알고있는 것을 사용하여 화살표 함수를 사용해서는 안되는 몇 가지 인스턴스를 정의 할 수 있습니다.&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;다음 두 예제에서는 화살표 함수을 사용하여 함수 안쪽에서 주의해야 하는 경우를 보여 줍니다.&lt;/p&gt;
+
+    &lt;p&gt;⚡️예제 1&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;p&gt;⚡️예제 1&lt;/p&gt;
 
 &lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;button&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;querySelector&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;btn&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;span class=&quot;nx&quot;&gt;button&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;addEventListener&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;click&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;()&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;c1&quot;&gt;// error: *this* refers to the `Window` Object 🌟&lt;/span&gt;
   &lt;span class=&quot;k&quot;&gt;this&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;classList&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;toggle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;});&lt;/span&gt;
+
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;⚡️예제 2&lt;/p&gt;
@@ -690,7 +687,9 @@ this가 없기 때문에 화살표 함수는 생성자 함수로 사용할 수 �
 &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;
 
 &lt;span class=&quot;nx&quot;&gt;person2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;grow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;();&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>제로미</name></author><category term="posts" /><category term="Javascript" /><summary type="html">⚡️ EC6 Javascritp Arrow Function 화살표 기능을 피해야 하는 경우</summary></entry><entry><title type="html">GIT MASTER</title><link href="http://localhost:4000/posts/post-git-GIT-master-doit/post-git-GIT-master-doit.html" rel="alternate" type="text/html" title="GIT MASTER" /><published>2023-01-11T00:00:00+09:00</published><updated>2023-01-10T22:06:00+09:00</updated><id>http://localhost:4000/posts/post-git-GIT-master-doit/post-git-GIT-master-doit</id><content type="html" xml:base="http://localhost:4000/posts/post-git-GIT-master-doit/post-git-GIT-master-doit.html">&lt;p&gt;&lt;img src=&quot;../assets/images/2023-01-11-post-git-GIT-master-doit/headway-5QgIuuBxKwM-unsplash.jpg&quot; alt=&quot;Git Commands List&quot; /&gt;&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;{: .notice}💡 정리&lt;/p&gt;</content><author><name>제로미</name></author><category term="posts" /><category term="Javascript" /><summary type="html">⚡️ Javascritp Arrow Function</summary></entry><entry><title type="html">GIT MASTER</title><link href="http://localhost:4000/posts/post-git-GIT-master-doit/post-git-GIT-master-doit.html" rel="alternate" type="text/html" title="GIT MASTER" /><published>2023-01-11T00:00:00+09:00</published><updated>2023-01-10T22:06:00+09:00</updated><id>http://localhost:4000/posts/post-git-GIT-master-doit/post-git-GIT-master-doit</id><content type="html" xml:base="http://localhost:4000/posts/post-git-GIT-master-doit/post-git-GIT-master-doit.html">&lt;p&gt;&lt;img src=&quot;../assets/images/2023-01-11-post-git-GIT-master-doit/headway-5QgIuuBxKwM-unsplash.jpg&quot; alt=&quot;Git Commands List&quot; /&gt;&lt;/p&gt;
 
 &lt;h5 id=&quot;-git-commands-list&quot;&gt;📗 Git Commands List&lt;/h5&gt;
 
