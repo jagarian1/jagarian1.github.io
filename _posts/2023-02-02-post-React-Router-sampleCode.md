@@ -1,5 +1,5 @@
 ---
-title:  "React Sample Code 공유"
+title:  "React Query 오류 다운그레이드"
 search: true
 categories: 
   - posts
@@ -17,7 +17,7 @@ toc_sticky: true
 ###### @tanstack/react-query   
 
 
-- 사용하는 이유  :  Custom Hook 의 문제로 인해.    1.Cache   2.Retry 기능이 없음.
+- React-Query 사용하는 이유  :  Custom Hook 의 문제로 인해.    1.Cache   2.Retry 기능이 없음.
 
   React Query 사용하여 이런 문제를 해결..
 
@@ -115,109 +115,6 @@ export default function Products() {
 </details>
 
 
-✨ App.js
-
-<details>
-<summary>App.js</summary>
-<div markdown="1">
-
-```react
-import React from 'react';
-import './App.css';
-import MainProducts from './components/MainProducts';
-import {
-  QueryClient,
-  QueryClientProvider
-} from '@tanstack/react-query';
-import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
-
-const queryClient = new QueryClient(); //예제에서 복사
-
-export default function App() {
-  return (
-    <QueryClientProvider client={queryClient}>
-      <MainProducts />
-      <ReactQueryDevtools initialIsOpen={true} />
-    </QueryClientProvider>
-  );
-}
-```
-</div>
-</details>
-
-
-✨ src/hooks/use-project.jsx
-
-<details>
-<summary>use-project.jsx</summary>
-<div markdown="1">
-
-```react
-import { useEffect, useState } from 'react';
-
-export default function useProducts({ salesOnly }) {
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState();
-  const [products, setProducts] = useState([]);
-  useEffect(() => {
-    console.log('1 fetching....');
-    setLoading(true);
-    setError(undefined);
-    fetch(`data/${salesOnly ? 'sale_' : ''}products.json`)
-      .then((res) => res.json())
-      .then((data) => {
-        console.log('🔥뜨끈한 데이터 네트워크에서 받아옴');
-        setProducts(data);
-      })
-      .catch((e) => setError('에러가 발생 !'))
-      .finally(() => setLoading(false));
-    return () => {
-      console.log('🧹 깨끗하게 청소');
-    };
-  }, [salesOnly]);
-
-  return [loading, error, products];
-}
-
-```
-</div>
-</details>
-
-
-✨ src/components/MainProducts.jsx
-
-<details>
-<summary>MainProducts.jsx</summary>
-<div markdown="1">
-
-```react
-import React, { useState } from 'react';
-import Products from './Products';
-
-export default function MainProducts() {
-  const [showLeftProducts, setShowLeftProducts] = useState(true);
-  const [showRightProducts, setShowRightProducts] = useState(true);
-  return (
-    <main className='container'>
-      <div>
-        {showLeftProducts && <Products />}
-        <button onClick={() => setShowLeftProducts((show) => !show)}>
-          Toggle
-        </button>
-      </div>
-      <div>
-        {showRightProducts && <Products />}
-        <button onClick={() => setShowRightProducts((show) => !show)}>
-          Toggle
-        </button>
-      </div>
-    </main>
-  );
-}
-```
-</div>
-</details>
-
 
 ###### ERROR
 
@@ -239,7 +136,9 @@ Uncaught Error: Objects are not valid as a React child (found: [object Error]). 
 위와 같이 화면로딩후 넘겨야할 data에 아무런 값이 없고 "Uncaught Error: Objects are not valid as a React child (found: [object Error]). If you meant to render a collection of children, use an array instead." 에러가 난다.
 
 해결을 위해 공식문서에 API가 변경 됬는지 확인해봐야 하는 작업이 필요할 거 같은데.
-2일쨰 확인이 안되고 있다.
+
+2일쨰 확인이 안되고 있다. -_- ;;;;;;;
+
 API : [useQuery | TanStack Query Docs](https://tanstack.com/query/latest/docs/react/reference/useQuery)
 GUIDE : [Queries | TanStack Query Docs](https://tanstack.com/query/latest/docs/react/guides/queries)
 
@@ -265,16 +164,29 @@ For an alternative way of performing status checks, have a look at the Community
 ```
 
 가이드대로 위와 같이 변경 된듯 합니다. data 를 쓰지 않고 queryKey 로 사용하라는건지 ...
+
+
+```react
+const query = useQuery({ queryKey: ['todos'], queryFn: fetchTodos })
+```
+
 근래 바뀐듯 합니다. 커뮤니티를 가보라고 쓰여 있으니 더 뒤져 봐야 할거 같은데요.
 
-커뮤니티 : [쿼리 데이터 변환 반응 | TkDodo의 블로그](https://tkdodo.eu/blog/react-query-data-transformations)
-
-............................................................. ;)
+**커뮤니티 **: [TkDodo의 블로그](https://tkdodo.eu/blog/react-query-data-transformations)
 
 
 
 에러 화면 :
 
-![image-20230202110820784](../assets/images/2023-02-02-post-React-Router-sampleCode/image-20230202110820784.png)
+해결 :  react-query v3로 다운그레이드 해서 정상 동작 되었다. ;)
 
 
+`yarn remove @tanstack/react-query`
+
+after
+
+`npm i react-query@3`
+
+정상화면 : )
+
+![](../assets/images/2023-02-02-post-React-Router-sampleCode/제목 없음.jpg)
