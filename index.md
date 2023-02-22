@@ -1,5 +1,5 @@
 ---
-title: "be My WingMan"
+title: "Be My WingMan"
 header:
   overlay_image: /assets/images/unsplash-image-9.jpg
   overlay_filter: rgba(255, 0, 0, 0.5)

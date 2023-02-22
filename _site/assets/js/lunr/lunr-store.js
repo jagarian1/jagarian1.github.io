@@ -59,8 +59,8 @@ var store = [{
         "url": "/posts/post-javascript-FunctionalPrograming/post-javascript-FunctionalPrograming.html",
         "teaser": null
       },{
-        "title": "React Sample Code 공유",
-        "excerpt":"✨ React Query @tanstack/react-query 사용하는 이유 : Custom Hook 의 문제로 인해. 1.Cache 2.Retry 기능이 없음. React Query 사용하여 이런 문제를 해결.. INSTALL 환경설정 yarn 으로 설치한다. @tanstack/react-query 를 설치한다. yarn create react-app query-init ✨ 디렉토리 상위에서 프로젝트(query-init)를 생성합니다. cd query-init ✨ yarn init ✨ yarn add @tanstack/react-query ✨명령으로 react-query를...","categories": ["posts"],
+        "title": "React Query 오류 다운그레이드",
+        "excerpt":"✨ React Query @tanstack/react-query React-Query 사용하는 이유 : Custom Hook 의 문제로 인해. 1.Cache 2.Retry 기능이 없음. React Query 사용하여 이런 문제를 해결.. INSTALL 환경설정 yarn 으로 설치한다. @tanstack/react-query 를 설치한다. yarn create react-app query-init ✨ 디렉토리 상위에서 프로젝트(query-init)를 생성합니다. cd query-init ✨ yarn init ✨ yarn add @tanstack/react-query ✨명령으로...","categories": ["posts"],
         "tags": ["React"],
         "url": "/posts/post-React-Router-sampleCode/post-React-Router-sampleCode.html",
         "teaser": null

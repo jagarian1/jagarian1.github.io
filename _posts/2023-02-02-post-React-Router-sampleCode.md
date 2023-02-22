@@ -55,7 +55,7 @@ import { useQuery } from '@tanstack/react-query';
 ######  SOURCE
 
 
-✨ src/components/Product.jsx
+✨ Product.jsx
 <details>
 <summary>Product.jsx</summary>
 <div markdown="1">

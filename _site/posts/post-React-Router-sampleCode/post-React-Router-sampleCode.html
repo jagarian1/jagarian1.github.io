@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>React Sample Code 공유 - WINGMAN Blog</title>
+<!-- begin _includes/seo.html --><title>React Query 오류 다운그레이드 - WINGMAN Blog</title>
 <meta name="description" content="">
 
 
@@ -22,7 +22,7 @@
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:site_name" content="WINGMAN Blog">
-<meta property="og:title" content="React Sample Code 공유">
+<meta property="og:title" content="React Query 오류 다운그레이드">
 <meta property="og:url" content="http://localhost:4000/posts/post-React-Router-sampleCode/post-React-Router-sampleCode.html">
 
 
@@ -265,7 +265,7 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="React Sample Code 공유">
+    <meta itemprop="headline" content="React Query 오류 다운그레이드">
     <meta itemprop="description" content="">
     <meta itemprop="datePublished" content="2023-02-02T00:00:00+09:00">
     <meta itemprop="dateModified" content="2023-02-02T00:00:00+09:00">
@@ -274,7 +274,7 @@
       
         <header>
           <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/posts/post-React-Router-sampleCode/post-React-Router-sampleCode.html" class="u-url" itemprop="url">React Sample Code 공유
+            <a href="http://localhost:4000/posts/post-React-Router-sampleCode/post-React-Router-sampleCode.html" class="u-url" itemprop="url">React Query 오류 다운그레이드
 </a>
           </h1>
           
@@ -316,7 +316,7 @@
 
 <ul>
   <li>
-    <p>사용하는 이유  :  Custom Hook 의 문제로 인해.    1.Cache   2.Retry 기능이 없음.</p>
+    <p>React-Query 사용하는 이유  :  Custom Hook 의 문제로 인해.    1.Cache   2.Retry 기능이 없음.</p>
 
     <p>React Query 사용하여 이런 문제를 해결..</p>
   </li>
@@ -356,7 +356,7 @@ https://tanstack.com/query/latest/docs/react/reference/useQuery</p>
 
 <h6 id="source">SOURCE</h6>
 
-<p>✨ src/components/Product.jsx</p>
+<p>✨ Product.jsx</p>
 <details>
 <summary>Product.jsx</summary>
 <div>
@@ -414,104 +414,6 @@ https://tanstack.com/query/latest/docs/react/reference/useQuery</p>
   </div>
 </details>
 
-<p>✨ App.js</p>
-
-<details>
-<summary>App.js</summary>
-<div>
-
-    <div class="language-react highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span><span class="p">;</span>
-<span class="k">import</span> <span class="dl">'</span><span class="s1">./App.css</span><span class="dl">'</span><span class="p">;</span>
-<span class="k">import</span> <span class="nx">MainProducts</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./components/MainProducts</span><span class="dl">'</span><span class="p">;</span>
-<span class="k">import</span> <span class="p">{</span>
-  <span class="nx">QueryClient</span><span class="p">,</span>
-  <span class="nx">QueryClientProvider</span>
-<span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@tanstack/react-query</span><span class="dl">'</span><span class="p">;</span>
-<span class="k">import</span> <span class="p">{</span> <span class="nx">ReactQueryDevtools</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">@tanstack/react-query-devtools</span><span class="dl">'</span><span class="p">;</span>
-
-<span class="kd">const</span> <span class="nx">queryClient</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">QueryClient</span><span class="p">();</span> <span class="c1">//예제에서 복사</span>
-
-<span class="k">export</span> <span class="k">default</span> <span class="kd">function</span> <span class="nx">App</span><span class="p">()</span> <span class="p">{</span>
-  <span class="k">return</span> <span class="p">(</span>
-    <span class="p">&lt;</span><span class="nc">QueryClientProvider</span> <span class="na">client</span><span class="p">=</span><span class="si">{</span><span class="nx">queryClient</span><span class="si">}</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nc">MainProducts</span> <span class="p">/&gt;</span>
-      <span class="p">&lt;</span><span class="nc">ReactQueryDevtools</span> <span class="na">initialIsOpen</span><span class="p">=</span><span class="si">{</span><span class="kc">true</span><span class="si">}</span> <span class="p">/&gt;</span>
-    <span class="p">&lt;/</span><span class="nc">QueryClientProvider</span><span class="p">&gt;</span>
-  <span class="p">);</span>
-<span class="p">}</span>
-</code></pre></div>    </div>
-  </div>
-</details>
-
-<p>✨ src/hooks/use-project.jsx</p>
-
-<details>
-<summary>use-project.jsx</summary>
-<div>
-
-    <div class="language-react highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">useEffect</span><span class="p">,</span> <span class="nx">useState</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span><span class="p">;</span>
-
-<span class="k">export</span> <span class="k">default</span> <span class="kd">function</span> <span class="nx">useProducts</span><span class="p">({</span> <span class="nx">salesOnly</span> <span class="p">})</span> <span class="p">{</span>
-  <span class="kd">const</span> <span class="p">[</span><span class="nx">loading</span><span class="p">,</span> <span class="nx">setLoading</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="kc">false</span><span class="p">);</span>
-  <span class="kd">const</span> <span class="p">[</span><span class="nx">error</span><span class="p">,</span> <span class="nx">setError</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">();</span>
-  <span class="kd">const</span> <span class="p">[</span><span class="nx">products</span><span class="p">,</span> <span class="nx">setProducts</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">([]);</span>
-  <span class="nx">useEffect</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">1 fetching....</span><span class="dl">'</span><span class="p">);</span>
-    <span class="nx">setLoading</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
-    <span class="nx">setError</span><span class="p">(</span><span class="kc">undefined</span><span class="p">);</span>
-    <span class="nx">fetch</span><span class="p">(</span><span class="s2">`data/</span><span class="p">${</span><span class="nx">salesOnly</span> <span class="p">?</span> <span class="dl">'</span><span class="s1">sale_</span><span class="dl">'</span> <span class="p">:</span> <span class="dl">''</span><span class="p">}</span><span class="s2">products.json`</span><span class="p">)</span>
-      <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">res</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">res</span><span class="p">.</span><span class="nx">json</span><span class="p">())</span>
-      <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">data</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
-        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">🔥뜨끈한 데이터 네트워크에서 받아옴</span><span class="dl">'</span><span class="p">);</span>
-        <span class="nx">setProducts</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
-      <span class="p">})</span>
-      <span class="p">.</span><span class="k">catch</span><span class="p">((</span><span class="nx">e</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">setError</span><span class="p">(</span><span class="dl">'</span><span class="s1">에러가 발생 !</span><span class="dl">'</span><span class="p">))</span>
-      <span class="p">.</span><span class="k">finally</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="nx">setLoading</span><span class="p">(</span><span class="kc">false</span><span class="p">));</span>
-    <span class="k">return</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
-      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">🧹 깨끗하게 청소</span><span class="dl">'</span><span class="p">);</span>
-    <span class="p">};</span>
-  <span class="p">},</span> <span class="p">[</span><span class="nx">salesOnly</span><span class="p">]);</span>
-
-  <span class="k">return</span> <span class="p">[</span><span class="nx">loading</span><span class="p">,</span> <span class="nx">error</span><span class="p">,</span> <span class="nx">products</span><span class="p">];</span>
-<span class="p">}</span>
-
-</code></pre></div>    </div>
-  </div>
-</details>
-
-<p>✨ src/components/MainProducts.jsx</p>
-
-<details>
-<summary>MainProducts.jsx</summary>
-<div>
-
-    <div class="language-react highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">import</span> <span class="nx">React</span><span class="p">,</span> <span class="p">{</span> <span class="nx">useState</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">react</span><span class="dl">'</span><span class="p">;</span>
-<span class="k">import</span> <span class="nx">Products</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./Products</span><span class="dl">'</span><span class="p">;</span>
-
-<span class="k">export</span> <span class="k">default</span> <span class="kd">function</span> <span class="nx">MainProducts</span><span class="p">()</span> <span class="p">{</span>
-  <span class="kd">const</span> <span class="p">[</span><span class="nx">showLeftProducts</span><span class="p">,</span> <span class="nx">setShowLeftProducts</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
-  <span class="kd">const</span> <span class="p">[</span><span class="nx">showRightProducts</span><span class="p">,</span> <span class="nx">setShowRightProducts</span><span class="p">]</span> <span class="o">=</span> <span class="nx">useState</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
-  <span class="k">return</span> <span class="p">(</span>
-    <span class="p">&lt;</span><span class="nt">main</span> <span class="na">className</span><span class="p">=</span><span class="s">'container'</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
-        <span class="si">{</span><span class="nx">showLeftProducts</span> <span class="o">&amp;&amp;</span> <span class="p">&lt;</span><span class="nc">Products</span> <span class="p">/&gt;</span><span class="si">}</span>
-        <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onClick</span><span class="p">=</span><span class="si">{</span><span class="p">()</span> <span class="o">=&gt;</span> <span class="nx">setShowLeftProducts</span><span class="p">((</span><span class="nx">show</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="o">!</span><span class="nx">show</span><span class="p">)</span><span class="si">}</span><span class="p">&gt;</span>
-          Toggle
-        <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
-      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
-        <span class="si">{</span><span class="nx">showRightProducts</span> <span class="o">&amp;&amp;</span> <span class="p">&lt;</span><span class="nc">Products</span> <span class="p">/&gt;</span><span class="si">}</span>
-        <span class="p">&lt;</span><span class="nt">button</span> <span class="na">onClick</span><span class="p">=</span><span class="si">{</span><span class="p">()</span> <span class="o">=&gt;</span> <span class="nx">setShowRightProducts</span><span class="p">((</span><span class="nx">show</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="o">!</span><span class="nx">show</span><span class="p">)</span><span class="si">}</span><span class="p">&gt;</span>
-          Toggle
-        <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
-      <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">main</span><span class="p">&gt;</span>
-  <span class="p">);</span>
-<span class="p">}</span>
-</code></pre></div>    </div>
-  </div>
-</details>
-
 <h6 id="error">ERROR</h6>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>react_devtools_backend.js:4012 
@@ -530,10 +432,22 @@ Uncaught Error: Objects are not valid as a React child <span class="o">(</span>f
 
 <p>위와 같이 화면로딩후 넘겨야할 data에 아무런 값이 없고 “Uncaught Error: Objects are not valid as a React child (found: [object Error]). If you meant to render a collection of children, use an array instead.” 에러가 난다.</p>
 
-<p>해결을 위해 공식문서에 API가 변경 됬는지 확인해봐야 하는 작업이 필요할 거 같은데.
-2일쨰 확인이 안되고 있다.
-API : <a href="https://tanstack.com/query/latest/docs/react/reference/useQuery">useQuery | TanStack Query Docs</a>
-GUIDE : <a href="https://tanstack.com/query/latest/docs/react/guides/queries">Queries | TanStack Query Docs</a></p>
+<p>해결을 위해 공식문서에 API가 변경 됬는지 확인해봐야 하는 작업이 필요할 거 같은데.</p>
+
+<p>2일쨰 확인이 안되고 있다. -_- ;;;;;;;</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>API : [useQuery</td>
+      <td>TanStack Query Docs](https://tanstack.com/query/latest/docs/react/reference/useQuery)</td>
+    </tr>
+    <tr>
+      <td>GUIDE : [Queries</td>
+      <td>TanStack Query Docs](https://tanstack.com/query/latest/docs/react/guides/queries)</td>
+    </tr>
+  </tbody>
+</table>
 
 <div class="language-react highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">Todos</span><span class="p">()</span> <span class="p">{</span>
   <span class="kd">const</span> <span class="p">{</span> <span class="nx">isLoading</span><span class="p">,</span> <span class="nx">isError</span><span class="p">,</span> <span class="nx">data</span><span class="p">,</span> <span class="nx">error</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">useQuery</span><span class="p">({</span>
@@ -555,24 +469,28 @@ GUIDE : <a href="https://tanstack.com/query/latest/docs/react/guides/queries">Qu
 <span class="nx">For</span> <span class="nx">an</span> <span class="nx">alternative</span> <span class="nx">way</span> <span class="k">of</span> <span class="nx">performing</span> <span class="nx">status</span> <span class="nx">checks</span><span class="p">,</span> <span class="nx">have</span> <span class="nx">a</span> <span class="nx">look</span> <span class="nx">at</span> <span class="nx">the</span> <span class="nx">Community</span> <span class="nx">Resources</span><span class="p">.</span>
 </code></pre></div></div>
 
-<p>가이드대로 위와 같이 변경 된듯 합니다. data 를 쓰지 않고 queryKey 로 사용하라는건지 …
-근래 바뀐듯 합니다. 커뮤니티를 가보라고 쓰여 있으니 더 뒤져 봐야 할거 같은데요.</p>
+<p>가이드대로 위와 같이 변경 된듯 합니다. data 를 쓰지 않고 queryKey 로 사용하라는건지 …</p>
 
-<table>
-  <tbody>
-    <tr>
-      <td>커뮤니티 : [쿼리 데이터 변환 반응</td>
-      <td>TkDodo의 블로그](https://tkdodo.eu/blog/react-query-data-transformations)</td>
-    </tr>
-  </tbody>
-</table>
+<div class="language-react highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">query</span> <span class="o">=</span> <span class="nx">useQuery</span><span class="p">({</span> <span class="na">queryKey</span><span class="p">:</span> <span class="p">[</span><span class="dl">'</span><span class="s1">todos</span><span class="dl">'</span><span class="p">],</span> <span class="na">queryFn</span><span class="p">:</span> <span class="nx">fetchTodos</span> <span class="p">})</span>
+</code></pre></div></div>
 
-<p>……………………………………………………. ;)</p>
+<p>근래 바뀐듯 합니다. 커뮤니티를 가보라고 쓰여 있으니 더 뒤져 봐야 할거 같은데요.</p>
+
+<p>**커뮤니티 **: <a href="https://tkdodo.eu/blog/react-query-data-transformations">TkDodo의 블로그</a></p>
 
 <p>에러 화면 :</p>
 
-<p><img src="../assets/images/2023-02-02-post-React-Router-sampleCode/image-20230202110820784.png" alt="image-20230202110820784" /></p>
+<p>해결 :  react-query v3로 다운그레이드 해서 정상 동작 되었다. ;)</p>
 
+<p><code class="language-plaintext highlighter-rouge">yarn remove @tanstack/react-query</code></p>
+
+<p>after</p>
+
+<p><code class="language-plaintext highlighter-rouge">npm i react-query@3</code></p>
+
+<p>정상화면 : )</p>
+
+<p><img src="../assets/images/2023-02-02-post-React-Router-sampleCode/제목 없음.jpg" alt="" /></p>
 
         
       </section>
@@ -623,7 +541,7 @@ GUIDE : <a href="https://tanstack.com/query/latest/docs/react/guides/queries">Qu
     <h4 class="page__share-title">공유하기</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=React+Sample+Code+%EA%B3%B5%EC%9C%A0%20http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fpost-React-Router-sampleCode%2Fpost-React-Router-sampleCode.html" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=React+Query+%EC%98%A4%EB%A5%98+%EB%8B%A4%EC%9A%B4%EA%B7%B8%EB%A0%88%EC%9D%B4%EB%93%9C%20http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fpost-React-Router-sampleCode%2Fpost-React-Router-sampleCode.html" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
   <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Fpost-React-Router-sampleCode%2Fpost-React-Router-sampleCode.html" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
