@@ -33,7 +33,7 @@ outterFunc();
 
 ```
 
-중첨 함수 내부에서 자시을 포함하고 있는 외부 함수 outterFunc의 x 변수에 접근이 가능하다.
+중첩 함수 내부에서 자시을 포함하고 있는 외부 함수 outterFunc의 x 변수에 접근이 가능하다.
 
 ```javascript
 const x = 1;

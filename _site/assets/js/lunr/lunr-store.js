@@ -24,7 +24,7 @@ var store = [{
         "teaser": null
       },{
         "title": "Javascript ES6 Lexical Scope",
-        "excerpt":"Javascript Lexical Scope 클로져 (Closure) : 함수가 선언된 렉시컬 환경 Lexical Scope 의 정적 스코프 const x = 1; function outterFunc() { const s = 10; function innerFunc() { console.log(x); //10 } innerFunc(); } outterFunc(); 중첨 함수 내부에서 자시을 포함하고 있는 외부 함수 outterFunc의 x 변수에 접근이 가능하다. const x...","categories": ["posts"],
+        "excerpt":"Javascript Lexical Scope 클로져 (Closure) : 함수가 선언된 렉시컬 환경 Lexical Scope 의 정적 스코프 const x = 1; function outterFunc() { const s = 10; function innerFunc() { console.log(x); //10 } innerFunc(); } outterFunc(); 중첩 함수 내부에서 자시을 포함하고 있는 외부 함수 outterFunc의 x 변수에 접근이 가능하다. const x...","categories": ["posts"],
         "tags": ["Javascript"],
         "url": "/posts/post-javascript-es6-lexicalscope/post-javascript-es6-lexicalscope.html",
         "teaser": null
