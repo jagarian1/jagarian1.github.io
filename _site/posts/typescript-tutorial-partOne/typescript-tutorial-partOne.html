@@ -1,0 +1,747 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="ko" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>타입스크립트 (TypeScript) Introduction - WINGMAN Blog</title>
+<meta name="description" content="TypeScript 정리 초안">
+
+
+  <meta name="author" content="제로미">
+  
+  <meta property="article:author" content="제로미">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:site_name" content="WINGMAN Blog">
+<meta property="og:title" content="타입스크립트 (TypeScript) Introduction">
+<meta property="og:url" content="http://localhost:4000/posts/typescript-tutorial-partOne/typescript-tutorial-partOne.html">
+
+
+  <meta property="og:description" content="TypeScript 정리 초안">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2023-03-11T00:00:00+09:00">
+
+
+
+  <meta property="article:modified_time" content="-0003-11-10T22:06:00+09:00">
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/posts/typescript-tutorial-partOne/typescript-tutorial-partOne.html">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Jerome",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="WINGMAN Blog Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/logo.ico/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/logo.ico/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/logo.ico/favicon-16x16.png">
+<link rel="manifest" href="/assets/logo.ico/site.webmanifest">
+<link rel="mask-icon" href="/assets/logo.ico/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          Do Something the Way You Want
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/">Home</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">Introduce</a>
+            </li><li class="masthead__menu-item">
+              <a href="/categories/">Category</a>
+            </li><li class="masthead__menu-item">
+              <a href="/year-archive/">Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="/tags/">Tags</a>
+            </li><li class="masthead__menu-item">
+              <a href="/sitemap/">Sitemap</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">토글 메뉴</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">제로미</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p><strong>Do Something</strong> Anything</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">팔로우</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Seoul Kor</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="mailto:jeromeoffice191@email.com" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+        
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="타입스크립트 (TypeScript) Introduction">
+    <meta itemprop="description" content="TypeScript 정리 초안">
+    <meta itemprop="datePublished" content="2023-03-11T00:00:00+09:00">
+    <meta itemprop="dateModified" content="-0003-11-10T22:06:00+09:00">
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/posts/typescript-tutorial-partOne/typescript-tutorial-partOne.html" class="u-url" itemprop="url">타입스크립트 (TypeScript) Introduction
+</a>
+          </h1>
+          
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2023-03-11T00:00:00+09:00">March 11, 2023</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+          <aside class="sidebar__right sticky">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On This Page</h4></header>
+              <ul class="toc__menu"><li><a href="#typescript-정리-초안">TypeScript 정리 초안</a></li></ul>
+
+            </nav>
+          </aside>
+        
+        <h4 id="typescript-정리-초안">TypeScript 정리 초안</h4>
+
+<p>1.1 타입스크립트 (TypeScript) Introduction</p>
+
+<pre><code class="language-wiki"> 자바스크립트 프로그램이 유용하려면 숫자, 문자열, 구조체, 불리언 값과 같은 간단한 데이터 단위가 필요합니다. TypeScript는 JavaScript와 거의 동일한 데이터 타입을 지원하며, 열거 타입을 사용하여 더 편리하게 사용할 수 있습니다.
+
++ TypeScript 의 개념
+ - TSC 타입스크립트 컴파일러
+ - AST를 바이트코드 라는 하위 수준의 표현으로 변환한다.
+ - 보통 자바스크립트 컴파일러와 런타임은 엔진이라는 하나의 프로그램으로 합쳐진다.
+  프로그래머는  주로 이 엔지과 사오 작용한다.  V8 스파이더몽키 JSCode  샤크라 등 브라우져별 엔진이 이처럼 동작하며 자바스크립트가 해석되는 Interpreted 언어의 모습을 갖게 만든다...
+ - 타입의 안정성. 타입을 이용해 프로그램이 유효하지 않은 작업을 수행하지 않도록 방지한다.active
+
+ 여기까지는 오레일리 타입스크립트 프로그래밍 책에서 발췌한 것이고 이제부터 내 기억에 넣을 정리를 시작해보자.
+
+</code></pre>
+
+<ul>
+  <li>공식 문서</li>
+</ul>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">Typescript</span> <span class="nx">공식</span> <span class="nx">홈페이지</span><span class="p">:</span> <span class="nx">https</span><span class="p">:</span><span class="c1">//www.typescriptlang.org/</span>
+<span class="nx">Typescript</span> <span class="nx">한글</span> <span class="nx">도움말</span><span class="p">:</span> <span class="nx">https</span><span class="p">:</span><span class="c1">//typescript-kr.github.io/</span>
+<span class="nx">Typescript</span> <span class="nx">한글</span> <span class="nx">문서</span><span class="p">:</span> <span class="nx">https</span><span class="p">:</span><span class="c1">//wikidocs.net/book/3687</span>
+<span class="nx">Typescript</span> <span class="nx">한글</span> <span class="nx">강좌</span><span class="p">:</span> <span class="nx">https</span><span class="p">:</span><span class="c1">//www.inflearn.com/course/%ed%83%80%ec%9e%85%ed%94%8c%eb%a0%88%ec%8a%a4-%ed%95%9c%ea%b8%80%ec%9e%90%eb%a3%8c%ea%b5%ac-%ea%b0%95%ec%a2%8c/</span>
+<span class="nx">Typescript</span> <span class="nx">한글</span> <span class="nx">메뉴얼</span><span class="p">:</span> <span class="nx">https</span><span class="p">:</span><span class="c1">//ahnheejong.gitbooks.io</span>
+
+</code></pre></div></div>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">fullName</span><span class="p">:</span> <span class="nx">string</span> <span class="o">=</span> <span class="s2">`Bob Bobbington`</span><span class="p">;</span>
+<span class="kd">let</span> <span class="nx">age</span><span class="p">:</span> <span class="nx">number</span> <span class="o">=</span> <span class="mi">37</span><span class="p">;</span>
+<span class="kd">let</span> <span class="nx">sentence</span><span class="p">:</span> <span class="nx">string</span> <span class="o">=</span> <span class="s2">`Hello, my name is </span><span class="p">${</span> <span class="nx">fullName</span> <span class="p">}</span><span class="s2">.
+I'll be </span><span class="p">${</span> <span class="nx">age</span> <span class="o">+</span> <span class="mi">1</span> <span class="p">}</span><span class="s2"> years old next month.`</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>위와 아래는 동일 하다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="kd">let</span> <span class="nx">sentence</span><span class="p">:</span> <span class="nx">string</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">Hello, my name is </span><span class="dl">"</span> <span class="o">+</span> <span class="nx">fullName</span> <span class="o">+</span> <span class="dl">"</span><span class="s2">.</span><span class="se">\n\n</span><span class="dl">"</span> <span class="o">+</span>
+    <span class="dl">"</span><span class="s2">I'll be </span><span class="dl">"</span> <span class="o">+</span> <span class="p">(</span><span class="nx">age</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="dl">"</span><span class="s2"> years old next month.</span><span class="dl">"</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>위 예제가 이해가 가지 않는다면.  자바 스크리브 ES6 튜토리얼을 보고 오기를 권장 한다.active</p>
+
+<pre><code class="language-wiki"> - 정리하자면 타입스크립트는 에러를 알려준다는 사실자체 보다는 더 휼륭한 기능은 바로 에러를 알려주는 시점이다. 개발자가 테스트 편집기에 코드를 입력하는 순간 곧바로 에러 메세지를 발생 시킨다.
+ 어떤 에러를 발생하는지 보자
+</code></pre>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="c1">// [에러 TS2365: '3' 타입과 'naver[]' 타입에 연산자 '+' 를 적용할 수 없음]]</span>
+  <span class="c1">// [에러 TS2345: 'number' 타입의 매개변수에  'x' 라는 인수타입을 할달할 수 없음]]</span>
+</code></pre></div></div>
+
+<pre><code class="language-wiki">2.1 타입스크립트 : 3000 미터 상공에서 내려다보기
+
+ - 타입 시스템 기능
+   타입 결정  방식             동적
+   타입이 자동으로 변환 되는가?  O 
+   언제 타입을 확인하는가?    런타임
+   언제 에러를 검출하는가?    런타임(대부분)
+
+ - 동적 타입 바인딩 : 자바스크립트가 프로그램을 실행해야 특정 데이터의 타입을 알 수 있음을 의미함.
+
+2-3 코드 편집기 설정
+ - VSCode 웹사이트에서 제공하는 절차를 따라 설정 하라.
+ - NodeJS 프로젝트 의존성이나 빌드를 관리하는 패키지 관리자 NPM 을 포함. TSC 와 TSLint 설치로 터미널에서
+   NPM 프로젝트를 초기화 하라.
+</code></pre>
+
+<pre><code class="language-wiki">mkdir 생성할project디렉토리명
+
+cd project디렉토리명
+
+npm Introduction
+npm instll --save-dev typescript tslint @type/node
+</code></pre>
+<pre><code class="language-wiki">2.3.1  tsconfig.json
+ - 모든 타입 스크립트 프로젝트는 루트 디렉토리에 tsconfig.json 이라는 파일이 존재 해야 한다.
+   json 파일은 타입스크리브의 프로젝트에서 어떤 파일을 컴파일 하고 어떤 자바스크립트 버전으로 방출하는지 등을 정의한다.active
+
+ - 루트 디렉토리에 tsconfig.json 이라는 파일을 만들고 코드 변집기를 열어 다음과 같이 입력하자.active
+</code></pre>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span>
+  <span class="dl">"</span><span class="s2">compilerOptions</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
+    <span class="dl">"</span><span class="s2">lib</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span><span class="dl">"</span><span class="s2">es2015</span><span class="dl">"</span><span class="p">},</span>
+    <span class="dl">"</span><span class="s2">module</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">commonjs</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">outDir</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">dist</span><span class="dl">"</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">sourceMap</span><span class="dl">"</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">strict</span><span class="dl">"</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="dl">"</span><span class="s2">target</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">es2015</span><span class="dl">"</span><span class="p">,</span>
+    <span class="p">},</span>
+    <span class="dl">"</span><span class="s2">include</span><span class="dl">"</span><span class="p">:</span> <span class="p">[</span>
+      <span class="dl">"</span><span class="s2">src</span><span class="dl">"</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<pre><code class="language-wiki">  - 그림 2-2 TypeScript 옵션
+ include
+ lib
+ module
+ outDir
+ strict
+ target
+
+2.2.2 tslint.json
+</code></pre>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">.</span><span class="o">/</span><span class="nx">node_modules</span><span class="o">/</span><span class="p">.</span><span class="nx">bin</span><span class="o">/</span><span class="nx">tslint</span> <span class="o">-</span><span class="nx">init</span>
+</code></pre></div></div>
+
+<pre><code class="language-wiki">- rule에 모든 규칙은 TSLint 공식분서에서 확인하자.active
+
+2.4 index.ts  또는 index.tsx 
+ - src/index.tsx 
+
+ index.ts 에  아래의 코드를 넣는다.
+
+ console.log('Hello TypeScript!');
+
+ - 컴파일 하고 실행하자
+
+# TSC로 타입스크립트 컴파일.
+ ./node_modules/.bin/tsc 
+# NodeJS 로 코드 실행
+ node ./dist/index.js
+
+여까지 실행환경 이었다.. 수고 했음.
+</code></pre>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> 태그: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/tags/#typescript" class="page__taxonomy-item p-category" rel="tag">TypeScript</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> 카테고리: </strong>
+    <span itemprop="keywords">
+    
+      <a href="/categories/#posts" class="page__taxonomy-item p-category" rel="tag">posts</a>
+    
+    </span>
+  </p>
+
+
+        
+
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time class="dt-published" datetime="-0003-11-10">November 10, -0003</time></p>
+
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">공유하기</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8+%28TypeScript%29+Introduction%20http%3A%2F%2Flocalhost%3A4000%2Fposts%2Ftypescript-tutorial-partOne%2Ftypescript-tutorial-partOne.html" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Ftypescript-tutorial-partOne%2Ftypescript-tutorial-partOne.html" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fposts%2Ftypescript-tutorial-partOne%2Ftypescript-tutorial-partOne.html" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/posts/post-React-Router-sampleCode/post-React-Router-sampleCode.html" class="pagination--pager" title="React Query 오류 다운그레이드
+">이전</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">다음</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h2 class="page__related-title">참고</h2>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/posts/post-React-Router-sampleCode/post-React-Router-sampleCode.html" rel="permalink">React Query 오류 다운그레이드
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2023-02-02T00:00:00+09:00">February 2, 2023</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/posts/post-javascript-FunctionalPrograming/post-javascript-FunctionalPrograming.html" rel="permalink">Functional Programming
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2023-01-27T00:00:00+09:00">January 27, 2023</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">
+  원본 : O’Reilly Functional Thinking - 닐 포트 지음 … 에서 인용 하였습니다.
+
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/posts/post-javascript-es6-Arrow_function-part2/post-javascript-es6-Arrow_function-part2.html" rel="permalink">ES6 Arrow Function part2
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2023-01-21T00:00:00+09:00">January 21, 2023</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">⚡️ Javascritp Arrow Function
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/posts/post-javascript-es6-Arrow_function-part1/post-javascript-es6-Arrow_function-part1.html" rel="permalink">ES6 Arrow Function part1
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2023-01-21T00:00:00+09:00">January 21, 2023</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">⚡️ EC6 Javascritp Arrow Function 1
+
+  화살표 함수(Arrow Function)
+
+
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>팔로우:</strong></li>
+    
+
+    
+      
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> 피드</a></li>
+    
+  </ul>
+</div>
+
+<!-- <div class="page__footer-copyright">&copy; 2023 Jerome. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div> -->
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "http://localhost:4000/posts/typescript-tutorial-partOne/typescript-tutorial-partOne.html";  /* Replace PAGE_URL with your page's canonical URL variable */
+      this.page.identifier = "/posts/typescript-tutorial-partOne/typescript-tutorial-partOne"; /* Replace PAGE_IDENTIFIER with your page's unique identifier variable */
+    };
+    (function() { /* DON'T EDIT BELOW THIS LINE */
+      var d = document, s = d.createElement('script');
+      s.src = 'https://jeromemi.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+
+
+  </body>
+</html>

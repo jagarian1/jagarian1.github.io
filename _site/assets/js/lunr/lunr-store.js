@@ -64,4 +64,10 @@ var store = [{
         "tags": ["React"],
         "url": "/posts/post-React-Router-sampleCode/post-React-Router-sampleCode.html",
         "teaser": null
+      },{
+        "title": "타입스크립트 (TypeScript) Introduction",
+        "excerpt":"TypeScript 정리 초안 1.1 타입스크립트 (TypeScript) Introduction 자바스크립트 프로그램이 유용하려면 숫자, 문자열, 구조체, 불리언 값과 같은 간단한 데이터 단위가 필요합니다. TypeScript는 JavaScript와 거의 동일한 데이터 타입을 지원하며, 열거 타입을 사용하여 더 편리하게 사용할 수 있습니다. + TypeScript 의 개념 - TSC 타입스크립트 컴파일러 - AST를 바이트코드 라는 하위 수준의 표현으로...","categories": ["posts"],
+        "tags": ["TypeScript"],
+        "url": "/posts/typescript-tutorial-partOne/typescript-tutorial-partOne.html",
+        "teaser": null
       }]

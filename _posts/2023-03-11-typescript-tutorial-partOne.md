@@ -1,7 +1,5 @@
 ---
-title: "TypeScript"
-layout: categories
-title: "TypeScript"
+title: "타입스크립트 (TypeScript) Introduction"
 search: true
 categories:
   - posts
@@ -12,10 +10,11 @@ toc: true
 toc_sticky: true
 ---
 
-##### TypeScript 정리 초안.
+#### TypeScript 정리 초안
 
 1.1 타입스크립트 (TypeScript) Introduction
 
+```wiki
  자바스크립트 프로그램이 유용하려면 숫자, 문자열, 구조체, 불리언 값과 같은 간단한 데이터 단위가 필요합니다. TypeScript는 JavaScript와 거의 동일한 데이터 타입을 지원하며, 열거 타입을 사용하여 더 편리하게 사용할 수 있습니다.
 
 + TypeScript 의 개념
@@ -27,7 +26,7 @@ toc_sticky: true
 
  여기까지는 오레일리 타입스크립트 프로그래밍 책에서 발췌한 것이고 이제부터 내 기억에 넣을 정리를 시작해보자.
 
-
+```
 
 + 공식 문서
 
@@ -57,16 +56,18 @@ let sentence: string = "Hello, my name is " + fullName + ".\n\n" +
 
 위 예제가 이해가 가지 않는다면.  자바 스크리브 ES6 튜토리얼을 보고 오기를 권장 한다.active
 
-
+```wiki
  - 정리하자면 타입스크립트는 에러를 알려준다는 사실자체 보다는 더 휼륭한 기능은 바로 에러를 알려주는 시점이다. 개발자가 테스트 편집기에 코드를 입력하는 순간 곧바로 에러 메세지를 발생 시킨다.
  어떤 에러를 발생하는지 보자
+```
+
 
  ```javascript
   // [에러 TS2365: '3' 타입과 'naver[]' 타입에 연산자 '+' 를 적용할 수 없음]]
   // [에러 TS2345: 'number' 타입의 매개변수에  'x' 라는 인수타입을 할달할 수 없음]]
  ```
 
-
+```wiki
 2.1 타입스크립트 : 3000 미터 상공에서 내려다보기
 
  - 타입 시스템 기능
@@ -81,8 +82,10 @@ let sentence: string = "Hello, my name is " + fullName + ".\n\n" +
  - VSCode 웹사이트에서 제공하는 절차를 따라 설정 하라.
  - NodeJS 프로젝트 의존성이나 빌드를 관리하는 패키지 관리자 NPM 을 포함. TSC 와 TSLint 설치로 터미널에서
    NPM 프로젝트를 초기화 하라.
-
 ```
+
+
+```wiki
 mkdir 생성할project디렉토리명
 
 cd project디렉토리명
@@ -90,14 +93,15 @@ cd project디렉토리명
 npm Introduction
 npm instll --save-dev typescript tslint @type/node
 ```
-
+```wiki
 2.3.1  tsconfig.json
  - 모든 타입 스크립트 프로젝트는 루트 디렉토리에 tsconfig.json 이라는 파일이 존재 해야 한다.
    json 파일은 타입스크리브의 프로젝트에서 어떤 파일을 컴파일 하고 어떤 자바스크립트 버전으로 방출하는지 등을 정의한다.active
 
  - 루트 디렉토리에 tsconfig.json 이라는 파일을 만들고 코드 변집기를 열어 다음과 같이 입력하자.active
-
 ```
+
+```javascript
 {
   "compilerOptions": {
     "lib": {"es2015"},
@@ -113,6 +117,8 @@ npm instll --save-dev typescript tslint @type/node
 }
 ```
 
+
+```wiki
   - 그림 2-2 TypeScript 옵션
  include
  lib
@@ -122,10 +128,13 @@ npm instll --save-dev typescript tslint @type/node
  target
 
 2.2.2 tslint.json
+```
 
 ```javascript 
 ./node_modules/.bin/tslint -init
 ```
+
+```wiki
 - rule에 모든 규칙은 TSLint 공식분서에서 확인하자.active
 
 2.4 index.ts  또는 index.tsx 
@@ -143,3 +152,4 @@ npm instll --save-dev typescript tslint @type/node
  node ./dist/index.js
 
 여까지 실행환경 이었다.. 수고 했음.
+```
