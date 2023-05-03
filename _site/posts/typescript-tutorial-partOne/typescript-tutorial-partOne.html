@@ -312,18 +312,19 @@
 
 <p>1.1 타입스크립트 (TypeScript) Introduction</p>
 
-<pre><code class="language-wiki"> 자바스크립트 프로그램이 유용하려면 숫자, 문자열, 구조체, 불리언 값과 같은 간단한 데이터 단위가 필요합니다. TypeScript는 JavaScript와 거의 동일한 데이터 타입을 지원하며, 열거 타입을 사용하여 더 편리하게 사용할 수 있습니다.
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nx">자바스크립트</span> <span class="nx">프로그램이</span> <span class="nx">유용하려면</span> <span class="nx">숫자</span><span class="p">,</span> <span class="nx">문자열</span><span class="p">,</span> <span class="nx">구조체</span><span class="p">,</span> <span class="nx">불리언</span> <span class="nx">값과</span> <span class="nx">같은</span> <span class="nx">간단한</span> <span class="nx">데이터</span> <span class="nx">단위가</span> <span class="nx">필요합니다</span><span class="p">.</span> 
+ <span class="nx">TypeScript는</span> <span class="nx">JavaScript와</span> <span class="nx">거의</span> <span class="nx">동일한</span> <span class="nx">데이터</span> <span class="nx">타입을</span> <span class="nx">지원하며</span><span class="p">,</span> <span class="nx">열거</span> <span class="nx">타입을</span> <span class="nx">사용하여</span> <span class="nx">더</span> <span class="nx">편리하게</span> <span class="nx">사용할</span> <span class="nx">수</span> <span class="nx">있습니다</span><span class="p">.</span>
 
-+ TypeScript 의 개념
- - TSC 타입스크립트 컴파일러
- - AST를 바이트코드 라는 하위 수준의 표현으로 변환한다.
- - 보통 자바스크립트 컴파일러와 런타임은 엔진이라는 하나의 프로그램으로 합쳐진다.
-  프로그래머는  주로 이 엔지과 사오 작용한다.  V8 스파이더몽키 JSCode  샤크라 등 브라우져별 엔진이 이처럼 동작하며 자바스크립트가 해석되는 Interpreted 언어의 모습을 갖게 만든다...
- - 타입의 안정성. 타입을 이용해 프로그램이 유효하지 않은 작업을 수행하지 않도록 방지한다.active
+<span class="o">+</span> <span class="nx">TypeScript</span> <span class="nx">의</span> <span class="nx">개념</span>
+ <span class="o">-</span> <span class="nx">TSC</span> <span class="nx">타입스크립트</span> <span class="nx">컴파일러</span>
+ <span class="o">-</span> <span class="nx">AST를</span> <span class="nx">바이트코드</span> <span class="nx">라는</span> <span class="nx">하위</span> <span class="nx">수준의</span> <span class="nx">표현으로</span> <span class="nx">변환한다</span><span class="p">.</span>
+ <span class="o">-</span> <span class="nx">보통</span> <span class="nx">자바스크립트</span> <span class="nx">컴파일러와</span> <span class="nx">런타임은</span> <span class="nx">엔진이라는</span> <span class="nx">하나의</span> <span class="nx">프로그램으로</span> <span class="nx">합쳐진다</span><span class="p">.</span>
+   <span class="nx">프로그래머는</span>  <span class="nx">주로</span> <span class="nx">이</span> <span class="nx">엔지과</span> <span class="nx">상호</span> <span class="nx">작용한다</span><span class="p">.</span>  
+   <span class="nx">V8</span> <span class="nx">스파이더몽키</span> <span class="nx">JSCode</span>  <span class="nx">샤크라</span> <span class="nx">등</span> <span class="nx">브라우져별</span> <span class="nx">엔진이</span> <span class="nx">이처럼</span> <span class="nx">동작하며</span> <span class="nx">자바스크립트가</span> <span class="nx">해석되는</span> <span class="nx">Interpreted</span> <span class="nx">언어의</span> <span class="nx">모습을</span> <span class="nx">갖게</span> <span class="nx">만든다</span><span class="p">...</span>
+ <span class="o">-</span> <span class="nx">타입의</span> <span class="nx">안정성</span><span class="p">.</span> <span class="nx">타입을</span> <span class="nx">이용해</span> <span class="nx">프로그램이</span> <span class="nx">유효하지</span> <span class="nx">않은</span> <span class="nx">작업을</span> <span class="nx">수행하지</span> <span class="nx">않도록</span> <span class="nx">방지한다</span><span class="p">.</span>
+</code></pre></div></div>
 
- 여기까지는 오레일리 타입스크립트 프로그래밍 책에서 발췌한 것이고 이제부터 내 기억에 넣을 정리를 시작해보자.
-
-</code></pre>
+<p>여기까지는 O’Reilly  타입스크립트 프로그래밍 책에서 발췌한 것이고 이제부터 내 기억에 넣을 정리를 시작해보자.</p>
 
 <ul>
   <li>공식 문서</li>
@@ -345,50 +346,53 @@ I'll be </span><span class="p">${</span> <span class="nx">age</span> <span class
 
 <p>위와 아래는 동일 하다.</p>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
-<span class="kd">let</span> <span class="nx">sentence</span><span class="p">:</span> <span class="nx">string</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">Hello, my name is </span><span class="dl">"</span> <span class="o">+</span> <span class="nx">fullName</span> <span class="o">+</span> <span class="dl">"</span><span class="s2">.</span><span class="se">\n\n</span><span class="dl">"</span> <span class="o">+</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">sentence</span><span class="p">:</span> <span class="nx">string</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">Hello, my name is </span><span class="dl">"</span> <span class="o">+</span> <span class="nx">fullName</span> <span class="o">+</span> <span class="dl">"</span><span class="s2">.</span><span class="se">\n\n</span><span class="dl">"</span> <span class="o">+</span>
     <span class="dl">"</span><span class="s2">I'll be </span><span class="dl">"</span> <span class="o">+</span> <span class="p">(</span><span class="nx">age</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">+</span> <span class="dl">"</span><span class="s2"> years old next month.</span><span class="dl">"</span><span class="p">;</span>
 </code></pre></div></div>
 
-<p>위 예제가 이해가 가지 않는다면.  자바 스크리브 ES6 튜토리얼을 보고 오기를 권장 한다.active</p>
+<p>위 예제가 이해가 가지 않는다면.  JavaScript ECMA6 튜토리얼을 보고 오기를 권장 한다.</p>
 
-<pre><code class="language-wiki"> - 정리하자면 타입스크립트는 에러를 알려준다는 사실자체 보다는 더 휼륭한 기능은 바로 에러를 알려주는 시점이다. 개발자가 테스트 편집기에 코드를 입력하는 순간 곧바로 에러 메세지를 발생 시킨다.
- 어떤 에러를 발생하는지 보자
-</code></pre>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="o">-</span> <span class="nx">정리하자면</span> <span class="nx">타입스크립트는</span> <span class="nx">에러를</span> <span class="nx">알려준다는</span> <span class="nx">사실자체</span> <span class="nx">보다는</span> <span class="nx">더</span> <span class="nx">휼륭한</span> <span class="nx">기능은</span> <span class="nx">바로</span> <span class="nx">에러를</span> <span class="nx">알려주는</span> <span class="nx">시점이다</span><span class="p">.</span> 
+ <span class="nx">개발자가</span> <span class="nx">테스트</span> <span class="nx">편집기에</span> <span class="nx">코드를</span> <span class="nx">입력하는</span> <span class="nx">순간</span> <span class="nx">곧바로</span> <span class="nx">에러</span> <span class="nx">메세지를</span> <span class="nx">발생</span> <span class="nx">시킨다</span><span class="p">.</span>
+ <span class="nx">어떤</span> <span class="nx">에러를</span> <span class="nx">발생하는지</span> <span class="nx">보자</span><span class="p">..</span>
+</code></pre></div></div>
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="c1">// [에러 TS2365: '3' 타입과 'naver[]' 타입에 연산자 '+' 를 적용할 수 없음]]</span>
   <span class="c1">// [에러 TS2345: 'number' 타입의 매개변수에  'x' 라는 인수타입을 할달할 수 없음]]</span>
 </code></pre></div></div>
 
-<pre><code class="language-wiki">2.1 타입스크립트 : 3000 미터 상공에서 내려다보기
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="mf">2.1</span> <span class="nx">타입스크립트</span> <span class="p">:</span> <span class="mi">3000</span> <span class="nx">미터</span> <span class="nx">상공에서</span> <span class="nx">내려다보기</span>
 
- - 타입 시스템 기능
-   타입 결정  방식             동적
-   타입이 자동으로 변환 되는가?  O 
-   언제 타입을 확인하는가?    런타임
-   언제 에러를 검출하는가?    런타임(대부분)
+ <span class="o">+</span> <span class="nx">타입</span> <span class="nx">시스템</span> <span class="nx">기능</span>
+ <span class="o">+</span> <span class="nx">타입</span> <span class="nx">결정</span>  <span class="nx">방식</span>             <span class="nx">동적</span>
+ <span class="o">+</span> <span class="nx">타입이</span> <span class="nx">자동으로</span> <span class="nx">변환</span> <span class="nx">되는가</span><span class="p">?</span>  <span class="nx">O</span> 
+ <span class="o">+</span> <span class="nx">언제</span> <span class="nx">타입을</span> <span class="nx">확인하는가</span><span class="p">?</span>       <span class="nx">런타임</span>
+ <span class="o">+</span> <span class="nx">언제</span> <span class="nx">에러를</span> <span class="nx">검출하는가</span><span class="p">?</span>       <span class="nx">런타임</span><span class="p">(</span><span class="nx">대부분</span><span class="p">)</span>
 
- - 동적 타입 바인딩 : 자바스크립트가 프로그램을 실행해야 특정 데이터의 타입을 알 수 있음을 의미함.
+ <span class="o">+</span> <span class="nx">동적</span> <span class="nx">타입</span> <span class="nx">바인딩</span> <span class="p">:</span> 
+   <span class="nx">자바스크립트가</span> <span class="nx">프로그램을</span> <span class="nx">실행해야</span> <span class="nx">특정</span> <span class="nx">데이터의</span> <span class="nx">타입을</span> <span class="nx">알</span> <span class="nx">수</span> <span class="nx">있음을</span> <span class="nx">의미함</span><span class="p">.</span>
 
-2-3 코드 편집기 설정
- - VSCode 웹사이트에서 제공하는 절차를 따라 설정 하라.
- - NodeJS 프로젝트 의존성이나 빌드를 관리하는 패키지 관리자 NPM 을 포함. TSC 와 TSLint 설치로 터미널에서
-   NPM 프로젝트를 초기화 하라.
-</code></pre>
+<span class="mf">2.2</span> <span class="nx">코드</span> <span class="nx">편집기</span> <span class="nx">설정</span>
+ <span class="o">-</span> <span class="nx">VSCode</span> <span class="nx">웹사이트에서</span> <span class="nx">제공하는</span> <span class="nx">절차를</span> <span class="nx">따라</span> <span class="nx">설정</span> <span class="nx">하라</span><span class="p">.</span>
+ <span class="o">-</span> <span class="nx">NodeJS</span> <span class="nx">프로젝트</span> <span class="nx">의존성이나</span> <span class="nx">빌드를</span> <span class="nx">관리하는</span> <span class="nx">패키지</span> <span class="nx">관리자</span> <span class="nx">NPM</span> <span class="nx">을</span> <span class="nx">포함</span><span class="p">.</span> 
+   <span class="nx">TSC</span> <span class="nx">와</span> <span class="nx">TSLint</span> <span class="nx">설치로</span> <span class="nx">터미널에서</span> <span class="nx">NPM</span> <span class="nx">프로젝트를</span> <span class="nx">초기화</span> <span class="nx">하라</span><span class="p">.</span>
+</code></pre></div></div>
 
-<pre><code class="language-wiki">mkdir 생성할project디렉토리명
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">mkdir</span> <span class="nx">생성할project디렉토리명</span>
 
-cd project디렉토리명
+<span class="nx">cd</span> <span class="nx">project디렉토리명</span>
 
-npm Introduction
-npm instll --save-dev typescript tslint @type/node
-</code></pre>
-<pre><code class="language-wiki">2.3.1  tsconfig.json
- - 모든 타입 스크립트 프로젝트는 루트 디렉토리에 tsconfig.json 이라는 파일이 존재 해야 한다.
-   json 파일은 타입스크리브의 프로젝트에서 어떤 파일을 컴파일 하고 어떤 자바스크립트 버전으로 방출하는지 등을 정의한다.active
+<span class="nx">npm</span> <span class="nx">Introduction</span>
+<span class="nx">npm</span> <span class="nx">instll</span> <span class="o">--</span><span class="nx">save</span><span class="o">-</span><span class="nx">dev</span> <span class="nx">typescript</span> <span class="nx">tslint</span> <span class="p">@</span><span class="nd">type</span><span class="sr">/nod</span><span class="err">e
+</span></code></pre></div></div>
 
- - 루트 디렉토리에 tsconfig.json 이라는 파일을 만들고 코드 변집기를 열어 다음과 같이 입력하자.active
-</code></pre>
+<p>2.2.1  tsconfig.json</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="o">-</span> <span class="nx">모든</span> <span class="nx">타입</span> <span class="nx">스크립트</span> <span class="nx">프로젝트는</span> <span class="nx">루트</span> <span class="nx">디렉토리에</span> <span class="nx">tsconfig</span><span class="p">.</span><span class="nx">json</span> <span class="nx">이라는</span> <span class="nx">파일이</span> <span class="nx">존재</span> <span class="nx">해야</span> <span class="nx">한다</span><span class="p">.</span>
+   <span class="nx">json</span> <span class="nx">파일은</span> <span class="nx">타입스크리브의</span> <span class="nx">프로젝트에서</span> <span class="nx">어떤</span> <span class="nx">파일을</span> <span class="nx">컴파일</span> <span class="nx">하고</span> <span class="nx">어떤</span> <span class="nx">자바스크립트</span> <span class="nx">버전으로</span> <span class="nx">방출하는지</span> <span class="nx">등을</span> <span class="nx">정의한다</span><span class="p">.</span>
+
+ <span class="o">-</span> <span class="nx">루트</span> <span class="nx">디렉토리에</span> <span class="nx">tsconfig</span><span class="p">.</span><span class="nx">json</span> <span class="nx">이라는</span> <span class="nx">파일을</span> <span class="nx">만들고</span> <span class="nx">코드</span> <span class="nx">변집기를</span> <span class="nx">열어</span> <span class="nx">다음과</span> <span class="nx">같이</span> <span class="nx">입력하자</span><span class="p">.</span>
+</code></pre></div></div>
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span>
   <span class="dl">"</span><span class="s2">compilerOptions</span><span class="dl">"</span><span class="p">:</span> <span class="p">{</span>
@@ -405,38 +409,54 @@ npm instll --save-dev typescript tslint @type/node
 <span class="p">}</span>
 </code></pre></div></div>
 
-<pre><code class="language-wiki">  - 그림 2-2 TypeScript 옵션
- include
- lib
- module
- outDir
- strict
- target
+<p>그림 2-2 TypeScript 옵션</p>
 
-2.2.2 tslint.json
-</code></pre>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nx">include</span>
+ <span class="nx">lib</span>
+ <span class="nx">module</span>
+ <span class="nx">outDir</span>
+ <span class="nx">strict</span>
+ <span class="nx">target</span>
+</code></pre></div></div>
+
+<p>2.2.2 tslint.json</p>
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">.</span><span class="o">/</span><span class="nx">node_modules</span><span class="o">/</span><span class="p">.</span><span class="nx">bin</span><span class="o">/</span><span class="nx">tslint</span> <span class="o">-</span><span class="nx">init</span>
 </code></pre></div></div>
 
-<pre><code class="language-wiki">- rule에 모든 규칙은 TSLint 공식분서에서 확인하자.active
+<p>** rule 모든 규칙은 TSLint 공식문서에서 확인하자.</p>
 
-2.4 index.ts  또는 index.tsx 
- - src/index.tsx 
+<p>2.4 index.ts  또는 index.tsx</p>
 
- index.ts 에  아래의 코드를 넣는다.
+<ul>
+  <li>src/index.tsx</li>
+</ul>
 
- console.log('Hello TypeScript!');
+<p>index.ts 에  아래의 코드를 넣는다.</p>
 
- - 컴파일 하고 실행하자
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">Hello TypeScript!</span><span class="dl">'</span><span class="p">);</span>
+</code></pre></div></div>
 
-# TSC로 타입스크립트 컴파일.
- ./node_modules/.bin/tsc 
-# NodeJS 로 코드 실행
- node ./dist/index.js
+<ul>
+  <li>
+    <p>컴파일 하고 실행하자</p>
+  </li>
+  <li>
+    <p>TSC로 타입스크립트 컴파일</p>
+  </li>
+</ul>
 
-여까지 실행환경 이었다.. 수고 했음.
-</code></pre>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="p">.</span><span class="o">/</span><span class="nx">node_modules</span><span class="o">/</span><span class="p">.</span><span class="nx">bin</span><span class="o">/</span><span class="nx">tsc</span>
+</code></pre></div></div>
+
+<ul>
+  <li>NodeJS 로 코드 실행</li>
+</ul>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="nx">node</span> <span class="p">.</span><span class="o">/</span><span class="nx">dist</span><span class="o">/</span><span class="nx">index</span><span class="p">.</span><span class="nx">js</span>
+</code></pre></div></div>
+
+<p>여기까지 실행환경 이었다.. 수고 했음.</p>
 
         
       </section>
@@ -498,7 +518,7 @@ npm instll --save-dev typescript tslint @type/node
       
   <nav class="pagination">
     
-      <a href="/posts/post-React-Router-sampleCode/post-React-Router-sampleCode.html" class="pagination--pager" title="React Query 오류 다운그레이드
+      <a href="/categories/" class="pagination--pager" title="코딩 사이트
 ">이전</a>
     
     
@@ -516,6 +536,44 @@ npm instll --save-dev typescript tslint @type/node
     <div class="page__related">
       <h2 class="page__related-title">참고</h2>
       <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/categories/" rel="permalink">코딩 사이트
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        
+        <time datetime="2023-03-02T00:00:00+09:00">March 2, 2023</time>
+      </span>
+    
+
+    
+
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">- 외국 코딩 사이트로는 대표적으로 다음과 같은 사이트들이 있습니다.
+
+</p>
+  </article>
+</div>
+
         
           
 
@@ -627,47 +685,6 @@ npm instll --save-dev typescript tslint @type/node
 
 
     <p class="archive__item-excerpt" itemprop="description">⚡️ Javascritp Arrow Function
-
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title no_toc" itemprop="headline">
-      
-        <a href="/posts/post-javascript-es6-Arrow_function-part1/post-javascript-es6-Arrow_function-part1.html" rel="permalink">ES6 Arrow Function part1
-</a>
-      
-    </h2>
-    
-
-  <p class="page__meta">
-    
-      
-      <span class="page__meta-date">
-        <i class="far fa-calendar-alt" aria-hidden="true"></i>
-        
-        <time datetime="2023-01-21T00:00:00+09:00">January 21, 2023</time>
-      </span>
-    
-
-    
-
-    
-  </p>
-
-
-    <p class="archive__item-excerpt" itemprop="description">⚡️ EC6 Javascritp Arrow Function 1
-
-  화살표 함수(Arrow Function)
-
 
 </p>
   </article>

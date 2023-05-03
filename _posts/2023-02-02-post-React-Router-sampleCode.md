@@ -16,18 +16,15 @@ toc_sticky: true
 
 ###### @tanstack/react-query   
 
-
 - React-Query 사용하는 이유  :  Custom Hook 의 문제로 인해.    1.Cache   2.Retry 기능이 없음.
 
   React Query 사용하여 이런 문제를 해결..
 
-  
-
-###### INSTALL   
+==== INSTALL
 
 환경설정   yarn 으로 설치한다.
 
-+ @tanstack/react-query 를 설치한다.
+= @tanstack/react-query 를 설치한다.
 
   1. yarn create react-app query-init 
      ✨ 디렉토리 상위에서 프로젝트(query-init)를 생성합니다. 
@@ -37,7 +34,6 @@ toc_sticky: true
   4. yarn add @tanstack/react-query-devtools  
      ✨명령으로 react-query-devtools를 설치 해줍니다. 
   5. yarn start 하면 페이지가 열립니다...
-     
 
 공식문서 : tanstack.com   ReactQuery
 https://tanstack.com/query/latest/docs/react/installation
@@ -45,17 +41,16 @@ https://tanstack.com/query/latest/docs/react/installation
 API :  
 https://tanstack.com/query/latest/docs/react/reference/useQuery
 
-
 ```react
 import { useQuery } from '@tanstack/react-query';
 ```
 
 ------
 
-######  SOURCE
-
+= SOURCE
 
 ✨ Product.jsx
+
 <details>
 <summary>Product.jsx</summary>
 <div markdown="1">
@@ -114,8 +109,6 @@ export default function Products() {
 </div>
 </details>
 
-
-
 ###### ERROR
 
 ```bash
@@ -165,21 +158,17 @@ For an alternative way of performing status checks, have a look at the Community
 
 가이드대로 위와 같이 변경 된듯 합니다. data 를 쓰지 않고 queryKey 로 사용하라는건지 ...
 
-
 ```react
 const query = useQuery({ queryKey: ['todos'], queryFn: fetchTodos })
 ```
 
 근래 바뀐듯 합니다. 커뮤니티를 가보라고 쓰여 있으니 더 뒤져 봐야 할거 같은데요.
 
-**커뮤니티 **: [TkDodo의 블로그](https://tkdodo.eu/blog/react-query-data-transformations)
-
-
+**커뮤니티 : [TkDodo의 블로그](https://tkdodo.eu/blog/react-query-data-transformations)
 
 에러 화면 :
 
 해결 :  react-query v3로 다운그레이드 해서 정상 동작 되었다. ;)
-
 
 `yarn remove @tanstack/react-query`
 

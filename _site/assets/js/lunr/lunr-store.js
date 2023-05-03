@@ -60,9 +60,15 @@ var store = [{
         "teaser": null
       },{
         "title": "React Query 오류 다운그레이드",
-        "excerpt":"✨ React Query @tanstack/react-query React-Query 사용하는 이유 : Custom Hook 의 문제로 인해. 1.Cache 2.Retry 기능이 없음. React Query 사용하여 이런 문제를 해결.. INSTALL 환경설정 yarn 으로 설치한다. @tanstack/react-query 를 설치한다. yarn create react-app query-init ✨ 디렉토리 상위에서 프로젝트(query-init)를 생성합니다. cd query-init ✨ yarn init ✨ yarn add @tanstack/react-query ✨명령으로...","categories": ["posts"],
+        "excerpt":"✨ React Query @tanstack/react-query React-Query 사용하는 이유 : Custom Hook 의 문제로 인해. 1.Cache 2.Retry 기능이 없음. React Query 사용하여 이런 문제를 해결.. ==== INSTALL 환경설정 yarn 으로 설치한다. = @tanstack/react-query 를 설치한다. yarn create react-app query-init ✨ 디렉토리 상위에서 프로젝트(query-init)를 생성합니다. cd query-init ✨ yarn init ✨ yarn add...","categories": ["posts"],
         "tags": ["React"],
         "url": "/posts/post-React-Router-sampleCode/post-React-Router-sampleCode.html",
+        "teaser": null
+      },{
+        "title": "코딩 사이트",
+        "excerpt":"- 외국 코딩 사이트로는 대표적으로 다음과 같은 사이트들이 있습니다.   1.1 Stack Overflow: https://stackoverflow.com/   1.2 GitHub: https://github.com/   1.3 Codecademy: https://www.codecademy.com/   1.4 HackerRank: https://www.hackerrank.com/   1.5 Udacity: https://www.udacity.com/   1.6 Codepen: https://codepen.io/   1.7 FreeCodeCamp: https://www.freecodecamp.org/   1.8 Codewars: https://www.codewars.com/  ","categories": ["Coding"],
+        "tags": ["Category"],
+        "url": "/categories/",
         "teaser": null
       },{
         "title": "타입스크립트 (TypeScript) Introduction",

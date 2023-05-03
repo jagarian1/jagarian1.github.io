@@ -1,19 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-13T15:43:13+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">WINGMAN Blog</title><subtitle>An amazing life.</subtitle><author><name>제로미</name></author><entry><title type="html">타입스크립트 (TypeScript) Introduction</title><link href="http://localhost:4000/posts/typescript-tutorial-partOne/typescript-tutorial-partOne.html" rel="alternate" type="text/html" title="타입스크립트 (TypeScript) Introduction" /><published>2023-03-11T00:00:00+09:00</published><updated>-0003-11-10T22:06:00+09:00</updated><id>http://localhost:4000/posts/typescript-tutorial-partOne/typescript-tutorial-partOne</id><content type="html" xml:base="http://localhost:4000/posts/typescript-tutorial-partOne/typescript-tutorial-partOne.html">&lt;h4 id=&quot;typescript-정리-초안&quot;&gt;TypeScript 정리 초안&lt;/h4&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-05-04T03:32:30+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">WINGMAN Blog</title><subtitle>An amazing life.</subtitle><author><name>제로미</name></author><entry><title type="html">타입스크립트 (TypeScript) Introduction</title><link href="http://localhost:4000/posts/typescript-tutorial-partOne/typescript-tutorial-partOne.html" rel="alternate" type="text/html" title="타입스크립트 (TypeScript) Introduction" /><published>2023-03-11T00:00:00+09:00</published><updated>-0003-11-10T22:06:00+09:00</updated><id>http://localhost:4000/posts/typescript-tutorial-partOne/typescript-tutorial-partOne</id><content type="html" xml:base="http://localhost:4000/posts/typescript-tutorial-partOne/typescript-tutorial-partOne.html">&lt;h4 id=&quot;typescript-정리-초안&quot;&gt;TypeScript 정리 초안&lt;/h4&gt;
 
 &lt;p&gt;1.1 타입스크립트 (TypeScript) Introduction&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-wiki&quot;&gt; 자바스크립트 프로그램이 유용하려면 숫자, 문자열, 구조체, 불리언 값과 같은 간단한 데이터 단위가 필요합니다. TypeScript는 JavaScript와 거의 동일한 데이터 타입을 지원하며, 열거 타입을 사용하여 더 편리하게 사용할 수 있습니다.
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;nx&quot;&gt;자바스크립트&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;프로그램이&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;유용하려면&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;숫자&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;문자열&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;구조체&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;불리언&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;값과&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;같은&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;간단한&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;데이터&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;단위가&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;필요합니다&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt; 
+ &lt;span class=&quot;nx&quot;&gt;TypeScript는&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;JavaScript와&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;거의&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;동일한&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;데이터&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;타입을&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;지원하며&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;열거&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;타입을&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;사용하여&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;더&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;편리하게&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;사용할&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;수&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;있습니다&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;
 
-+ TypeScript 의 개념
- - TSC 타입스크립트 컴파일러
- - AST를 바이트코드 라는 하위 수준의 표현으로 변환한다.
- - 보통 자바스크립트 컴파일러와 런타임은 엔진이라는 하나의 프로그램으로 합쳐진다.
-  프로그래머는  주로 이 엔지과 사오 작용한다.  V8 스파이더몽키 JSCode  샤크라 등 브라우져별 엔진이 이처럼 동작하며 자바스크립트가 해석되는 Interpreted 언어의 모습을 갖게 만든다...
- - 타입의 안정성. 타입을 이용해 프로그램이 유효하지 않은 작업을 수행하지 않도록 방지한다.active
+&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;TypeScript&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;의&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;개념&lt;/span&gt;
+ &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;TSC&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;타입스크립트&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;컴파일러&lt;/span&gt;
+ &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;AST를&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;바이트코드&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;라는&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;하위&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;수준의&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;표현으로&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;변환한다&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;
+ &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;보통&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;자바스크립트&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;컴파일러와&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;런타임은&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;엔진이라는&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;하나의&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;프로그램으로&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;합쳐진다&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;
+   &lt;span class=&quot;nx&quot;&gt;프로그래머는&lt;/span&gt;  &lt;span class=&quot;nx&quot;&gt;주로&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;이&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;엔지과&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;상호&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;작용한다&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;  
+   &lt;span class=&quot;nx&quot;&gt;V8&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;스파이더몽키&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;JSCode&lt;/span&gt;  &lt;span class=&quot;nx&quot;&gt;샤크라&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;등&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;브라우져별&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;엔진이&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;이처럼&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;동작하며&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;자바스크립트가&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;해석되는&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Interpreted&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;언어의&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;모습을&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;갖게&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;만든다&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;...&lt;/span&gt;
+ &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;타입의&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;안정성&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;타입을&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;이용해&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;프로그램이&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;유효하지&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;않은&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;작업을&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;수행하지&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;않도록&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;방지한다&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
- 여기까지는 오레일리 타입스크립트 프로그래밍 책에서 발췌한 것이고 이제부터 내 기억에 넣을 정리를 시작해보자.
-
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;여기까지는 O’Reilly  타입스크립트 프로그래밍 책에서 발췌한 것이고 이제부터 내 기억에 넣을 정리를 시작해보자.&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;공식 문서&lt;/li&gt;
@@ -35,50 +36,53 @@ I&apos;ll be &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;${&lt;/span&gt; &lt;sp
 
 &lt;p&gt;위와 아래는 동일 하다.&lt;/p&gt;
 
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;sentence&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Hello, my name is &lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;fullName&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n\n&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;sentence&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;string&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;Hello, my name is &lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;fullName&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n\n&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;
     &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;I&apos;ll be &lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;age&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt; years old next month.&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;위 예제가 이해가 가지 않는다면.  자바 스크리브 ES6 튜토리얼을 보고 오기를 권장 한다.active&lt;/p&gt;
+&lt;p&gt;위 예제가 이해가 가지 않는다면.  JavaScript ECMA6 튜토리얼을 보고 오기를 권장 한다.&lt;/p&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-wiki&quot;&gt; - 정리하자면 타입스크립트는 에러를 알려준다는 사실자체 보다는 더 휼륭한 기능은 바로 에러를 알려주는 시점이다. 개발자가 테스트 편집기에 코드를 입력하는 순간 곧바로 에러 메세지를 발생 시킨다.
- 어떤 에러를 발생하는지 보자
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;정리하자면&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;타입스크립트는&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;에러를&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;알려준다는&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;사실자체&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;보다는&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;더&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;휼륭한&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;기능은&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;바로&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;에러를&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;알려주는&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;시점이다&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt; 
+ &lt;span class=&quot;nx&quot;&gt;개발자가&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;테스트&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;편집기에&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;코드를&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;입력하는&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;순간&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;곧바로&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;에러&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;메세지를&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;발생&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;시킨다&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;
+ &lt;span class=&quot;nx&quot;&gt;어떤&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;에러를&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;발생하는지&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;보자&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;..&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;c1&quot;&gt;// [에러 TS2365: &apos;3&apos; 타입과 &apos;naver[]&apos; 타입에 연산자 &apos;+&apos; 를 적용할 수 없음]]&lt;/span&gt;
   &lt;span class=&quot;c1&quot;&gt;// [에러 TS2345: &apos;number&apos; 타입의 매개변수에  &apos;x&apos; 라는 인수타입을 할달할 수 없음]]&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-wiki&quot;&gt;2.1 타입스크립트 : 3000 미터 상공에서 내려다보기
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;mf&quot;&gt;2.1&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;타입스크립트&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3000&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;미터&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;상공에서&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;내려다보기&lt;/span&gt;
 
- - 타입 시스템 기능
-   타입 결정  방식             동적
-   타입이 자동으로 변환 되는가?  O 
-   언제 타입을 확인하는가?    런타임
-   언제 에러를 검출하는가?    런타임(대부분)
+ &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;타입&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;시스템&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;기능&lt;/span&gt;
+ &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;타입&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;결정&lt;/span&gt;  &lt;span class=&quot;nx&quot;&gt;방식&lt;/span&gt;             &lt;span class=&quot;nx&quot;&gt;동적&lt;/span&gt;
+ &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;타입이&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;자동으로&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;변환&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;되는가&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;?&lt;/span&gt;  &lt;span class=&quot;nx&quot;&gt;O&lt;/span&gt; 
+ &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;언제&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;타입을&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;확인하는가&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;?&lt;/span&gt;       &lt;span class=&quot;nx&quot;&gt;런타임&lt;/span&gt;
+ &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;언제&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;에러를&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;검출하는가&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;?&lt;/span&gt;       &lt;span class=&quot;nx&quot;&gt;런타임&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;대부분&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 
- - 동적 타입 바인딩 : 자바스크립트가 프로그램을 실행해야 특정 데이터의 타입을 알 수 있음을 의미함.
+ &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;동적&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;타입&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;바인딩&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; 
+   &lt;span class=&quot;nx&quot;&gt;자바스크립트가&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;프로그램을&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;실행해야&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;특정&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;데이터의&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;타입을&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;알&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;수&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;있음을&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;의미함&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;
 
-2-3 코드 편집기 설정
- - VSCode 웹사이트에서 제공하는 절차를 따라 설정 하라.
- - NodeJS 프로젝트 의존성이나 빌드를 관리하는 패키지 관리자 NPM 을 포함. TSC 와 TSLint 설치로 터미널에서
-   NPM 프로젝트를 초기화 하라.
-&lt;/code&gt;&lt;/pre&gt;
+&lt;span class=&quot;mf&quot;&gt;2.2&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;코드&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;편집기&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;설정&lt;/span&gt;
+ &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;VSCode&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;웹사이트에서&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;제공하는&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;절차를&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;따라&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;설정&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;하라&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;
+ &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;NodeJS&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;프로젝트&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;의존성이나&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;빌드를&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;관리하는&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;패키지&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;관리자&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;NPM&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;을&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;포함&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt; 
+   &lt;span class=&quot;nx&quot;&gt;TSC&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;와&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;TSLint&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;설치로&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;터미널에서&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;NPM&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;프로젝트를&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;초기화&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;하라&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-wiki&quot;&gt;mkdir 생성할project디렉토리명
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;mkdir&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;생성할project디렉토리명&lt;/span&gt;
 
-cd project디렉토리명
+&lt;span class=&quot;nx&quot;&gt;cd&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;project디렉토리명&lt;/span&gt;
 
-npm Introduction
-npm instll --save-dev typescript tslint @type/node
-&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code class=&quot;language-wiki&quot;&gt;2.3.1  tsconfig.json
- - 모든 타입 스크립트 프로젝트는 루트 디렉토리에 tsconfig.json 이라는 파일이 존재 해야 한다.
-   json 파일은 타입스크리브의 프로젝트에서 어떤 파일을 컴파일 하고 어떤 자바스크립트 버전으로 방출하는지 등을 정의한다.active
+&lt;span class=&quot;nx&quot;&gt;npm&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;Introduction&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;npm&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;instll&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;save&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;dev&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;typescript&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;tslint&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;@&lt;/span&gt;&lt;span class=&quot;nd&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;sr&quot;&gt;/nod&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;e
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
- - 루트 디렉토리에 tsconfig.json 이라는 파일을 만들고 코드 변집기를 열어 다음과 같이 입력하자.active
-&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;2.2.1  tsconfig.json&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;모든&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;타입&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;스크립트&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;프로젝트는&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;루트&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;디렉토리에&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;tsconfig&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;json&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;이라는&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;파일이&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;존재&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;해야&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;한다&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;
+   &lt;span class=&quot;nx&quot;&gt;json&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;파일은&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;타입스크리브의&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;프로젝트에서&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;어떤&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;파일을&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;컴파일&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;하고&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;어떤&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;자바스크립트&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;버전으로&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;방출하는지&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;등을&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;정의한다&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;
+
+ &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;루트&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;디렉토리에&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;tsconfig&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;json&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;이라는&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;파일을&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;만들고&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;코드&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;변집기를&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;열어&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;다음과&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;같이&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;입력하자&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
   &lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;compilerOptions&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
@@ -95,38 +99,70 @@ npm instll --save-dev typescript tslint @type/node
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-wiki&quot;&gt;  - 그림 2-2 TypeScript 옵션
- include
- lib
- module
- outDir
- strict
- target
+&lt;p&gt;그림 2-2 TypeScript 옵션&lt;/p&gt;
 
-2.2.2 tslint.json
-&lt;/code&gt;&lt;/pre&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;nx&quot;&gt;include&lt;/span&gt;
+ &lt;span class=&quot;nx&quot;&gt;lib&lt;/span&gt;
+ &lt;span class=&quot;nx&quot;&gt;module&lt;/span&gt;
+ &lt;span class=&quot;nx&quot;&gt;outDir&lt;/span&gt;
+ &lt;span class=&quot;nx&quot;&gt;strict&lt;/span&gt;
+ &lt;span class=&quot;nx&quot;&gt;target&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;2.2.2 tslint.json&lt;/p&gt;
 
 &lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;node_modules&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;bin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;tslint&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;init&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;pre&gt;&lt;code class=&quot;language-wiki&quot;&gt;- rule에 모든 규칙은 TSLint 공식분서에서 확인하자.active
+&lt;p&gt;** rule 모든 규칙은 TSLint 공식문서에서 확인하자.&lt;/p&gt;
 
-2.4 index.ts  또는 index.tsx 
- - src/index.tsx 
+&lt;p&gt;2.4 index.ts  또는 index.tsx&lt;/p&gt;
 
- index.ts 에  아래의 코드를 넣는다.
+&lt;ul&gt;
+  &lt;li&gt;src/index.tsx&lt;/li&gt;
+&lt;/ul&gt;
 
- console.log(&apos;Hello TypeScript!&apos;);
+&lt;p&gt;index.ts 에  아래의 코드를 넣는다.&lt;/p&gt;
 
- - 컴파일 하고 실행하자
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;Hello TypeScript!&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-# TSC로 타입스크립트 컴파일.
- ./node_modules/.bin/tsc 
-# NodeJS 로 코드 실행
- node ./dist/index.js
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;컴파일 하고 실행하자&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;TSC로 타입스크립트 컴파일&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
-여까지 실행환경 이었다.. 수고 했음.
-&lt;/code&gt;&lt;/pre&gt;</content><author><name>제로미</name></author><category term="posts" /><category term="TypeScript" /><summary type="html">TypeScript 정리 초안</summary></entry><entry><title type="html">React Query 오류 다운그레이드</title><link href="http://localhost:4000/posts/post-React-Router-sampleCode/post-React-Router-sampleCode.html" rel="alternate" type="text/html" title="React Query 오류 다운그레이드" /><published>2023-02-02T00:00:00+09:00</published><updated>2023-02-02T00:00:00+09:00</updated><id>http://localhost:4000/posts/post-React-Router-sampleCode/post-React-Router-sampleCode</id><content type="html" xml:base="http://localhost:4000/posts/post-React-Router-sampleCode/post-React-Router-sampleCode.html">&lt;p&gt;&lt;img src=&quot;../assets/images/2023-02-02-post-React-Router-sampleCode/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;node_modules&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;bin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;tsc&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;NodeJS 로 코드 실행&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; &lt;span class=&quot;nx&quot;&gt;node&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;dist&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;/&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;index&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;js&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;여기까지 실행환경 이었다.. 수고 했음.&lt;/p&gt;</content><author><name>제로미</name></author><category term="posts" /><category term="TypeScript" /><summary type="html">TypeScript 정리 초안</summary></entry><entry><title type="html">코딩 사이트</title><link href="http://localhost:4000/categories/" rel="alternate" type="text/html" title="코딩 사이트" /><published>2023-03-02T00:00:00+09:00</published><updated>2023-03-13T23:27:53+09:00</updated><id>http://localhost:4000/categories-test</id><content type="html" xml:base="http://localhost:4000/categories/">&lt;h4 id=&quot;--외국-코딩-사이트로는-대표적으로-다음과-같은-사이트들이-있습니다&quot;&gt;- 외국 코딩 사이트로는 대표적으로 다음과 같은 사이트들이 있습니다.&lt;/h4&gt;
+
+&lt;p&gt;1.1 Stack Overflow: https://stackoverflow.com/&lt;/p&gt;
+
+&lt;p&gt;1.2 GitHub: https://github.com/&lt;/p&gt;
+
+&lt;p&gt;1.3 Codecademy: https://www.codecademy.com/&lt;/p&gt;
+
+&lt;p&gt;1.4 HackerRank: https://www.hackerrank.com/&lt;/p&gt;
+
+&lt;p&gt;1.5 Udacity: https://www.udacity.com/&lt;/p&gt;
+
+&lt;p&gt;1.6 Codepen: https://codepen.io/&lt;/p&gt;
+
+&lt;p&gt;1.7 FreeCodeCamp: https://www.freecodecamp.org/&lt;/p&gt;
+
+&lt;p&gt;1.8 Codewars: https://www.codewars.com/&lt;/p&gt;</content><author><name>제로미</name></author><category term="Coding" /><category term="Category" /><summary type="html">- 외국 코딩 사이트로는 대표적으로 다음과 같은 사이트들이 있습니다.</summary></entry><entry><title type="html">React Query 오류 다운그레이드</title><link href="http://localhost:4000/posts/post-React-Router-sampleCode/post-React-Router-sampleCode.html" rel="alternate" type="text/html" title="React Query 오류 다운그레이드" /><published>2023-02-02T00:00:00+09:00</published><updated>2023-02-02T00:00:00+09:00</updated><id>http://localhost:4000/posts/post-React-Router-sampleCode/post-React-Router-sampleCode</id><content type="html" xml:base="http://localhost:4000/posts/post-React-Router-sampleCode/post-React-Router-sampleCode.html">&lt;p&gt;&lt;img src=&quot;../assets/images/2023-02-02-post-React-Router-sampleCode/glenn-carstens-peters-npxXWgQ33ZQ-unsplash.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 &lt;h5 id=&quot;-react-query&quot;&gt;✨ React Query&lt;/h5&gt;
 
@@ -140,26 +176,22 @@ npm instll --save-dev typescript tslint @type/node
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h6 id=&quot;install&quot;&gt;INSTALL&lt;/h6&gt;
+&lt;p&gt;==== INSTALL&lt;/p&gt;
 
 &lt;p&gt;환경설정   yarn 으로 설치한다.&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;@tanstack/react-query 를 설치한다.&lt;/p&gt;
+&lt;p&gt;= @tanstack/react-query 를 설치한다.&lt;/p&gt;
 
-    &lt;ol&gt;
-      &lt;li&gt;yarn create react-app query-init 
+&lt;ol&gt;
+  &lt;li&gt;yarn create react-app query-init 
 ✨ 디렉토리 상위에서 프로젝트(query-init)를 생성합니다.&lt;/li&gt;
-      &lt;li&gt;cd query-init ✨   yarn init ✨&lt;/li&gt;
-      &lt;li&gt;yarn add @tanstack/react-query&lt;br /&gt;
+  &lt;li&gt;cd query-init ✨   yarn init ✨&lt;/li&gt;
+  &lt;li&gt;yarn add @tanstack/react-query&lt;br /&gt;
 ✨명령으로 react-query를 설치 해줍니다.&lt;/li&gt;
-      &lt;li&gt;yarn add @tanstack/react-query-devtools&lt;br /&gt;
+  &lt;li&gt;yarn add @tanstack/react-query-devtools&lt;br /&gt;
 ✨명령으로 react-query-devtools를 설치 해줍니다.&lt;/li&gt;
-      &lt;li&gt;yarn start 하면 페이지가 열립니다…&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+  &lt;li&gt;yarn start 하면 페이지가 열립니다…&lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;p&gt;공식문서 : tanstack.com   ReactQuery
 https://tanstack.com/query/latest/docs/react/installation&lt;/p&gt;
@@ -172,9 +204,10 @@ https://tanstack.com/query/latest/docs/react/reference/useQuery&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;h6 id=&quot;source&quot;&gt;SOURCE&lt;/h6&gt;
+&lt;p&gt;= SOURCE&lt;/p&gt;
 
 &lt;p&gt;✨ Product.jsx&lt;/p&gt;
+
 &lt;details&gt;
 &lt;summary&gt;Product.jsx&lt;/summary&gt;
 &lt;div&gt;
@@ -294,7 +327,7 @@ Uncaught Error: Objects are not valid as a React child &lt;span class=&quot;o&qu
 
 &lt;p&gt;근래 바뀐듯 합니다. 커뮤니티를 가보라고 쓰여 있으니 더 뒤져 봐야 할거 같은데요.&lt;/p&gt;
 
-&lt;p&gt;**커뮤니티 **: &lt;a href=&quot;https://tkdodo.eu/blog/react-query-data-transformations&quot;&gt;TkDodo의 블로그&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;**커뮤니티 : &lt;a href=&quot;https://tkdodo.eu/blog/react-query-data-transformations&quot;&gt;TkDodo의 블로그&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;에러 화면 :&lt;/p&gt;
 
@@ -1387,30 +1420,4 @@ more...
 
 &lt;h5 id=&quot;정리&quot;&gt;정리&lt;/h5&gt;
 
-&lt;p class=&quot;notice&quot;&gt;&lt;strong&gt;Watch out!&lt;/strong&gt; new Function을 이용해 만든 함수의 [[Environment]]는 외부 렉시컬 환경이 아닌 전역 렉시컬 환경을 참조하므로 외부 변수를 사용할 수 없습니다.&lt;/p&gt;</content><author><name>제로미</name></author><category term="posts" /><category term="Javascript" /><summary type="html">Javascript Lexical Scope</summary></entry><entry><title type="html">When U git Change Default Branch Renamed!</title><link href="http://localhost:4000/posts/post-git-WhenChangeDefaultBranchRenamed2/post-git-WhenChangeDefaultBranchRenamed2.html" rel="alternate" type="text/html" title="When U git Change Default Branch Renamed!" /><published>2023-01-10T00:00:00+09:00</published><updated>2023-01-10T00:00:00+09:00</updated><id>http://localhost:4000/posts/post-git-WhenChangeDefaultBranchRenamed2/post-git-WhenChangeDefaultBranchRenamed2</id><content type="html" xml:base="http://localhost:4000/posts/post-git-WhenChangeDefaultBranchRenamed2/post-git-WhenChangeDefaultBranchRenamed2.html">&lt;h5 id=&quot;-git-default-branch-renamed&quot;&gt;✨ git Default Branch Renamed&lt;/h5&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;github 에서 default 브렌치를 이름 변경하면 로컬에서 cmd 창에 아래와 같이 작업&lt;/p&gt;
-
-    &lt;ol&gt;
-      &lt;li&gt;
-        &lt;p&gt;브렌치 마스터에서 변경된 이름으로 하고  ✨&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;fetch origin  branch -u 변경된 branch 이름으로 ✨&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-        &lt;p&gt;remote 명령으로 origin의 모든것을 set-head 해줍니다. ✨&lt;/p&gt;
-      &lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h5 id=&quot;-commands&quot;&gt;✨ commands&lt;/h5&gt;
-
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git branch &lt;span class=&quot;nt&quot;&gt;-m&lt;/span&gt; master devlop 
-git fetch origin 
-git branch &lt;span class=&quot;nt&quot;&gt;-u&lt;/span&gt; origin/devlop devlop 
-git remote set-head origin &lt;span class=&quot;nt&quot;&gt;-a&lt;/span&gt; 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>제로미</name></author><category term="posts" /><category term="GIT" /><summary type="html">✨ git Default Branch Renamed</summary></entry></feed>
+&lt;p class=&quot;notice&quot;&gt;&lt;strong&gt;Watch out!&lt;/strong&gt; new Function을 이용해 만든 함수의 [[Environment]]는 외부 렉시컬 환경이 아닌 전역 렉시컬 환경을 참조하므로 외부 변수를 사용할 수 없습니다.&lt;/p&gt;</content><author><name>제로미</name></author><category term="posts" /><category term="Javascript" /><summary type="html">Javascript Lexical Scope</summary></entry></feed>
