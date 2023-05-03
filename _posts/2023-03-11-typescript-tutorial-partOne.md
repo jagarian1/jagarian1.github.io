@@ -33,10 +33,10 @@ toc_sticky: true
 
 ```javascript
 Typescript 공식 홈페이지: https://www.typescriptlang.org/
-Typescript 한글 도움말: https://typescript-kr.github.io/
-Typescript 한글 문서: https://wikidocs.net/book/3687
-Typescript 한글 강좌: https://www.inflearn.com/course/%ed%83%80%ec%9e%85%ed%94%8c%eb%a0%88%ec%8a%a4-%ed%95%9c%ea%b8%80%ec%9e%90%eb%a3%8c%ea%b5%ac-%ea%b0%95%ec%a2%8c/
-Typescript 한글 메뉴얼: https://ahnheejong.gitbooks.io
+Typescript 한글 git   : https://github.com/microsoft/TypeScript-Website
+Typescript 한글 문서   : https://www.typescriptlang.org/docs/home
+Typescript 한글 강좌   : 
+Typescript 한글 메뉴얼 : https://typescript-kr.github.io/
 
 ```
 
